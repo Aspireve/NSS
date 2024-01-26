@@ -7,7 +7,6 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-image: url("../assets/home_reduced/hero-section.jpg");
     filter: blur(2rem) brightness(1.2);
 }
 .blurry-image {

@@ -1,8 +1,7 @@
 import { useEffect, useRef } from "react";
-import hero_reduced from "../assets/home_reduced/hero-section.jpg"
 import "../styles/image.css"
 
-export const Image = ({ simple_image, HD_image, alt }) => {
+const Image = ({ simple_image, HD_image, alt }) => {
   const imageRef = useRef(null);
   useEffect(() => {
     const img = imageRef.current.querySelector("img");
@@ -24,3 +23,5 @@ export const Image = ({ simple_image, HD_image, alt }) => {
     </div>
   );
 };
+
+export default Image

@@ -11,9 +11,6 @@ import { QuickMenu } from "./QuickMenu";
 export default function Navbar() {
   const [sidebar, setSidebar] = useState(false);
   const [navabarClass, setnavbarClass] = useState("")
-  const openSidebar = () => {
-    setSidebar((prev) => !prev);
-  };
   
   
   // const changeNavbarStyles = () => {

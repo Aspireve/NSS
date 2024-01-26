@@ -1,7 +1,7 @@
 import { useState } from "react";
-import hero from "../assets/home/hero-section.jpg";
+// import hero from "../assets/home/hero-section.jpg";
 
-import hero_reduced from "../assets/home_reduced/hero-section.jpg";
+// import hero_reduced from "../assets/home_reduced/hero-section.jpg";
 
 export const useCarousel = (pages) => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0); 

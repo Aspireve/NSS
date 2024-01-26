@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import hamburgerMenu from "../assets/static_images/bars-solid.svg";
 import closeButton from "../assets/static_images/xmark-solid.svg";
 

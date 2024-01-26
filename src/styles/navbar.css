@@ -31,7 +31,6 @@ nav {
 .logo-container {
     display: flex;
     align-items: center;
-    font-family: 'Times New Roman';
 }
 
 .logo-container>img {
@@ -42,7 +41,7 @@ nav {
 .logo-title {
     margin-left: .75rem;
     color: var(--_font-color);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Lora-web;
 }
 
 .logo-title h2 {
@@ -58,16 +57,17 @@ nav {
 .nav-links-container {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 1.5rem;
     transition: 500ms ease-in-out;
 }
 .nav-links {
     display: flex;
     flex-direction: column;
     color: var(--_font-color);
+    font-family: Roboto-web;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 1.1rem;
     transition: 500ms;
 }
 .nav-links:not(.active)::after {
@@ -84,7 +84,7 @@ nav {
 }
 .nav-links.active {
     border: 2px solid var(--_font-color);
-    padding: .4rem .7rem;
+    padding: .5rem .8rem;
     border-radius: 20px;
     transition: 500ms ease-in-out;
 }
