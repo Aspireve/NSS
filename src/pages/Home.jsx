@@ -6,6 +6,8 @@ export const Home = () => {
   return (
     <>
       <Hero />
+      <Hero />
+      <Hero />
     </>
   )
 }

@@ -145,6 +145,11 @@ nav {
         background-color: white;
         
     }
+    .nav-links {
+        color: white;
+    }
+    .nav-links.active {
+        border: 2px solid white;}
 
     .nav-links-container {
         position: fixed;

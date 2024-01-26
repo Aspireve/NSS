@@ -13,18 +13,18 @@ export default function Navbar() {
   const [navabarClass, setnavbarClass] = useState("")
   
   
-  // const changeNavbarStyles = () => {
-  //   if(window.scrollY > 0 && window.scrollY < 530) {
-  //     setnavbarClass(() => "gradient-navbar")
-  //   } else if (window.scrollY > 530) {
-  //     setnavbarClass(() => "solid-color-navbar")
-  //   }
-  //   else {
-  //     setnavbarClass(() => "")
-  //   }
-  // }
+  const changeNavbarStyles = () => {
+    if(window.scrollY > 0 && window.scrollY < 530) {
+      setnavbarClass(() => "gradient-navbar")
+    } else if (window.scrollY > 530) {
+      setnavbarClass(() => "solid-color-navbar")
+    }
+    else {
+      setnavbarClass(() => "")
+    }
+  }
 
-  // window.addEventListener("scroll", changeNavbarStyles)
+  window.addEventListener("scroll", changeNavbarStyles)
   
   return (
     <nav className={navabarClass}>
