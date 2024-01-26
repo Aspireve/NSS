@@ -1,0 +1,49 @@
+.image-loader {
+    background: orange;
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/home_reduced/hero-section.jpg");
+    filter: blur(2rem) brightness(1.2);
+}
+.blurry-image {
+    position: relative;
+}
+.blurry-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #343434;
+    animation: pulse 1s infinite;
+}
+.loaded-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+    display: block;
+}
+.image-loader.image-loaded {
+    filter: blur(0) brightness(1);
+}
+.blurry-image::after.image-loaded {
+    background-color: transparent;
+    animation: none;
+}
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
