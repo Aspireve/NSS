@@ -1,0 +1,203 @@
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+    transform: translateY(5rem);
+    opacity: 0;
+    transition: 1.2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+section.appear {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.image-wrapper {
+    height: 100%;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.image-wrapper::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    width: 30rem;
+    height: 40rem;
+    transform: skewX(140deg) translate(0, 0);
+    animation: shine 2s linear infinite;
+    animation-delay: 2s;
+}
+
+
+.nss-logo-container {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nss-logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-us-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.about-us-text h2 {
+    font-family: Roboto-web;
+    font-size: 5rem;
+    font-weight: 900;
+    position: relative;
+    width: fit-content;
+}
+
+.about-us-text-header:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    border-left: 7px solid black;
+    animation: typewriter 2s ease-in-out forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+        display: none;
+    }
+}
+
+.about-us-text p {
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: .95rem;
+    font-weight: 400;
+}
+
+.about-us-text button {
+    outline: none;
+    border: none;
+    width: fit-content;
+    border-radius: 20px;
+    font-weight: 400;
+    color: white;
+    padding: .6rem .9rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #f857a6, #ff5858);
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.about-us-text button:hover {
+    border: 2px solid black;
+    color: black
+}
+
+@media screen and (max-width:1024px) {
+    .nss-logo-container {
+        width: 40%;
+    }
+
+    .about-us-text {
+        width: 55%;
+    }
+
+    .about-us-text h2 {
+        font-size: 3.5rem;
+    }
+
+    .about-us-text p {
+        font-size: .85rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .nss-logo-container {
+        width: 40%;
+    }
+
+    .about-us-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-us-text h2 {
+        font-size: 3rem;
+        margin: auto;
+    }
+
+    .about-us-text p {
+        font-size: .8rem;
+    }
+
+    .about-us-text button {
+        font-size: .9rem;
+        padding: .4rem .8rem;
+        margin: auto;
+
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .nss-logo-container {
+        width: 60%;
+    }
+
+    .about-us-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-us-text p {
+        font-size: .8rem;
+    }
+
+    .about-us-text button {
+        font-size: .8rem;
+        padding: .4rem .8rem;
+        margin: auto;
+    }
+}
+
+
+@keyframes shine {
+    0% {
+        transform: skewX(140deg) translate(-120%, 0);
+    }
+
+    25% {
+        transform: skewX(140deg) translate(140%, 0);
+    }
+
+    100% {
+        transform: skewX(140deg) translate(140%, 0);
+    }
+}

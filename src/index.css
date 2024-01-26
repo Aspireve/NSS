@@ -18,6 +18,12 @@
 @font-face {
   font-family: Roboto-web;
   font-weight: 800;
+  src: url("./fonts/Roboto-Bold.woff2");
+}
+
+@font-face {
+  font-family: Roboto-web;
+  font-weight: 900;
   src: url("./fonts/Roboto-Black.woff2");
 }
 
