@@ -1,0 +1,82 @@
+.objective-container {
+    padding: 1.5rem 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem
+}
+.objective-container h2 {
+    font-family: Roboto-web;
+    font-weight: 900;
+    font-size: 4rem;
+}
+.objective-card-container {
+    width: 65%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+}
+.objective-card-container img {
+    position: absolute;
+    height: 9rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 20px white);
+}
+
+@keyframes rotateimg {
+    from {
+        rotate: 0deg
+    } to {
+        rotate: 360deg
+    }
+    
+}
+
+.objective-card {
+    padding: 2rem;
+}
+.objective-card:nth-child(1) {
+    border-radius: 7rem  0 0 0;
+    background-image: linear-gradient(135deg,#322864, #de2028 );
+    padding: 2rem  3rem 3rem 2rem;
+
+}
+.objective-card:nth-child(2) {
+    border-radius: 0 7rem  0 0;
+    background-image: linear-gradient(45deg, #de2028 ,#322864);
+    padding: 2rem 2rem 3rem 3rem;
+}
+.objective-card:nth-child(3) {
+    border-radius: 0 0 0 7rem  ;
+    background-image: linear-gradient(-135deg , #de2028 ,#322864);
+    padding: 3rem 3rem 2rem 2rem ;
+}
+.objective-card:nth-child(4) {
+    border-radius: 0 0 7rem  0 ;
+    background-image: linear-gradient(-45deg,#322864, #de2028);
+    padding: 3rem  2rem 2rem 3rem;
+}
+.objective-card > h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.objective-card > h2 {
+    font-family: Roboto-web;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.651);
+}
+.objective-card > p {
+    width: 80%;
+    margin: auto;
+    color: white;
+}

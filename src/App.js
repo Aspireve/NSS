@@ -12,6 +12,7 @@ import Testimonial from "./pages/Testimonials";
 import Team from "./pages/Team";
 import { NavbarOnly } from "./templates/Navbar";
 import Projects from "./pages/Projects";
+import About from "./pages/About";
 
 function App() {
   // const carousel
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route element={<NavbarFooter phase={3}/>}>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
           </Route>
           <Route element={<NavbarFooter phase={1}/>}>
             <Route path="/testimonials" element={<Testimonial />} />

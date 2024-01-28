@@ -1,13 +1,23 @@
 import { motion, useTransform, useScroll, easeInOut } from "framer-motion";
 import React, { useRef, useState, useEffect } from "react";
-import "../styles/scroller.css";
-import Modal from "../components/Modal";
-import Images from "../assets/index";
+import "../styles/team/scroller.css";
+import Modal from "../components/TeamModal";
+import Linkedin from "../assets/static_images/linkedin.svg";
+import Facebook from "../assets/static_images/facebook.svg";
+import Instagram from "../assets/static_images/instagram.svg";
+import Atharva from "../assets/testimonial/Atharva Pardeshii.png"
+import Nandu from "../assets/testimonial/Nandkumar Pandey.webp"
+import Ruchi from "../assets/testimonial/Ruchi Yadav.webp"
+import Ruchika from "../assets/testimonial/Ruchika Singh.webp"
+import Satyam from "../assets/testimonial/Satyam Rudrakanthwar.webp"
+import Gaurav from "../assets/testimonial/Gourav Singh.png"
+import Tanay from "../assets/testimonial/Tanay Agarwal.png"
+import Harsh from "../assets/testimonial/Harsh Mishra.webp"
 import { Link } from "react-router-dom";
 
 const cards = [
   {
-    url: `${Images.Atharva}`,
+    url: Atharva,
     quote: "Listen with curiosity. Speak with honesty. Act with integrity",
     details: {
       name: "Atharva Pardeshi",
@@ -19,7 +29,7 @@ const cards = [
     id: 1,
   },
   {
-    url: `${Images.Satyam}`,
+    url: Satyam,
     quote:
       "A great person attracts great people and knows how to hold them together",
 
@@ -33,7 +43,7 @@ const cards = [
     id: 2,
   },
   {
-    url: `${Images.Ruchika}`,
+    url: Ruchika,
     quote:
       "Leadership is not about being in charge. It's about taking care of those in your charge.",
 
@@ -47,7 +57,7 @@ const cards = [
     id: 3,
   },
   {
-    url: `${Images.Harsh}`,
+    url: Harsh,
     quote:
       "If your actions inspire others to dream more, learn more, do more and becomemore, you are a leader",
 
@@ -61,7 +71,7 @@ const cards = [
     id: 4,
   },
   {
-    url: `${Images.Ruchi}`,
+    url: Ruchi,
     quote: "We come nearest to the great when we are great in humility.",
 
     details: {
@@ -74,7 +84,7 @@ const cards = [
     id: 5,
   },
   {
-    url: `${Images.Gourav}`,
+    url: Gaurav,
     quote:
       "Leadership is not just about making decisions; it's about making the right decisions strategically",
 
@@ -88,7 +98,7 @@ const cards = [
     id: 6,
   },
   {
-    url: `${Images.Tanay}`,
+    url: Tanay,
     quote:
       "Life is a collection of moments; don't just count them, make them count",
 
@@ -102,7 +112,7 @@ const cards = [
     id: 7,
   },
   {
-    url: `${Images.Nandu}`,
+    url: Nandu,
     quote:
       "It's not about the resources you have available. It's about the resourcefulness you have within you.",
 
@@ -142,13 +152,13 @@ const Scroller = () => {
             <h4>Contact</h4>
             <div className="contact">
               <Link to={selectedCardDetails.details.linkedin} className="link">
-                <FontAwesomeIcon icon={faInstagram} />
+                <img src={Instagram} alt="instagram" />
               </Link>
               <Link className="link">
-                <FontAwesomeIcon icon={faXTwitter} />
+                <img src={Linkedin} alt="linkedin" />
               </Link>
               <Link className="link">
-                <FontAwesomeIcon icon={faFacebook} />
+                <img src={Facebook} alt="facebook" />
               </Link>
             </div>
           </div>

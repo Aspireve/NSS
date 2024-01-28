@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
-import "../styles/modal.css";
+import "../styles/team/modal.css";
+import Close from "../assets/static_images/xmark-solid.svg"
 
 const Modal = ({ show, onClose, children }) => {
   useEffect(() => {
@@ -22,7 +23,7 @@ const Modal = ({ show, onClose, children }) => {
     <div className="modalWrapper">
       <div className="modal_Council">
         <button className="btnClose" onClick={onClose}>
-          <FontAwesomeIcon icon={faClose} />
+          <img src={Close} alt="Close Button" />
         </button>
         {children}
       </div>

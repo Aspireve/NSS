@@ -1,0 +1,69 @@
+.values-container {
+    padding: 1.5rem 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem
+}
+
+.values-container > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+}
+
+.values-animated-container {
+    display: flex;
+    gap:1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.value-card {
+    border: 3px solid lightskyblue;
+    width: 30%;
+    border-radius: 20px;
+    padding: 1rem 1rem ;
+    text-align: center;
+}
+
+.value-quote {
+    font-style: italic;
+    font-size: 300;
+    margin-bottom: .7rem;
+}
+
+.value-title {
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.value-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: .7rem;
+}
+.value-separator > hr {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.438);
+    height: 2px;
+}
+.see-more-domains {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: .5rem;
+    box-shadow: 0 0 4px #000;
+    transition: 500ms;
+}
+.see-more-domains:hover {
+    scale: 1.1;
+}

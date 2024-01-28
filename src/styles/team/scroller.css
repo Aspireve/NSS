@@ -1,17 +1,21 @@
 .heading {
-    font-size: 5vw;
+  font-family: Roboto-web;
+  font-weight: 900;
+    font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
   }
   .council_head {
     text-align: center;
-    font-size: 3.5vh;
+    font-family: Roboto-web;
+    font-size: 1.2rem;
     font-weight: 400;
     text-wrap: balance;
     line-height: 1.1;
     padding: 0 5vw;
   }
   .carousel-section {
+    padding-top: 4rem;
     position: relative;
     height: 800vh;
   }

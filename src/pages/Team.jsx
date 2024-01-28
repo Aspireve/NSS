@@ -1,12 +1,14 @@
 import React from "react";
 import "../styles/team/teams.css";
 import { useState } from "react";
-// import Scroller from "../components/Scroller";
+import Scroller from "../components/Scroller";
 import ReactCardFlip from "react-card-flip";
-// import JcContainer from "../components/TeamCardcontainer";
+import JcContainer from "../components/TeamCardcontainer";
 // import Images from "../assets/index";
 // import ImageGallery from "../components/ImageGallery";
 import NSS_chairperson from "../assets/home/nss_chairperson.png"
+import Map from "../components/HomeMap"
+import Socials from "../components/HomeSocials"
 import SatishSingh from "../assets/team/Dr. Satish Singh.png"
 import VinitaAgarwal from "../assets/team/Dr. Vinita Agarwal.png"
 import SajjanKumar from "../assets/team/Mr. Sajjankumar Lal.png"
@@ -230,9 +232,11 @@ const Team = () => {
           </div>
         </div>
       </div>
-      {/* <JcContainer />
       <Scroller />
-      <ImageGallery /> */}
+      <JcContainer />
+      <Socials />
+      <Map />
+      {/* <ImageGallery /> */}
     </div>
   );
 };

@@ -1,0 +1,128 @@
+.significanceContainer {
+    padding: 1.5rem 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem
+  }
+  
+  .aboutLogoContainer {
+    width: 35%;
+    border-radius: 50%;
+    position: relative;
+  
+  }
+  
+  .cls-1 {
+    fill: #de2028;
+  }
+  
+  .cls-2 {
+    fill-rule: evenodd;
+  }
+  
+  .cls-2,
+  .cls-3 {
+    fill: #fff;
+  }
+  
+  .cls-4 {
+    fill: #322864;
+  }
+  
+  .cls-5 {
+    fill: #fdfdfd;
+  }
+  
+  .cls-3 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+  }
+  
+  .aboutLogoTextContainer {
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  
+  .aboutLogoTextContainer h1 {
+    font-family: Roboto-web;
+    font-size: 4rem;
+  }
+  
+  .aboutLogoTextContainer p {
+    font-size: .9rem;
+    display: inline;
+    line-height: 1.6rem;
+    overflow: hidden;
+    z-index: 999;
+    transition: 500ms;
+  }
+  
+  .aboutLogoTextContainer p:has(.highlight-blue),
+  .aboutLogoTextContainer p:has(.highlight-red),
+  .aboutLogoTextContainer p:has(.highlight-white) {
+    color: rgba(72, 71, 71, 0.37)
+  }
+  
+  .highlight-blue {
+    --_background: rgba(135, 189, 236, 0.842);
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    /* border: 3px dashed #322864; */
+    display: inline;
+    margin: 0 2px;
+    padding: 0 .5rem;
+    box-shadow: 2px 2px 10px #32323245;
+    width: 50%;
+    height: 50%;
+    animation: highlight 1s ease-in-out forwards;
+  }
+  
+  .highlight-red {
+    --_background: rgba(248, 171, 162, 0.842);
+    /* background-color: rgb(255, 255, 255); */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 2px 2px 10px #32323245;
+    /* border: 3px dashed #de2028; */
+    margin: 0 2px;
+    display: inline;
+    padding: 0 .5rem;
+    width: 50%;
+    height: 50%;
+    animation: highlight 1s ease-in-out forwards;
+  }
+  
+  .highlight-white {
+    --_background: rgba(255, 255, 255, 0.842);
+    /* --_border: 2px dashed black; */
+    box-shadow: 2px 2px 10px #32323245;
+    /* background-color: rgb(255, 255, 255); */
+    overflow: hidden;
+    position: relative;
+    /* border: 3px dashed #de2028; */
+    margin: 0 2px;
+    display: inline;
+    padding: 0 .5rem;
+    width: 50%;
+    height: 50%;
+    animation: highlight 1s ease-in-out forwards;
+  }
+  
+  
+  @keyframes highlight {
+    to {
+      border: var(--_border);
+      color: black;
+      background-color: var(--_background)
+    }
+  }
+  
+  
+  /* Apply animation to the ::before pseudo-element */

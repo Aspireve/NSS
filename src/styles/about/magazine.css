@@ -1,0 +1,41 @@
+.magazine-container {
+    padding: 1.5rem 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.magazine-container h2 {
+    font-size: 4rem;
+    font-family: Roboto, sans-serif;
+}
+
+.magazine-page-container {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.magazine-image {
+    box-shadow: 2px 2px 20px #00000077;
+    transition: 500ms ease-in;
+    cursor: pointer;
+}
+
+.magazine-image img {
+    width: 20rem;
+    display: block;
+}
+
+.magazine-image.blacked {
+    filter: brightness(.5);
+}
+
+.magazine-image.hover {
+    scale: 1.1;
+}

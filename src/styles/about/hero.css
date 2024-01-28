@@ -1,0 +1,64 @@
+.council-carousel {
+    overflow: hidden;
+
+}
+
+.counc-carousel {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    transition: 1s ease-in-out;
+}
+
+.council {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: bottom;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+
+.council:nth-child(1) {
+    background-image: url("../../assets/about/council2024.png");
+}
+
+.council:nth-child(2) {
+    background-image: url("../../assets/about/council2024.png");
+}
+
+.council:nth-child(3) {
+    background-image: url("../../assets/about/council2024.png");
+}
+
+.council:nth-child(4) {
+    background-image: url("../../assets/about/council2024.png");
+}
+
+.council-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: Roboto-web;
+}
+
+.council-text h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px #000;
+    color: white;
+}
+
+.council-text p {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 1.2rem;
+    /* text-shadow: 2px 2px 10px #000; */
+}

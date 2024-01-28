@@ -11,20 +11,26 @@
   }
   #jc-container-header {
     text-align: center;
-    font-family: Gilroy-semibold;
+    font-family: Roboto-web;
+    font-weight: 800;
     font-size: 4rem;
   }
   #jc-container-info {
     text-align: center;
-    line-height: 1;
-    font-family: segoe UI;
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-family: Roboto-web;
+    font-size: 1.2rem;
+    width: 75%;
+    margin: auto;
+    font-weight: 400;
     padding: 1rem;
   }
   
-  .jc-card-wrapper {
+  .jc-card-wrappers {
     display: flex;
+    gap:1rem;
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
   }
   
   .jc-card {
@@ -35,7 +41,8 @@
     border-radius: 1rem;
     flex-direction: column;
     height: 100%;
-    width: 20rem;
+    width: 100%;
+    /* width: 20rem; */
   }
   
   .jc-image {
