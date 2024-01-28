@@ -13,6 +13,7 @@ import Team from "./pages/Team";
 import { NavbarOnly } from "./templates/Navbar";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import Developers from "./pages/Developers";
 
 function App() {
   // const carousel
@@ -35,6 +36,7 @@ function App() {
           </Route>
           <Route element={<NavbarFooter phase={1}/>}>
             <Route path="/testimonials" element={<Testimonial />} />
+            <Route path="/developers" element={<Developers />} />
             <Route path="/team" element={<Team />} />
           </Route>
           <Route element={<NavbarOnly phase={3}/>}>

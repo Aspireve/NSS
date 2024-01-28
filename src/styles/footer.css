@@ -39,6 +39,9 @@ footer {
     justify-content: space-between;
     padding: 1rem 0;
 }
+.developers-link {
+    cursor: pointer;
+}
 
 .footer-impt-links> ul {
     display: flex;

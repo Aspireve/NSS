@@ -17,6 +17,7 @@ function FooterSection({ title, list, link }) {
 
 
 export default function Footer() {
+  const navigate = useNavigate()
   return (
     <footer>
       <div className="links">
@@ -54,7 +55,7 @@ export default function Footer() {
       <hr />
       <div className="footer-impt-links">
         <p>TCET-NSS. All rights reserved</p>
-        <p>Meet the Developers</p>
+        <p className="developers-link" onClick={() => navigate("../developers")}>Meet the Developers</p>
         <ul>
           <li>Instagram</li>
           <li>LinkedIn</li>
