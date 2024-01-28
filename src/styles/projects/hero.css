@@ -1,0 +1,96 @@
+.parent-magestic-carousel {
+    width: 100%;
+    /* background-image: radial-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)), url("../assets/society.png"); */
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    pointer-events: auto;
+    overflow: inherit;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 500 ease-in-out;
+    overflow: hidden;
+}
+
+.animated-carousel-enter {
+    position: absolute;
+    inset: 0;
+    width: 50%;
+    height: 50%;
+    transform: translateX(100%);
+  }
+  .animated-carousel-enter-active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+    width: 100%;
+    height: 100%;
+    transition: all 1000ms ease-in-out;
+  }
+  .animated-carousel-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .animated-carousel-exit-active {
+    transform: translateX(-100%);
+    transition: all 1000ms ease-in-out;
+  } 
+
+.cursor-following-div {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    z-index: 99999999;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.cursor-following-div>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cursor-following-div>div>h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.696);
+}
+
+.cursor-following-div>div>h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.696);
+}
+
+.project-header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: fit-content;
+}
+
+.project-header-text>h3 {
+    color: rgba(255, 255, 255, 0.783);
+    font-size: 7rem;
+    text-wrap: nowrap;
+    font-family: Roboto-web;
+}
+
+.project-header-text>h4 {
+    
+    color: rgba(255, 255, 255, 0.783);
+    font-size: 5rem;
+    text-wrap: nowrap;
+    font-family: Alex-Brush-web;
+    font-weight: 400;
+}

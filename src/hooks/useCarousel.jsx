@@ -8,13 +8,13 @@ export const useCarousel = (pages) => {
   function next() {
     console.log(currentStepIndex);
     setCurrentStepIndex((i) => {
-      if (i >= pages.length - 1) return i;
+      if (i >= pages.length - 1) return 0;
       return i + 1;
     });
   }
   function back() {
     setCurrentStepIndex((i) => {
-      if (i <= 0) return i;
+      if (i <= 0) return pages.length -1 ;
       return i - 1;
     });
   }
