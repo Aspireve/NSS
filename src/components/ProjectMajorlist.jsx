@@ -15,7 +15,7 @@ export default function MajorProjectsDisplay({ projects }) {
       <h2>Major Projects</h2>
       <div
         className="scale-projects-card-display"
-        style={{ gridTemplateColumns: "repeat(3, 1fr)" }}
+        style={{ gridTemplateColumns: "repeat(3, minmax(32%, 1fr))" }}
       >
         {projects.map((project, idx) => (
           <div key={"major-project-" + idx} className="scale-projects-card" onClick={() => setShowMajorModal(true)}>

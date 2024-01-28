@@ -15,7 +15,7 @@ export default function MinorProjectsDisplay({ projects }) {
       <h2>Minor Projects</h2>
       <div
         className="scale-projects-card-display"
-        style={{ gridTemplateColumns: "repeat(2, 1fr)" }}
+        style={{ gridTemplateColumns: "repeat(2, minmax(50%, 1fr))" }}
       >
         {projects.map((project, idx) => (
           <div
@@ -33,7 +33,7 @@ export default function MinorProjectsDisplay({ projects }) {
             <div className="scale-project-text">
               <h4>{project.domain}</h4>
               <h2>{project.project}</h2>
-              <p>{project.summary.substring(0,80)}.....</p>
+              <p>{project.summary.substring(0,60)}.....</p>
             </div>
           </div>
         ))}

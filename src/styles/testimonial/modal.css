@@ -20,6 +20,19 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* scale: 0.01; */
+    transform: translateX(100%);
+    opacity: 0.01;
+    animation: oversize 1s ease-in forwards ;
+  }
+
+  @keyframes oversize {
+    to {
+      scale: 1;
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
   }
   
   .modal-content {
