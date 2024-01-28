@@ -9,6 +9,7 @@ import { CarouselWrapper } from "./components/CarouselWrapper";
 import { Home } from "./pages/Home";
 import { NavbarFooter } from "./templates/NavbarFooter";
 import Testimonial from "./pages/Testimonials";
+import Team from "./pages/Team";
 
 function App() {
   // const carousel
@@ -30,6 +31,7 @@ function App() {
           </Route>
           <Route element={<NavbarFooter phase={1}/>}>
             <Route path="/testimonials" element={<Testimonial />} />
+            <Route path="/team" element={<Team />} />
           </Route>
         </Routes>
       </BrowserRouter>

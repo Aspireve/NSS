@@ -1,16 +1,9 @@
 import { motion, useTransform, useScroll, easeInOut } from "framer-motion";
-import React, { useRef, useState } from "react";
-import { useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "../styles/scroller.css";
 import Modal from "../components/Modal";
 import Images from "../assets/index";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
 
 const cards = [
   {

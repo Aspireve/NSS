@@ -1,0 +1,144 @@
+
+.jc-card-container {
+    padding: 0 2rem;
+  }
+  .jc-card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+  }
+  #jc-container-header {
+    text-align: center;
+    font-family: Gilroy-semibold;
+    font-size: 4rem;
+  }
+  #jc-container-info {
+    text-align: center;
+    line-height: 1;
+    font-family: segoe UI;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 1rem;
+  }
+  
+  .jc-card-wrapper {
+    display: flex;
+  }
+  
+  .jc-card {
+    background-color: #ecf0f3;
+    border: 1px solid #ddd;
+    padding: 1.1rem;
+    display: flex;
+    border-radius: 1rem;
+    flex-direction: column;
+    height: 100%;
+    width: 20rem;
+  }
+  
+  .jc-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    outline: none;
+    border: 5px solid lightblue;
+    margin-bottom: 12px;
+  }
+  
+  .jc-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .jc-name {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  
+  .jc-position {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .jc-quote {
+    margin-top: 1rem;
+    font-style: italic;
+    text-wrap: wrap;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .testimonial-card {
+      max-height: 20rem;
+    }
+    #jc-container-header {
+      font-size: 3.5rem;
+      margin-bottom: -1rem;
+    }
+    #jc-container-info {
+      font-size: 1.2rem;
+    }
+    .testimonial-card > div > h5 {
+      font-size: 1rem;
+    }
+    .testimonial-card > div > h3 {
+      font-size: 1.3rem;
+    }
+    .testimonial-card > p {
+      font-size: 0.9rem;
+    }
+    .testimonial-card img {
+      height: 7rem;
+      width: 7rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .testimonial-card {
+      max-height: 20rem;
+    }
+    .testimonial-card img {
+      height: 8rem;
+      width: 8rem;
+    }
+    #jc-container-header {
+      font-size: 3rem;
+    }
+    .testimonial-card-container {
+      /* flex-direction: column; */
+      width: 100%;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .testimonial-card {
+      min-width: 50%;
+      margin: auto;
+    }
+    .testimonial-card > p {
+      font-size: 1rem;
+      text-align: center;
+    }
+    .sub-active {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .testimonial-card {
+      min-width: 100%;
+      height: 20rem;
+      margin: auto;
+    }
+    .testimonial-card img {
+      height: 10rem;
+      width: 10rem;
+    }
+    #jc-container-header {
+      font-size: 2.5rem;
+    }
+  }
+  

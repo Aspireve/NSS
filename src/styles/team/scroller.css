@@ -1,0 +1,417 @@
+.heading {
+    font-size: 5vw;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .council_head {
+    text-align: center;
+    font-size: 3.5vh;
+    font-weight: 400;
+    text-wrap: balance;
+    line-height: 1.1;
+    padding: 0 5vw;
+  }
+  .carousel-section {
+    position: relative;
+    height: 800vh;
+  }
+  
+  .sticky-container {
+    position: sticky;
+    top: 0vh;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3vw;
+    padding: 0.2vh 2vw;
+    margin-top: 2vh;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    position: relative;
+    border-radius: 3%;
+    width: 28vw;
+    height: 71vh;
+    flex: 0 0 auto;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px solid black;
+  }
+  .card-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
+    z-index: 0;
+    transition: transform 300ms;
+  }
+  .card-image img {
+    height: 50vh;
+    width: auto;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -45%);
+    background-color: #00000058;
+    border-radius: 1rem;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    padding: 0.8vw 1vw;
+    gap: 0.8vh;
+    line-height: 1;
+  }
+  .council_name {
+    font-size: 1.7vw;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000;
+  }
+  .council_post {
+    font-size: 1.3vw;
+    font-weight: 400;
+    margin-top: -0.5vh;
+    text-transform: uppercase;
+    color: rgb(47, 43, 43);
+  }
+  .council_quote {
+    line-height: 1;
+    color: #00000096;
+    text-wrap: balance;
+    font-weight: 400;
+    position: absolute;
+    padding: 0 0.4vw;
+    text-align: center;
+    top: 89.5%;
+    font-style: italic;
+    font-size: 1.2vw;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .heading {
+      font-size: 8vw;
+    }
+    .council_head {
+      font-size: 3.5vh;
+      font-weight: 400;
+      text-wrap: balance;
+      line-height: 1;
+      padding: 0 3vw;
+    }
+    .carousel-section {
+      position: relative;
+      max-height: 500vh;
+    }
+  
+    .sticky-container {
+      position: sticky;
+      top: 0;
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+    }
+  
+    .card-container {
+      display: flex;
+      gap: 4vw;
+      margin-top: 4vh;
+      width: max-content;
+    }
+    .card {
+      position: relative;
+      border-radius: 3%;
+      height: 65vh;
+      width: 35vw;
+      overflow: hidden;
+    }
+    .card-image {
+      position: absolute;
+      height: 100%;
+      width: auto;
+    }
+    .card-image img {
+      width: 45vh;
+      height: auto;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -58%);
+    }
+    .card-overlay {
+      top: 75%;
+    }
+    .council_quote {
+      line-height: 1;
+      color: #00000096;
+      padding: 0 0.5vw;
+      top: 57vh;
+      font-size: 1.75vw;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) and (min-height: 1024px) {
+    .heading {
+      font-size: 10vw;
+      margin-top: 2vh;
+    }
+    .council_head {
+      font-size: 2.5vw;
+      font-weight: 400;
+    }
+    .carousel-section {
+      position: relative;
+      max-height: 500vh;
+    }
+  
+    .sticky-container {
+      position: sticky;
+      top: 0;
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+    }
+  
+    .card-container {
+      display: flex;
+      gap: 4vw;
+      margin-top: 5vh;
+      width: max-content;
+    }
+  
+    .card {
+      position: relative;
+      border-radius: 3%;
+      height: 60vh;
+      width: 45vw;
+      overflow: hidden;
+    }
+  
+    .card-image img {
+      width: 51vw;
+      top: 42%;
+      transform: translate(-50%, -62%);
+    }
+    .card-overlay {
+      top: 73%;
+      height: 4.5rem;
+      padding: 3.5vh 1vw;
+    }
+    .council_name {
+      font-size: 2.2vh;
+    }
+    .council_post {
+      font-size: 1.9vh;
+      margin-top: -0.5vh;
+    }
+    .council_quote {
+      color: #000000b0;
+      top: 50vh;
+      font-size: 1.75vh;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) and (max-height: 800px) {
+    .heading {
+      font-size: 8vw;
+    }
+  
+    .card-container {
+      margin-top: 2vh;
+    }
+    .card {
+      height: 65vh;
+      width: 30vw;
+    }
+    .card-image {
+      position: absolute;
+    }
+    .card-image img {
+      width: 42vh;
+      top: 42%;
+      transform: translate(-50%, -63%);
+    }
+    .card-overlay {
+      position: absolute;
+      left: 50%;
+      top: 73%;
+    }
+    .council_name {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    .council_post {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-top: 0.1vh;
+      text-transform: uppercase;
+      color: #000;
+    }
+    .council_quote {
+      line-height: 1;
+      color: #00000096;
+      padding: 0 0.5vw;
+      top: 54.5vh;
+      font-size: 1.75vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card-container {
+      gap: 4vw;
+      margin-top: 5vh;
+    }
+    .card {
+      width: 48vw;
+    }
+    .card-image img {
+      width: 41vh;
+      top: 45%;
+      transform: translate(-50%, -63%);
+    }
+    .card-overlay {
+      top: 77%;
+      padding: 1vw 2vw;
+    }
+    .council_quote {
+      top: 52vh;
+      font-size: 1.75vh;
+    }
+  }
+  
+  @media screen and (max-width: 768px) and (min-height: 1024px) {
+    .heading {
+      font-size: 6vw;
+    }
+    .card-container {
+      gap: 2vw;
+      margin-top: 5vh;
+    }
+    .card {
+      width: 38vh;
+    }
+    .card-image img {
+      width: 41vh;
+      top: 28%;
+      transform: translate(-50%, -40%);
+    }
+    .card-overlay {
+      top: 75%;
+      border-radius: 2vw;
+      padding: 3vh 1vh;
+      width: max-content;
+    }
+    .council_name {
+      font-size: 2.4vh;
+    }
+    .council_post {
+      font-size: 1.9vh;
+    }
+    .council_quote {
+      top: 50vh;
+      font-size: 2.3vh;
+    }
+  }
+  
+  @media screen and (max-width: 768px) and (max-height: 400px) {
+    .heading {
+      font-size: 6vw;
+    }
+    .card-container {
+      gap: 2vw;
+      margin-top: 5vh;
+    }
+    .card {
+      width: 20vw;
+    }
+    .card-image img {
+      width: 38vh;
+      top: 25%;
+      transform: translate(-50%, -38%);
+    }
+    .card-overlay {
+      top: 70%;
+      border-radius: 2vh;
+      padding: 2vh 1vh;
+      width: max-content;
+    }
+    .council_name {
+      font-size: 1.3vw;
+    }
+    .council_post {
+      font-size: 1.3vw;
+    }
+    .council_quote {
+      top: 55vh;
+      font-size: 2.4vh;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .heading {
+      font-size: 14vw;
+      margin-top: 6vw;
+    }
+    .council_head {
+      font-size: 2vh;
+    }
+    .card {
+      height: 65vh;
+      width: 42vh;
+    }
+    .card-image {
+      position: absolute;
+      height: 100%;
+      width: auto;
+      right: -2%;
+      z-index: 0;
+      transition: transform 300ms;
+    }
+    .card-image img {
+      height: 45vh;
+      width: auto;
+      top: 50%;
+      transform: translate(-50%, -70%);
+    }
+    .card-overlay {
+      top: 77.5%;
+      height: 4rem;
+      border-radius: 10px;
+      height: max-content;
+      padding: 10px;
+    }
+    .council_name {
+      font-size: 3vh;
+    }
+    .council_post {
+      font-size: 2.4vh;
+      margin-top: -0.5vh;
+      text-transform: capitalize;
+    }
+    .council_quote {
+      top: 56vh;
+      line-height: 0.9;
+      font-size: 2.5vh;
+      padding: 0 0.6vw;
+      font-weight: 300;
+    }
+  }
+  
