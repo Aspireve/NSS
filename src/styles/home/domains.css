@@ -98,6 +98,10 @@
     margin: auto;    
 }
 
+.domains-chart-passage {
+    font-size: 1rem;
+}
+
 .home-domains-chart img:hover + .see-more-domains-container {
     opacity: 1;
     transform: translateY(0);
