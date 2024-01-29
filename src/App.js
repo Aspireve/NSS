@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Image } from "./containers/Image";
+import { useState } from "react";
 // import hero from "./assets/home/hero-section.jpg";
 
 // import hero_reduced from "./assets/home_reduced/hero-section.jpg";
@@ -16,30 +17,21 @@ import About from "./pages/About";
 import Developers from "./pages/Developers";
 
 function App() {
-  // const carousel
-  // const a = useCarousel([
-  //   <Image simple_image={hero_reduced} HD_image={hero} alt="Trial Element" />,
-  //   <Image simple_image={hero_reduced} HD_image={hero} alt="Trial Element" />,
-  // ]);
-  // console.log(a.currentStepIndex);
+  const [loader, setLoader] = useState(true)
   return (
     <div className="app_container">
-      {/* <Home /> */}
-      {/* <CarouselWrapper>{a.page}</CarouselWrapper>
-      <button onClick={a.next}>Click</button> <Image simple_image={hero_reduced} HD_image={hero} alt="Trial Element"/> */}
-
       <BrowserRouter>
         <Routes>
-          <Route element={<NavbarFooter phase={3}/>}>
+          <Route element={<NavbarFooter phase={3} setLoader={setLoader} loader={loader}/>}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Route>
-          <Route element={<NavbarFooter phase={1}/>}>
+          <Route element={<NavbarFooter phase={1} setLoader={setLoader} loader={loader}/>}>
             <Route path="/testimonials" element={<Testimonial />} />
             <Route path="/developers" element={<Developers />} />
             <Route path="/team" element={<Team />} />
           </Route>
-          <Route element={<NavbarOnly phase={3}/>}>
+          <Route element={<NavbarOnly phase={3} setLoader={setLoader} loader={loader}/>}>
             <Route path="/projects" element={<Projects />} />
           </Route>
         </Routes>
