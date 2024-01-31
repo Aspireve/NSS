@@ -4,8 +4,6 @@ import { useState } from "react";
 import Scroller from "../components/Scroller";
 import ReactCardFlip from "react-card-flip";
 import JcContainer from "../components/TeamCardcontainer";
-// import Images from "../assets/index";
-// import ImageGallery from "../components/ImageGallery";
 import NSS_chairperson from "../assets/home/nss_chairperson.png"
 import Map from "../components/HomeMap"
 import Socials from "../components/HomeSocials"

@@ -1,4 +1,6 @@
-
+.colors {
+  position: relative;
+}
 .colors .circle {
     height: 25rem;
     width: 25rem;
@@ -133,8 +135,9 @@
   .developers_content p {
     font-size: 1.1vw;
     margin-top: 0.1em;
+    font-weight: 300;
     color: #44476a;
-    line-height: 1;
+    /* line-height: 1; */
   }
   
   .developers_content .links {
@@ -274,6 +277,24 @@
       width: 22rem;
       height: 30rem;
     }
+    .developer-card:nth-child(3) {
+      order: 1;
+    }
+    .developer-card:nth-child(1) {
+      order: 2;
+    }
+    .developer-card:nth-child(2) {
+      order: 3;
+    }
+    .developer-card:nth-child(4) {
+      order: 4;
+    }
+    .developer-card:nth-child(5) {
+      order: 5;
+    }
+    .developer-card:nth-child(6) {
+      order: 6;
+    }
     .developers_content {
       margin-top: 1.8vh;
       height: 10rem;
@@ -300,6 +321,7 @@
   }
   
   @media only screen and (max-width: 480px) {
+
     .footer-div {
       width: 100%;
       height: fit-content;

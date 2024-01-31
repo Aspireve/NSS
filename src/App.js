@@ -5,8 +5,6 @@ import { useState } from "react";
 
 // import hero_reduced from "./assets/home_reduced/hero-section.jpg";
 import "./App.css";
-// import { useCarousel } from "./hooks/useCarousel";
-import { CarouselWrapper } from "./components/CarouselWrapper";
 import { Home } from "./pages/Home";
 import { NavbarFooter } from "./templates/NavbarFooter";
 import Testimonial from "./pages/Testimonials";
@@ -27,11 +25,11 @@ function App() {
             <Route path="/about" element={<About />} />
           </Route>
           <Route element={<NavbarFooter phase={1} setLoader={setLoader} loader={loader}/>}>
-            <Route path="/testimonials" element={<Testimonial />} />
             <Route path="/developers" element={<Developers />} />
             <Route path="/team" element={<Team />} />
           </Route>
           <Route element={<NavbarOnly phase={3} setLoader={setLoader} loader={loader}/>}>
+            <Route path="/testimonials" element={<Testimonial />} />
             <Route path="/projects" element={<Projects />} />
           </Route>
         </Routes>

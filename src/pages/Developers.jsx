@@ -4,19 +4,14 @@ import { Link } from "react-router-dom";
 import GitHub from "../assets/static_images/github.svg"
 import Instagram from "../assets/static_images/instagram.svg"
 import LinkedIn from "../assets/static_images/linkedin.svg"
-import Steve from "../assets/developers/Steve Fernandes.png"
-import Tanay from "../assets/developers/Tanay.jpg"
-import Jitesh from "../assets/developers/Jitesh Dubey.jpg"
-import Aditi from "../assets/developers/Aditi Yadav.jpg"
-import Aniket from "../assets/developers/Aniket Gupta.jpg"
-import Sumit from "../assets/developers/Sumit Tiwari.jpg"
+import Images from "../assets/developers/index"
 
 
 const developersData = [
   {
     name: "Steve Fernandes",
     role: "UI/UX Designer, Frontend Developer",
-    image: Steve,
+    image: Images.Steve,
     social: {
       instagram: "https://www.instagram.com/steve_______9856",
       linkedin: "https://www.linkedin.com/in/aspireve",
@@ -26,7 +21,7 @@ const developersData = [
   {
     name: "Jitesh Dubey",
     role: "UI/UX Designer, Frontend Developer",
-    image: Jitesh,
+    image: Images.Jitesh,
     social: {
       instagram: "https://instagram.com/jitesh_dubey_jd/",
       linkedin: "https://www.linkedin.com/in/jiteshdubey/",
@@ -36,7 +31,7 @@ const developersData = [
   {
     name: "Tanay Agrawal",
     role: "Developer and Coordinator",
-    image: Tanay,
+    image: Images.Tanay,
     social: {
       instagram: "https://www.instagram.com/_tanay_agarwal",
       linkedin: "https://www.linkedin.com/in/tanay-agarval",
@@ -44,19 +39,9 @@ const developersData = [
     },
   },
   {
-    name: "Aditi Yadav",
-    role: "Frontend Developer",
-    image: Aditi,
-    social: {
-      instagram: "https://www.instagram.com/adiiti._?igsh=MWxwM2g0eWJuYTc5eA==",
-      linkedin: "",
-      github: "https://github.com/aditiyadav2004",
-    },
-  },
-  {
     name: "Aniket Gupta",
     role: "Frontend Developer",
-    image: Aniket,
+    image: Images.Aniket,
     social: {
       instagram: "https://www.instagram.com/the_aniketgupta0408",
       linkedin: "https://www.linkedin.com/in/aniket-gupta-94952425",
@@ -64,9 +49,20 @@ const developersData = [
     },
   },
   {
+    name: "Aditi Yadav",
+    role: "Frontend Developer",
+    image: Images.Aditi,
+    social: {
+      instagram: "https://www.instagram.com/adiiti._?igsh=MWxwM2g0eWJuYTc5eA==",
+      linkedin: "",
+      github: "https://github.com/aditiyadav2004",
+    },
+  },
+  
+  {
     name: "Sumit Tiwari",
     role: "Frontend Developer",
-    image: Sumit,
+    image: Images.Sumit,
     social: {
       instagram: "https://www.instagram.com/sumitevolv",
       linkedin: "https://www.linkedin.com/in/sumit-tiwari-623b04257/",

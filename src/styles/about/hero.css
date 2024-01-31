@@ -1,6 +1,5 @@
 .council-carousel {
     overflow: hidden;
-
 }
 
 .counc-carousel {
@@ -20,22 +19,6 @@
     background-position: bottom;
     background-size: cover;
     position: relative;
-}
-
-.council:nth-child(1) {
-    background-image: url("../../assets/about/council2024.png");
-}
-
-.council:nth-child(2) {
-    background-image: url("../../assets/about/council2024.png");
-}
-
-.council:nth-child(3) {
-    background-image: url("../../assets/about/council2024.png");
-}
-
-.council:nth-child(4) {
-    background-image: url("../../assets/about/council2024.png");
 }
 
 .council-text {
@@ -60,5 +43,4 @@
     color: white;
     font-weight: 300;
     font-size: 1.2rem;
-    /* text-shadow: 2px 2px 10px #000; */
 }
