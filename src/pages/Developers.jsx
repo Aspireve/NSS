@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/developers/developers.css";
 import { Link } from "react-router-dom";
 import GitHub from "../assets/static_images/github.svg"
@@ -86,7 +85,7 @@ const Developers = () => {
               <div className="img-container">
                 <div className="skewed">
                   <div id="img-div">
-                    <img src={developer.image} alt={developer.name} />
+                    <img loading="lazy" src={developer.image} alt={developer.name} />
                   </div>
                 </div>
               </div>

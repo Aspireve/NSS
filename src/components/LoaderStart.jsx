@@ -1,38 +1,65 @@
-import React, { useEffect } from 'react'
-import logo from "../assets/static_images/nss_logo.svg"
-import "../styles/loading/startscreen.css"
+import React, { useEffect, useState } from "react";
+import static_image from "../assets/static_images/index";
+import "../styles/loading/startscreen.css";
 
-export default function LoadingScreen({setLoader}) {
-    useEffect(() => {
-        const nss_image = document.getElementById("nss_image_loading")
-        const nss_title = document.getElementById('nss_landing_title')
-        const nss_subtite = document.getElementById('nss_landing_subtitle')
-        const full_page = document.getElementById("loading-screen-container")
-        setTimeout(() => {nss_image.style.scale = 1
-        nss_image.style.rotate = "0deg"
-        }, 900)
-        setTimeout( () => {
-            nss_title.style.opacity = 1
-            nss_title.style.transform = "translateX(0)"
-        }, 1700)
-        setTimeout(() => {
-            nss_subtite.style.opacity =1
-            nss_subtite.style.transform = "translateX(0)"
-        }, 2000)
-        setTimeout(() => {
-            full_page.style.transform = "translateY(-100%)"
-        }, 3000)
-        setTimeout(() => {
-            setLoader(false)
-        }, 4000)
-    })
+export default function LoadingScreen({ setLoader }) {
+  const [loading_styles, set_loading_styles] = useState({
+    show_image: false,
+    show_title: false,
+    show_subtitle: false,
+    show_page: false,
+  });
+  useEffect(() => {
+    const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+    delay(900)
+      .then(() => {
+        set_loading_styles((prev) => ({ ...prev, show_image: true }));
+        return delay(800);
+      })
+      .then(() => {
+        set_loading_styles((prev) => ({ ...prev, show_title: true }));
+        return delay(300);
+      })
+      .then(() => {
+        set_loading_styles((prev) => ({ ...prev, show_subtitle: true }));
+        return delay(500);
+      })
+      .then(() => {
+        set_loading_styles((prev) => ({ ...prev, show_page: true }));
+        return delay(1000);
+      })
+      .then(() => {
+        setLoader(false);
+      });
+  }, []);
   return (
-    <div className='loading-screen-container' id='loading-screen-container' >
-        <div className='loading-element-container'>
-            <img src={logo} id='nss_image_loading' alt='NSS Logo'/>
-            <h2 id='nss_landing_title' >TCET-NSS UNIT</h2>
-            <h3 id='nss_landing_subtitle'>B-34 Mumbai University</h3>
-        </div>
+    <div
+      className={`loading-screen-container ${
+        loading_styles.show_page ? "translate-y-loading" : ""
+      }`}
+      id="loading-screen-container"
+    >
+      <div className="loading-element-container">
+        <img
+          src={static_image.nss_logo_img}
+          className={`nss-loader-image ${
+            loading_styles.show_image ? "rotate-to-zero" : ""
+          }`}
+          alt="NSS Logo"
+        />
+        <h2
+          id="nss_landing_title"
+          className={loading_styles.show_title ? "show-text-loader" : ""}
+        >
+          TCET-NSS UNIT
+        </h2>
+        <h3
+          id="nss_landing_subtitle"
+          className={loading_styles.show_title ? "show-text-loader" : ""}
+        >
+          B-34 Mumbai University
+        </h3>
+      </div>
     </div>
-  )
+  );
 }

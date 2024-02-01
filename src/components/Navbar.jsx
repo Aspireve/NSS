@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Logo from "./Logo";
-// import NavMenu from "../components/NavMenu";
-// import Sidebar from "../components/Sidebar";
 import "../styles/navbar.css";
 import NavMenu from "./Navmenu";
 import { QuickMenu } from "./QuickMenu";
