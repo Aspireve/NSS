@@ -29,8 +29,10 @@ function App() {
             <Route path="/team" element={<Team />} />
           </Route>
           <Route element={<NavbarOnly phase={3} setLoader={setLoader} loader={loader}/>}>
-            <Route path="/testimonials" element={<Testimonial />} />
             <Route path="/projects" element={<Projects />} />
+          </Route>
+          <Route element={<NavbarOnly phase={1} setLoader={setLoader} loader={loader}/>}>
+            <Route path="/testimonials" element={<Testimonial />} />
           </Route>
         </Routes>
       </BrowserRouter>

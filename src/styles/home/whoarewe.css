@@ -24,6 +24,8 @@ section.appear {
     overflow: hidden;
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
+    height: fit-content;
+    width: fit-content;
     transition-property: transform;
 }
 
@@ -34,17 +36,31 @@ section.appear {
     opacity: 0.2;
     top: 0;
     left: 0;
-    width: 30rem;
-    height: 40rem;
-    transform: skewX(140deg) translate(0, 0);
-    animation: shine 2s linear infinite;
+    width: 100%;
+    height: 100%;
+    transform: skewX(140deg) translate(-120%, 0);
+    animation: logoshine 2s linear infinite;
     animation-delay: 2s;
+}
+
+@keyframes logoshine {
+    0% {
+        transform: skewX(140deg) translate(-120%, 0);
+    }
+
+    25% {
+        transform: skewX(140deg) translate(140%, 0);
+    }
+
+    100% {
+        transform: skewX(140deg) translate(140%, 0);
+    }
 }
 
 
 .nss-logo-container {
     width: 35%;
-    height: 100%;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,16 +204,3 @@ section.appear {
 }
 
 
-@keyframes shine {
-    0% {
-        transform: skewX(140deg) translate(-120%, 0);
-    }
-
-    25% {
-        transform: skewX(140deg) translate(140%, 0);
-    }
-
-    100% {
-        transform: skewX(140deg) translate(140%, 0);
-    }
-}

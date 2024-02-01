@@ -137,7 +137,6 @@
     margin-top: 0.1em;
     font-weight: 300;
     color: #44476a;
-    /* line-height: 1; */
   }
   
   .developers_content .links {
@@ -148,7 +147,6 @@
     gap: 1rem;
     justify-content: space-evenly;
     font-size: 1.9vw;
-    /* background-color: red; */
   }
   .icon_link {
     aspect-ratio: 1/1;
