@@ -3,7 +3,6 @@ import Logo from "./Logo";
 import "../styles/navbar.css";
 import NavMenu from "./Navmenu";
 import { QuickMenu } from "./QuickMenu";
-import { useLocation } from "react-router-dom";
 
 export default function Navbar({ phase }) {
   const [sidebar, setSidebar] = useState(false);

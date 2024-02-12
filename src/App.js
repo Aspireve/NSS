@@ -1,5 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Image } from "./containers/Image";
+import { BrowserRouter, Route, Routes, ScrollRestoration } from "react-router-dom";
 import { useState } from "react";
 // import hero from "./assets/home/hero-section.jpg";
 
@@ -13,12 +12,14 @@ import { NavbarOnly } from "./templates/Navbar";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Developers from "./pages/Developers";
+import ScrollToTop from "./utills/ScrollToTop";
 
 function App() {
   const [loader, setLoader] = useState(true)
   return (
     <div className="app_container">
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route element={<NavbarFooter phase={3} setLoader={setLoader} loader={loader}/>}>
             <Route path="/" element={<Home />} />

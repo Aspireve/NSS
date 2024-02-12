@@ -5,6 +5,7 @@
     height: 100%;
     width: 80%;
     margin: auto;
+    gap:2rem;
     padding: 2rem 0;
     transform: translateY(5rem);
     opacity: 0;

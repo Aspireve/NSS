@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Hero } from '../components/HomeHero'
 import "../styles/home/hero.css"
 import WhoAreWe from '../components/HomeWhoarewe'
@@ -12,19 +12,21 @@ import RecentProjects from '../components/HomeRecentprojects'
 import Testimonials from '../components/HomeTestimonials'
 
 export const Home = () => {
+  useEffect(() => {
+    document.title  = "Home | TCET NSS UNIT"
+  })
   return (
     <>
-      <Hero />
-      <WhoAreWe />
+      {/* <Hero /> */}
+      {/* <WhoAreWe />
       <WhatWeDo />
       <Objectives />
       <Domains />
       <Achievements />
       <RecentProjects />
       <Testimonials />
-      {/* <Testimonials /> */}
       <Socials />
-      <Map />
+      <Map /> */}
     </>
   )
 }

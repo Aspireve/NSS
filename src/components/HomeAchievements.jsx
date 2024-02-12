@@ -9,14 +9,14 @@ export default function Achievements() {
   var i = 0;
   var txt = "Achievements";
   var speed = 150;
-  function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("home-achievements-header").innerHTML +=
-        txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
-  }
+  // function typeWriter() {
+  //   if (i < txt.length) {
+  //     document.getElementById("home-achievements-header").innerHTML +=
+  //       txt.charAt(i);
+  //     i++;
+  //     setTimeout(typeWriter, speed);
+  //   }
+  // }
 
   useEffect(() => {
     const counter = document.getElementsByClassName("counter-incrementer");
@@ -57,7 +57,7 @@ export default function Achievements() {
       (entries) => {
         if (entries[0].isIntersecting) {
           whoAreWeTitle[0].classList.add("appear");
-          typeWriter();
+          // typeWriter();
           incrementCounter1();
           incrementCounter2();
           incrementCounter3();
