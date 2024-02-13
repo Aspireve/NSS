@@ -14,7 +14,7 @@ export default function MinorProjectsDisplay({ projects }) {
     <section className="scale-projects-container">
       <h2>Minor Projects</h2>
       <div
-        className="scale-projects-card-display"
+        className="scale-projects-card-display minor"
         style={{ gridTemplateColumns: "repeat(2, minmax(50%, 1fr))" }}
       >
         {projects.map((project, idx) => (

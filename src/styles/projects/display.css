@@ -313,6 +313,25 @@
 .major-image-conatiner{
     padding: 25px;
     height: 60%;
+    position: relative;
+}
+.major-image-conatiner > .image-arrowe {
+    position: absolute;
+    top:50%;
+    height: 2rem;
+    width: 2rem;
+    transform: translateY(-50%);
+    padding: .5rem;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 99999;
+}
+.image-arrowe.left {
+    left: 2rem;
+}
+.image-arrowe.right {
+    right: 2rem;
 }
 .major-image-conatiner > img {
     width: 100%;
@@ -371,4 +390,108 @@
 }
 .major-project-full::-webkit-scrollbar-thumb:hover {
     background-color: #555; 
+}
+@media screen and (max-width: 768px) {
+    .scale-projects-card-display.minor {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .projects-display-container {
+        flex-direction: column;
+    }
+    .domain-nss-title, .domain-nss-name, .domain-options-name {
+        display: none;
+    }
+    .domain-option-domains {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem
+    }
+    .domain-option-filters-containers {
+        width: 100%;
+    }
+    .domain-option-domains, .projects-search-bar {
+        margin: 0 auto 1rem auto;
+    }
+    .projects-cards-side {
+        width: 100%;
+    }
+    .project-option {
+        border-radius: 2rem;
+        box-shadow: 0 0 2px black;
+    }
+    .project-option > img {
+        display: none;
+    }
+    .project-option > h5 {
+        font-size: .8rem;
+    }
+    .project-option.p-active {
+        background-color: black;
+    }
+    .project-option.p-active > h5 {
+        color: white;
+
+    }
+    .scale-project-text > h4 {
+        font-size: 1rem;
+    }
+    .scale-project-text > h2 {
+        font-size: 1.2rem;
+        white-space:unset;
+        text-overflow: unset;
+        overflow: none;
+    }
+    .scale-project-text > p {
+        font-size: .7rem;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 636px) {
+    .scale-projects-card-display {
+        grid-template-columns: repeat(2, minmax(45%, 1fr)) !important
+    }
+    
+    .domain-option-domains, .projects-search-bar {
+        margin: 0 auto .8rem auto;
+    }
+}
+@media screen and (max-width: 445px) {
+    .domain-option-domains {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .project-option  {
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .project-option > h5 {
+        font-size: .8rem;
+    }
+    
+    .domain-option-domains, .projects-search-bar {
+        margin: 0 auto .5rem auto;
+    }
+    .scale-projects-container > h2 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 445px) {
+    .scale-projects-container {
+        padding: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    .scale-project-text>h4 {
+        font-size: .8rem;
+    }
+    .scale-project-text>h2 {
+        font-size: .9rem;
+    }
+    .scale-project-text > p {
+        display: none;
+    }
 }

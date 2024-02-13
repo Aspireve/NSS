@@ -66,10 +66,10 @@ export default function ProjectHero() {
         id="parent-magestic-carousel"
         onClick={next}
       >
-        <TransitionGroup>
+        <TransitionGroup style={{height: '100%'}}>
           <CSSTransition key={currentStepIndex}
             timeout={1000}
-            classNames="animated-carousel">{page}</CSSTransition>
+            classNames="animated-carousel" >{page}</CSSTransition>
         </TransitionGroup>
         <div className="cursor-following-div" id="cursor-following-div">
           <div>

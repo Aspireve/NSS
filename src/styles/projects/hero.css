@@ -3,10 +3,8 @@
     /* background-image: radial-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)), url("../assets/society.png"); */
     position: relative;
     height: 100vh;
-    background-color: black;
-    overflow: hidden;
+    background-color: #000000;
     pointer-events: auto;
-    overflow: inherit;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -93,4 +91,34 @@
     text-wrap: nowrap;
     font-family: Alex-Brush-web;
     font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+    .project-header-text>h3 {
+        font-size: 5rem;
+    }
+    .project-header-text>h4 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cursor-following-div {
+        display: none;
+    }
+    .project-header-text>h3 {
+        font-size: 3rem;
+    }
+    .project-header-text>h4 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .project-header-text>h3 {
+        font-size: 1.9rem;
+    }
+    .project-header-text>h4 {
+        font-size: 1.5rem;
+    }
 }

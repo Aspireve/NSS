@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/projects/display.css";
 import Book from "../assets/static_images/book-solid.svg";
 import Heart from "../assets/static_images/heart-solid.svg";
@@ -389,15 +389,26 @@ const minor_project = [
 ];
 
 const domain_names = [
-  { name: "All", icon: Heart },
-  { name: "Environment", icon: Earth },
-  { name: "Education", icon: Book },
-  { name: "Society", icon: UserGroup },
-  { name: "Health", icon: HeartPulse },
+  { name: "All", search:"", icon: Heart },
+  { name: "Environment", search: "ENVIRONMENT", icon: Earth },
+  { name: "Education", search: "EDUCATION", icon: Book },
+  { name: "Society", search: "SOCIETY", icon: UserGroup },
+  { name: "Health", search: "HEALTH", icon: HeartPulse },
 ];
 
 export default function ProjectDisplay() {
   const [selectedDomain, setSelectedDomain] = useState(0);
+  const [query, setQuery] = useState("");
+  console.log(query);
+  useEffect(() => {
+    document.title = "Projects | TCET NSS UNIT";
+  });
+  const filtered_major_items = major_projects.filter((item) =>
+    item.project.toLowerCase().includes(query.toLowerCase()) && item.domain.includes(domain_names[selectedDomain].search)
+  );
+  const filtered_minor_items = minor_project.filter((item) =>
+    item.project.toLowerCase().includes(query.toLowerCase()) && item.domain.includes(domain_names[selectedDomain].search)
+  );
   return (
     <div className="projects-display-container">
       <div className="domain-option-filters-containers">
@@ -423,11 +434,11 @@ export default function ProjectDisplay() {
             ))}
           </ul>
         </div>
-        <SearchBar />
+        <SearchBar query={query} setQuery={setQuery} />
       </div>
       <div className="projects-cards-side">
-        <MajorProjectsDisplay projects={major_projects} />
-        <MinorProjectsDisplay projects={minor_project} />
+        <MajorProjectsDisplay projects={filtered_major_items} />
+        <MinorProjectsDisplay projects={filtered_minor_items} />
       </div>
     </div>
   );

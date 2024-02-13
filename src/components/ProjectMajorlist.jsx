@@ -3,8 +3,11 @@ import MajorModal from "./ProjectsMajormodal";
 import { useState } from "react";
 
 export default function MajorProjectsDisplay({ projects }) {
-  const [showMajorModal, setShowMajorModal] = useState(false);
-  if (projects == null)
+  const [showMajorModal, setShowMajorModal] = useState({
+    display: false,
+    data: null,
+  });
+  if (projects === null)
     return (
       <section className="scale-projects-container">
         <h2>No Major Projects</h2>
@@ -18,7 +21,11 @@ export default function MajorProjectsDisplay({ projects }) {
         style={{ gridTemplateColumns: "repeat(3, minmax(32%, 1fr))" }}
       >
         {projects.map((project, idx) => (
-          <div key={"major-project-" + idx} className="scale-projects-card" onClick={() => setShowMajorModal(true)}>
+          <div
+            key={"major-project-" + idx}
+            className="scale-projects-card"
+            onClick={() => setShowMajorModal({display: true, data: project})}
+          >
             <img
               src={health}
               style={{ borderRadius: "20px 20px 0 0" }}
@@ -33,7 +40,7 @@ export default function MajorProjectsDisplay({ projects }) {
           </div>
         ))}
       </div>
-      {showMajorModal && <MajorModal setShowMajorModal={setShowMajorModal} />}
+      {showMajorModal.display && <MajorModal dataModel={showMajorModal} setShowMajorModal={setShowMajorModal} />}
     </section>
   );
 }
