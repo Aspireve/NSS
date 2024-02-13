@@ -1,22 +1,15 @@
-import React, { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import nss_logo from "../assets/static_images/nss_logo.svg";
-import lives_affected from "../assets/home/lives-affected.png";
-import leadership from "../assets//home/leadership_and_democracy.png";
-import trees_planted from "../assets//home/tree-plantation.png";
+import lives_affected from "../assets/home/lives-affected.webp";
+import leadership from "../assets/home/leadership_and_democracy.webp";
+import trees_planted from "../assets/home/tree-plantation.webp";
 import "../styles/home/achievements.css";
+import useScrollVisibility from "../hooks/useScrollAnimation";
 
 export default function Achievements() {
-  var i = 0;
-  var txt = "Achievements";
-  var speed = 150;
-  // function typeWriter() {
-  //   if (i < txt.length) {
-  //     document.getElementById("home-achievements-header").innerHTML +=
-  //       txt.charAt(i);
-  //     i++;
-  //     setTimeout(typeWriter, speed);
-  //   }
-  // }
+  const achievementsTitleRef = useRef(null);
+  const sliderRef = useRef(null);
+  const { isVisible } = useScrollVisibility(achievementsTitleRef, sliderRef);
 
   useEffect(() => {
     const counter = document.getElementsByClassName("counter-incrementer");
@@ -27,7 +20,6 @@ export default function Achievements() {
       `${parseInt(counter[3].getAttribute("data-ctr"))}`,
     ];
     const itrs = [1, 6, 6, 3];
-    const whoAreWeTitle = document.querySelectorAll(".home-achievements");
     function incrementCounter1() {
       if (parseInt(counter[0].innerHTML) < final_values[0]) {
         counter[0].innerHTML = parseInt(counter[0].innerHTML) + itrs[0];
@@ -52,28 +44,17 @@ export default function Achievements() {
         setTimeout(incrementCounter4, 150);
       }
     }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          whoAreWeTitle[0].classList.add("appear");
-          // typeWriter();
-          incrementCounter1();
-          incrementCounter2();
-          incrementCounter3();
-          incrementCounter4();
-        }
-      },
-      {
-        rootMargin: "-100px",
-      }
-    );
-
-    window.addEventListener("scroll", () => observer.observe(whoAreWeTitle[0]));
+    if(isVisible) {
+      incrementCounter1();
+      incrementCounter2();
+      incrementCounter3();
+      incrementCounter4();
+    }
   });
   return (
-    <div className="home-achievements">
-      <h2 id="home-achievements-header"> </h2>
+    <div className={`home-achievements ${isVisible ? "appear" : ""}`} ref={achievementsTitleRef}
+    >
+      <h2 id="home-achievements-header" className={isVisible ? "home-domains-header" : ""} ref={sliderRef}>Achievements</h2>
       <p>
         {" "}
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae

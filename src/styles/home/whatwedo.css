@@ -23,6 +23,7 @@
 }
 .what-we-do-text-header {
     position: relative;
+    text-wrap: nowrap;
     width: fit-content;
 }
 .what-we-do-text-header::before {
@@ -941,10 +942,13 @@
 
 @media screen and (max-width:768px) {
     .what-we-do-text h2 {
+        text-align: center;
         font-size: 3rem;
+        margin: auto;
     }
     .what-we-do-text p {
         font-size: .8rem;
+        text-align: justify;
     }
     .what-we-do-text {
         width: 100%;

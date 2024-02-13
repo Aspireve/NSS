@@ -1,12 +1,12 @@
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
-import Footer from "../components/Footer";
-import LoadingScreen from "../components/LoaderStart";
 
-export const NavbarFooter = ({phase, loader, setLoader}) => {
+import { Navbar, Footer, LoaderStart } from "../components/index";
+
+export const NavbarFooter = ({ phase }) => {
   return (
     <>
-      {loader && <LoadingScreen setLoader={setLoader}/>}
+      <LoaderStart />
       <Navbar phase={phase} />
       <Outlet />
       <Footer />

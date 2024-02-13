@@ -150,7 +150,10 @@ section.appear {
 
 @media screen and (max-width:768px) {
     .about-us {
+        opacity: 1;
         flex-direction: column;
+        height: fit-content;
+        transform: translateY(0);
     }
 
     .nss-logo-container {
@@ -169,6 +172,7 @@ section.appear {
 
     .about-us-text p {
         font-size: .8rem;
+        text-align: justify;
     }
 
     .about-us-text button {

@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
-import eduaction from "../assets/home/education domain.png";
-import health from "../assets/home/health Domain.png";
-import society from "../assets/home/Society Domain.png";
-import environment from "../assets/home/environment domain.png";
+import { useRef } from "react";
+import eduaction from "../assets/home/education domain.webp";
+import health from "../assets/home/health Domain.webp";
+import society from "../assets/home/Society Domain.webp";
+import environment from "../assets/home/environment domain.webp";
 import Plus from "../assets/static_images/plus-solid.svg";
 import "../styles/home/domains.css";
+import useScrollVisibility from "../hooks/useScrollAnimation";
 
 const domaintext = [
   {
@@ -30,21 +30,11 @@ const domaintext = [
   },
 ];
 
-export default function Domains() {
-  const [isVisible, setIsVisible] = useState(false);
-  const navigate = useNavigate();
+export default function Domains({ nav }) {
   const domainsTitleRef = useRef(null);
   const sliderRef = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (domainsTitleRef.current && sliderRef.current) {
-        const rect = domainsTitleRef.current.getBoundingClientRect();
-        setIsVisible((prev) => rect.top <= window.innerHeight - 200 || prev);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, []);
+  const { isVisible } = useScrollVisibility(domainsTitleRef, sliderRef);
   return (
     <div
       className={`home-domains-container ${isVisible ? "appear" : ""}`}
@@ -58,7 +48,7 @@ export default function Domains() {
           <div key={domain.title} className="home-domains-chart">
             <div
               className="home-domains-chart-image-container"
-              onClick={() => navigate(`../projects?domain=${domain.title}`)}
+              onClick={() => nav(`../projects?domain=${domain.title}`)}
             >
               <img src={domain.image} alt={domain.title} />
               <div className="see-more-domains-container">

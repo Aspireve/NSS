@@ -1,41 +1,35 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
-import assesment from "../assets/home/assesment_and_engagement.png";
-import community from "../assets/home/community_engagement.png";
-import competance from "../assets/home/competence_development.png";
-import leadership from "../assets/home/no-of-volunteers.png";
-import assesment_simple from "../assets/home_reduced/assesment_and_engagement.jpg";
-import community_simple from "../assets/home_reduced/community_engagement.jpg";
-import competance_simple from "../assets/home_reduced/competence_development.jpg";
-import leadership_simple from "../assets/home_reduced/no-of-volunteers.jpg";
+import { useRef } from "react";
+import HomeImages from "../assets/home/index"
+import HomeImagesReduced from "../assets/home_reduced/index"
 import "../styles/home/objectives.css";
 import Image from "../containers/Image";
+import useScrollVisibility from "../hooks/useScrollAnimation";
 
 const objectiveText = [
   {
-    image: community,
-    simple_image: community_simple,
+    image: HomeImages.community,
+    simple_image: HomeImagesReduced.community_simple,
     title: "Community Understanding",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor ",
   },
   {
-    image: assesment,
-    simple_image: assesment_simple,
+    image: HomeImages.assesment,
+    simple_image: HomeImagesReduced.assesment_simple,
     title: "Assesment & Engagement",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor ",
   },
   {
-    image: competance,
-    simple_image: competance_simple,
+    image: HomeImages.competance,
+    simple_image: HomeImagesReduced.competance_simple,
     title: "Competence Development",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor ",
   },
   {
-    image: leadership,
-    simple_image: leadership_simple,
+    image: HomeImages.leadership,
+    simple_image: HomeImagesReduced.leadership_simple,
     title: "Leadership & Democracy",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor ",
@@ -43,21 +37,9 @@ const objectiveText = [
 ];
 
 export default function Objectives() {
-    const [isVisible, setIsVisible] = useState(false);
-    const navigate = useNavigate();
     const objectivesTitleRef = useRef(null);
     const sliderRef = useRef(null);
-
-    useEffect(() => {
-        const handleScroll = () => {
-          if (objectivesTitleRef.current && sliderRef.current) {
-            const rect = objectivesTitleRef.current.getBoundingClientRect();
-            setIsVisible(prev => rect.top <= window.innerHeight - 200 || prev);
-          }
-        };
-        window.addEventListener("scroll", handleScroll);
-      }, []);
-  
+    const {isVisible} = useScrollVisibility(objectivesTitleRef, sliderRef)
     return (
       <section className={`home-objective-container ${isVisible ? "appear" : ""}`} ref={objectivesTitleRef}>
         <h2 className={isVisible ? "home-objective-header": ""} ref={sliderRef}>Our Objectives</h2>
@@ -70,11 +52,6 @@ export default function Objectives() {
               <div className="home-objective-card-image">
                 <Image simple_image={text.simple_image} HD_image={text.image} alt={text.title}/>
               </div>
-              {/* <img
-                src={text.image}
-                className="home-objective-card-image"
-                alt="objective card"
-              /> */}
               <div className="home-objective-card-text ">
                 <h2>{text.title}</h2>
                 <p >{text.description}</p>

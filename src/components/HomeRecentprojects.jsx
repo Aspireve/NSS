@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
-import education from "../assets/home/education.png";
-import health from "../assets/home/health.png";
-import society from "../assets/home/society.png";
+import { useRef } from "react";
+import education from "../assets/home/education.webp";
+import health from "../assets/home/health.webp";
+import society from "../assets/home/society.webp";
 import "../styles/home/recent-projects.css";
+import useScrollVisibility from "../hooks/useScrollAnimation";
 
 const projectDescription = [
   {
@@ -48,27 +48,17 @@ const projectDescription = [
   },
 ];
 
-export default function RecentProjects() {
-  const [isVisible, setIsVisible] = useState(false);
-  const navigate = useNavigate();
+export default function RecentProjects({nav}) {
   const projectsTitleRef = useRef(null);
   const sliderRef = useRef(null);
+  const { isVisible } = useScrollVisibility(projectsTitleRef, sliderRef);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (projectsTitleRef.current && sliderRef.current) {
-        const rect = projectsTitleRef.current.getBoundingClientRect();
-        setIsVisible((prev) => rect.top <= window.innerHeight - 200 || prev);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, []);
   return (
     <section className={`recent-projects-container ${isVisible? "appear" : ""}`} ref={projectsTitleRef}>
-      <h2 className={isVisible? "home-projects-header" : ""} ref={sliderRef}>Recent Projects</h2>
+      <h1 className={isVisible? "home-projects-header" : ""} ref={sliderRef}>Recent Projects</h1>
       <div className="prioject-class-container">
-        {projectDescription.map((project) => (
-          <div key={project.title} className="recent-project-card" onClick={() => navigate(`../projects?id=${project.id}`)}>
+        {projectDescription.map((project, idx) => (
+          <div key={project.title + idx} className="recent-project-card" onClick={() => nav(`../projects?id=${project.id}`)}>
             <img src={project.image} alt="project" />
             <h4 className="recent-project-domain">{project.domain}</h4>
             <h3 className="recent-project-title">{project.title}</h3>

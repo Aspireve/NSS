@@ -19,7 +19,7 @@ const Image = ({ simple_image, HD_image, alt }) => {
     }}
       ref={imageRef}
     >
-      <img src={HD_image} class="loaded-image" alt={alt} loading="lazy" />
+      <img src={HD_image} className="loaded-image" alt={alt} loading="lazy" />
     </div>
   );
 };

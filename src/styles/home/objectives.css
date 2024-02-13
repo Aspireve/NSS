@@ -146,6 +146,7 @@
 
     .home-objective-quote {
         font-size: .8rem;
+        text-align: justify;
     }
     .home-objective-cards-container {
         display: grid;

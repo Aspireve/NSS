@@ -1,9 +1,9 @@
 import React from 'react'
 import teamNSS from "../assets/home/team-NSS.jpg"
-import teamNSSReduced from "../assets/home_reduced/team_NSS.jpg"
+import teamNSSReduced from "../assets/home_reduced/team_NSS.webp"
 import Image from "../containers/Image"
  
-export const Hero = () => {
+const Hero = () => {
   return (
     <div  className='hero-section'>
         <Image simple_image={teamNSSReduced} HD_image={teamNSS} alt="NSS Team "/>
@@ -14,3 +14,4 @@ export const Hero = () => {
     </div>
   )
 }
+export default Hero

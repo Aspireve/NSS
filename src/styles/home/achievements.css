@@ -24,7 +24,7 @@
     font-family: Roboto-web;
     font-size: 5rem;
     font-weight: 900;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -91,8 +91,9 @@
     #home-achievements-header {
         font-size: 3rem;
     }
-    .home-achievements p {
+    .home-achievements > p {
         font-size: .8rem;
+        text-align: justify;
     }
     .achievement {
         background-color: rgb(255, 255, 255);
@@ -107,6 +108,7 @@
     }
     .incrementer > p {
         font-size: 2rem;
+        text-align: center;
     }
 }
 
