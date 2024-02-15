@@ -9,10 +9,14 @@
   }
   
   .aboutLogoContainer {
-    width: 35%;
+    width: 45%;
     border-radius: 50%;
     position: relative;
-  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
   }
   
   .cls-1 {
@@ -50,14 +54,14 @@
   }
   
   .aboutLogoTextContainer h1 {
-    font-family: Roboto-web;
+    font-family: sans-serif;
     font-size: 4rem;
   }
   
   .aboutLogoTextContainer p {
     font-size: .9rem;
     display: inline;
-    line-height: 1.6rem;
+    /* line-height: 1.6rem; */
     overflow: hidden;
     z-index: 999;
     transition: 500ms;
@@ -83,6 +87,27 @@
     height: 50%;
     animation: highlight 1s ease-in-out forwards;
   }
+  .aboutLogoTitle {
+    position: relative;
+    width: fit-content;
+  }
+  .aboutLogoTitle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    border-left: 7px solid black;
+    animation: typewriter 2s ease-in-out forwards;
+  }
+
+  
+@keyframes typewriter {
+  to {
+      left: 100%;
+      display: none;
+  }
+}
+
   
   .highlight-red {
     --_background: rgba(248, 171, 162, 0.842);
@@ -121,6 +146,52 @@
       border: var(--_border);
       color: black;
       background-color: var(--_background)
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .aboutLogoTitle {
+      font-size: 1.5rem;
+    }
+    .aboutLogoTextContainer {
+      width: 65%;
+      max-width: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .significanceContainer  {
+      flex-direction: column;
+      width: 80%;
+    }
+    .aboutLogoTitle {
+      font-size: 1.5rem;
+      margin: auto;
+      text-align: center;
+    }
+    .aboutLogoTextContainer {
+      width: 100%;
+      text-align: justify;
+      gap: 1rem
+    }
+    .aboutLogoContainer {
+      width: fit-content;
+    }
+  }
+  @media screen and (max-width: 525px) {
+    .aboutLogoTitle {
+      font-size: 2.5rem !important; 
+    }
+    .value-card > p {
+      font-size: .8rem;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .aboutLogoTitle {
+      font-size: 2rem !important; 
+    }
+    .aboutLogoTextContainer p {
+      font-size: .7rem;
     }
   }
   

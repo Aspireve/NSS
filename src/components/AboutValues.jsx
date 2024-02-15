@@ -1,8 +1,9 @@
-import React from "react";
 import "../styles/about/values.css";
 import Descipline from "../assets/about/Descipline.png"
 import Respect from "../assets/about/Respect.png"
 import Punctuality from "../assets/about/Punctuality.png"
+import { useRef } from "react";
+import useScrollVisibility from "../hooks/useScrollAnimation";
 
 const values = [
   {
@@ -29,9 +30,12 @@ const values = [
 ];
 
 export default function Values() {
+  const valueRef = useRef()
+  const sliderRef = useRef()
+  const { isVisible } = useScrollVisibility(valueRef, sliderRef);
   return (
-    <div className="values-container">
-      <h1>Core Values</h1>
+    <div className={`values-container ${isVisible ? "appear" : ""}`} ref={valueRef}>
+      <h1 className={isVisible ? "about-values-title" : ""} ref={sliderRef}>Core Values</h1>
       <div className="values-animated-container">
         {values.map((value, idx) => (
           <div className="value-card">

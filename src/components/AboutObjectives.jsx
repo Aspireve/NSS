@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/about/objectives.css";
 import nss_logo from "../assets/static_images/nss_logo.svg"
 

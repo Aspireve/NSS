@@ -9,6 +9,7 @@ import MajorProjectsDisplay from "./ProjectMajorlist";
 import MinorProjectsDisplay from "./ProjectMinorlist";
 import SearchBar from "./ProjectSearchbar";
 import SidebarHeader from "./ProjectSidebaeheader";
+import FullImages from "../project_assets/full/index"
 
 const major_projects = [
   {
@@ -183,6 +184,7 @@ const minor_project = [
   },
   {
     project: "Amrit Kalash : Pot Painting",
+    full: [FullImages.AmritKalash.img1, FullImages.AmritKalash.img2, FullImages.AmritKalash.img3, FullImages.AmritKalash.img4, FullImages.AmritKalash.img5, FullImages.AmritKalash.img6, FullImages.AmritKalash.img7],
     domain: "EDUCATION",
     summary:
       "Dive into artistic expression with TCET NSS UNIT, from the initial white layer to the symbolic depth of Indian patriotism. TCET NSS Volunteers' dedication created more than a painted pot; they crafted cultural significance. Uncover the beauty of tradition, nurture creativity, and join a unifying journey where art binds us spiritually and culturally",

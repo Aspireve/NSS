@@ -1,5 +1,5 @@
 import health from "../assets/projects/online-health.jpg";
-import fitness from "../assets/projects/blood-dono.jpg";
+import fitness from "../assets/home/carousel-image-1.png";
 import arrow_left from "../assets/static_images/arrow-left-solid.svg";
 import arrow_right from "../assets/static_images/arrow-right-solid.svg";
 import { useCarousel } from "../hooks/useCarousel";

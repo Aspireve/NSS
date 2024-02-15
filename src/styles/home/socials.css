@@ -94,6 +94,12 @@
     }
 }
 
+@media screen and (max-width:525px){
+    .social-icon > img {
+        height: 2.4rem;
+    }
+}
+
 @media screen and (max-width:425px){
     
     .home-socials-header {

@@ -32,7 +32,7 @@ export default function MinorProjectsDisplay({ projects }) {
             />
             <div className="scale-project-text">
               <h4>{project.domain}</h4>
-              <h2>{project.project}</h2>
+              <h2>{project.project.length < 20 ? project.project : project.project.substring(0, 20) + "..."}</h2>
               <p>{project.summary.substring(0,60)}.....</p>
             </div>
           </div>

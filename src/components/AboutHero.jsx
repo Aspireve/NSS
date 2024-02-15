@@ -15,7 +15,7 @@ export default function AboutHero() {
   return (
     <div className="council-carousel">
       <div className="counc-carousel" ref={councilCarousel}>
-        <div className="council" style={{backgroundImage: Images.council2024}}>
+        <div className="council" style={{backgroundImage: "green"}}>
           <div className="council-text">
             <h2>COUNCIL 2020-21</h2>
             <p>

@@ -16,19 +16,20 @@
 
 .magazine-page-container {
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .magazine-image {
+    width: 30%;
     box-shadow: 2px 2px 20px #00000077;
     transition: 500ms ease-in;
     cursor: pointer;
 }
 
 .magazine-image img {
-    width: 20rem;
+    width: 100%;
     display: block;
 }
 
@@ -38,4 +39,35 @@
 
 .magazine-image.hover {
     scale: 1.1;
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 525px) {
+    .magazine-page-container {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .magazine-image {
+        width: 65%;
+    }
+    .magazine-container {
+        gap: 1rem;
+    }
+    .magazine-container > p {
+        font-size: .9rem;
+    }
+    .magazine-container > h2 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 324px) {
+    .magazine-container > h2 {
+        font-size: 2rem;
+    }
+    .magazine-container > p {
+        font-size: .8rem;
+    }
 }

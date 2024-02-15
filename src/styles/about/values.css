@@ -6,7 +6,14 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem
+    gap: 2rem;
+    transform: translateX(10rem);
+    opacity: 0;
+    transition: 500ms cubic-bezier(0.4, 0, 1, 1);
+}
+.values-container.appear {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .values-container > h1 {
@@ -38,7 +45,7 @@
 .value-title {
     font-weight: 600;
     font-family: Roboto, sans-serif;
-    font-size: 2.7rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
@@ -66,4 +73,35 @@
 }
 .see-more-domains:hover {
     scale: 1.1;
+}
+@media screen and (max-width: 1024px) {
+    .value-title {
+        font-size: 1.5rem;
+    }
+    .values-container > h1 {
+        font-size: 4rem;
+    }
+    .values-container {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .values-animated-container {
+        flex-direction: column;
+    }
+    .value-card {
+        width: 100%;
+    }
+    .value-separator {
+        display: none;
+    }
+}
+@media screen and (max-width: 525px) {
+    .values-container {
+        gap: 1rem;
+    }
+    .values-container > h1 {
+        font-size: 2.5rem;
+    };
+    
 }

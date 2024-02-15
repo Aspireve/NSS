@@ -1,23 +1,26 @@
-import AboutHero from "../components/AboutHero";
-import Significance from "../components/AboutSignificance";
-import Magazine from "../components/AboutMagazine.jsx";
-import Values from "../components/AboutValues";
-import Moto from "../components/AboutMoto";
-import Socials from "../components/HomeSocials";
-import Map from "../components/HomeMap"
-import AboutObjectives from "../components/AboutObjectives";
-import Outcomes from "../components/AboutOutcomes";
+import {
+  AboutHero,
+  AboutMoto,
+  AboutSignificance,
+  AboutValue,
+  AboutObjectives,
+  AboutMagazine
+} from "../components/about.js";
+import { Map, Socials } from "../components/common.js";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About | TCET NSS UNIT"
+  })
   return (
     <>
       <AboutHero />
-      <Moto />
-      <Significance />
-      <Values />
+      <AboutMoto />
+      <AboutSignificance />
+      <AboutValue />
       <AboutObjectives />
-      <Outcomes />
-      <Magazine />
+      <AboutMagazine />
       <Socials />
       <Map />
     </>

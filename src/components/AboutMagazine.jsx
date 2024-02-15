@@ -21,6 +21,15 @@ const magazineData = [
 
 export default function Magazine() {
   const [focusMag, setFocusMag] = useState(null)
+  const handleDownload = () => {
+    console.log("here")
+    const downloadLink = document.createElement('a');
+    downloadLink.href = `/pdf/NSS Magazine 2.0.pdf`;
+    downloadLink.download = 'NSS Magazine 2.0.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
   return (
     <div className="magazine-container">
       <h2>Our Magazine</h2>
@@ -30,8 +39,8 @@ export default function Magazine() {
       </p>
       <div className="magazine-page-container">
         {magazineData.map((mag, idx) => (
-          <div onClick={() => alert(`Read ${mag.link}`)} onMouseEnter={() => setFocusMag(idx)} onMouseLeave={() => setFocusMag(null)} className={`magazine-image ${focusMag === idx? "hover" : focusMag === null ? "" : "blacked"}`} >
-            <img src={mag.image} />
+          <div onClick={() => handleDownload()} onMouseEnter={() => setFocusMag(idx)} onMouseLeave={() => setFocusMag(null)} className={`magazine-image ${focusMag === idx? "hover" : focusMag === null ? "" : "blacked"}`} >
+            <img src={mag.image} alt={mag.link}/>
           </div>
         ))}
       </div>

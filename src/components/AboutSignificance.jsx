@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import useScrollVisibility from "../hooks/useScrollAnimation";
 import "../styles/about/significance.css";
 
 export default function Significance() {
@@ -14,14 +15,18 @@ export default function Significance() {
     isBlue: false,
     isWhite: false,
   }
+  const signifaceRef = useRef(null)
+  const sliderRef = useRef(null)
   // setInterval(() =>
   //   setColorHighlight((prev) => {
   //     return { ...prev, isBlue: !prev.isBlue };
   //   }),
   //   7500
   // );
+  
+  const { isVisible } = useScrollVisibility(signifaceRef, sliderRef);
   return (
-    <div className="significanceContainer">
+    <div className={`significanceContainer ${isVisible ? "appear": ""}`} ref={signifaceRef}>
       <div className="aboutLogoContainer">
         <svg
           id="Layer_1"
@@ -241,9 +246,10 @@ export default function Significance() {
             </g>
           </g>
         </svg>
+        <p>Click the logo to highlight the importance</p>
       </div>
       <div className="aboutLogoTextContainer">
-        <h1 className="aboutLogoTitle">Logo Significance</h1>
+        <h1 className={isVisible ? "aboutLogoTitle" : ""} ref={sliderRef}>Significance</h1>
         <p>
           The National Service Scheme (NSS) logo is a symbol of the dynamism and
           progressive outlook of youth. It features a wheel with eight bars,

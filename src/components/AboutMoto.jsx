@@ -1,14 +1,22 @@
 import "../styles/about/moto.css";
+import useScrollVisibility from "../hooks/useScrollAnimation";
+import { useRef } from "react";
 
 export default function Moto() {
+  const motoRef = useRef(null);
+  const sliderRef = useRef(null);
+  const { isVisible } = useScrollVisibility(motoRef, sliderRef);
   return (
-    <div className="moto-container">
+    <div
+      className={`moto-container ${isVisible ? "appear" : ""}`}
+      ref={motoRef}
+    >
       <div className="moto-separator">
         <hr />
         <p>OUR MOTO</p>
         <hr />
       </div>
-      <h1>NOT ME BUT YOU</h1>
+      <h1 ref={sliderRef}>NOT ME BUT YOU</h1>
       <p>
         The National Service Scheme operates with the motto "NOT ME BUT YOU,"
         aiming to inspire youth to serve the people and emphasises the

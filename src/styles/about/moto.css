@@ -6,12 +6,20 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: 500ms;
+}
+
+.moto-container.appear {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .moto-container h1 {
     font-family: Roboto-web;
-    font-size: 8rem;
+    font-size: 6rem;
     background-image: linear-gradient(90deg,#322864, #de2028, #322864);
     background-position: center;
     background-repeat: no-repeat;
@@ -39,4 +47,54 @@
 .moto-container >p {
     width: 80%;
     text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .moto-container h1 {
+        font-size: 4.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .moto-container {
+        opacity: 1;
+        transform: translate(0);
+    }
+    .moto-container {
+        gap: 1rem;
+    }
+    .moto-container h1 {
+        font-size: 3rem;
+    }
+    .moto-container >p {
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 525px) {
+    .moto-separator {
+        gap: 1rem;
+        width:100%
+    }
+    .moto-container {
+        gap: 1rem;
+    }
+    .moto-container h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .moto-container h1 {
+        font-size: 2rem;
+    }
+    .moto-container >p {
+        font-size: .8rem;
+        text-align: justify;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .moto-container h1 {
+        font-size: 1.5rem;
+        text-wrap: nowrap;
+    }
 }

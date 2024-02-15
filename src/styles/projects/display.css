@@ -324,6 +324,7 @@
     padding: .5rem;
     box-shadow: 0 0 10px white;
     cursor: pointer;
+    background-color: white;
     pointer-events: all;
     z-index: 99999;
 }
@@ -391,9 +392,34 @@
 .major-project-full::-webkit-scrollbar-thumb:hover {
     background-color: #555; 
 }
+@media screen and (max-width: 1024px) {
+    .major-modal {
+        width: 80vw;
+    }
+}
 @media screen and (max-width: 768px) {
+    .major-modal-summary {
+        height: 100%;
+    }
+    .major-modal {
+        flex-direction: column;
+        pointer-events: all;
+    }
+    .minor-modal {
+        width: 80%;
+    }
+    .major-image-and-summary {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2rem 2rem 0 0;
+        padding: 1rem;
+    }
     .scale-projects-card-display.minor {
         grid-template-columns: repeat(1, 1fr) !important;
+        background-color: green;
+        width: 100%;
     }
     .projects-display-container {
         flex-direction: column;
@@ -459,6 +485,14 @@
     .domain-option-domains {
         flex-wrap: wrap;
         flex-direction: row;
+    }
+    .minor-modal {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+    .minor-modal > img {
+        border-radius: 0;
     }
     .project-option  {
         width: fit-content;

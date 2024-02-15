@@ -14,10 +14,9 @@
     flex-shrink: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
-    object-position: bottom;
-    /* background-position: bottom; */
-    /* background-size: cover; */
+    background-image: url("../../assets/about/council2024.png");
+    background-size: cover;
+    background-position: bottom;
     position: relative;
 }
 
@@ -43,4 +42,34 @@
     color: white;
     font-weight: 300;
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .counc-carousel {
+        height: 80vh;
+    }
+    .council {
+        height: 80vh;
+    }
+    .council-text h2 {
+        font-size: 3rem;
+    }
+    .council-text p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .counc-carousel {
+        height: 50vh;
+    }
+    .council {
+        height: 50vh;
+    }
+    .council-text h2 {
+        font-size: 2rem;
+    }
+    .council-text p {
+        font-size: .8rem;
+    }
 }

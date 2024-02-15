@@ -30,15 +30,6 @@
     filter: drop-shadow(0 0 20px white);
 }
 
-@keyframes rotateimg {
-    from {
-        rotate: 0deg;
-    } to {
-        rotate: 360deg
-    }
-    
-}
-
 .objective-card {
     padding: 2rem;
 }
@@ -79,4 +70,93 @@
     width: 80%;
     margin: auto;
     color: white;
+}
+@media screen and (max-width: 1024px) {
+    .objective-card-container {
+        width: 80%;
+    }
+    .objective-card > h2 {
+        font-size: 3rem;
+    }
+    .objective-card > p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .objective-card-container {
+        width: 100%;
+    }
+    .objective-card > h2 {
+        font-size: 1.8rem;
+    }
+    .objective-card > p {
+        font-size: .8rem;
+        text-align: justify;
+    }
+    .objective-card-container > img {
+        width: 6rem;
+        height: 6rem;
+    }
+    .objective-card-container > .objective-card {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .objective-container > h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .objective-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .objective-card > h2 {
+        font-size: 1.8rem;
+    }
+    .objective-card > p {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .objective-card-container {
+        width: 100%;
+    }
+    .objective-card-container > .objective-card:nth-child(1) {
+        border-radius: 3rem 3rem 0 0;
+        background-image: linear-gradient(90deg,#322864, #de2028 );
+    }
+    .objective-card:nth-child(2) {
+        border-radius: 0 0 0 0;
+        background-image: linear-gradient(90deg,#322864, #de2028 );
+    }
+    .objective-card:nth-child(3) {
+        border-radius: 0 0 0 0;
+        background-image: linear-gradient(90deg,#322864, #de2028 );
+    }
+    .objective-card-container > .objective-card:nth-child(4) {
+        border-radius: 0 0 3rem 3rem ;
+        background-image: linear-gradient(90deg,#322864, #de2028 );
+    }
+    .objective-card-container > img {
+        display: none;
+    }
+    .objective-card > h2 {
+        font-size: 1.2rem;
+    }
+    .objective-card > p {
+        font-size: .7rem;
+    }
+    .objective-card-container > .objective-card {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 324px) {
+    .objective-container > h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
 }

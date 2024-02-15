@@ -2,13 +2,12 @@
     padding: 2rem 0;
     width: 80%;
     margin: auto;
-    transform: translateY(3rem);
+    transform: translateX(3rem);
     opacity: 0;
     transition: 1.2s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .home-domains-container.appear{
-    
     transform: translateY(0);
     opacity: 1;
 }
