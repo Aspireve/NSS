@@ -31,15 +31,15 @@ export default function Footer() {
           list={[
             "What is NSS",
             "History",
-            "Legacy Projects",
-            "Current Projects",
-            "Resedential Camps",
+            "Logo Significance",
             "Our Magazine",
           ]}
+          link={["../about#what-is-nss", "../about#history", "../about#significance", "../about#what-is-nss", "../about#magazine"]}
         />
         <FooterSection
           title="DOMAINS"
           list={["Education", "Health", "Environment", "Society"]}
+          link={["../projects?domain=Education", "../projects?domain=Health", "../projects?domain=Environment", "../projects?domain=Society"]}
         />
         <FooterSection
           title="TEAM"
@@ -50,6 +50,7 @@ export default function Footer() {
             "Councils",
             "Junior Councils",
           ]}
+          link={["../team#chairperson", "../team#programme-officer", "../team#deputy-programme-officer", "../team#council", "../team#junior-council"]}
         />
       </div>
       <hr />
@@ -57,9 +58,8 @@ export default function Footer() {
         <p>TCET-NSS. All rights reserved</p>
         <p className="developers-link" onClick={() => navigate("../developers")}>Meet the Developers</p>
         <ul>
-          <li>Instagram</li>
-          <li>LinkedIn</li>
-          <li>WhatsApp</li>
+          <a href="https://www.instagram.com/tcetnssunit" target="blank" style={{textDecoration: "none", color: "inherit"}}><li>Instagram</li></a>
+          <a href="https://x.com/nss_tcet" target="blank" style={{textDecoration: "none", color: "inherit"}}><li>Twitter</li></a>
         </ul>
       </div>
     </footer>

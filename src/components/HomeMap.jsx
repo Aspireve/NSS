@@ -24,8 +24,8 @@ export default function Map() {
           <br />
           Thakur Village kandivali(E). Mumbai 400101
         </p>
-        <p>Tel: 123456789</p>
-        <p>Email: tcet-nss-mail@tcetmumbai.in</p>
+        <p>Tel: <a href="tel:+919869221812" target="blank" style={{textDecoration: "none", color: "inherit"}}>+919869221812</a></p>
+        <p>Email: <a href="mailto:tcet.nss@tcetmumbai.in" target="blank" style={{textDecoration: "none", color: "inherit"}}>tcet.nss@tcetmumbai.in</a></p>
       </div>
     </div>
   );

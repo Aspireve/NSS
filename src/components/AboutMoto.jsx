@@ -10,6 +10,7 @@ export default function Moto() {
     <div
       className={`moto-container ${isVisible ? "appear" : ""}`}
       ref={motoRef}
+      id="what-is-nss"
     >
       <div className="moto-separator">
         <hr />

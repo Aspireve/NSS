@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/team/teams.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Scroller from "../components/Scroller";
 import ReactCardFlip from "react-card-flip";
 import JcContainer from "../components/TeamCardcontainer";
@@ -11,6 +11,7 @@ import SatishSingh from "../assets/team/Dr. Satish Singh.png"
 import VinitaAgarwal from "../assets/team/Dr. Vinita Agarwal.png"
 import SajjanKumar from "../assets/team/Mr. Sajjankumar Lal.png"
 import JyotiVanave from "../assets/team/Ms. Jyoti Vanawe.png"
+import TeamCreativeTeam from "../components/TeamCreativeTeam";
 
 const Team = () => {
   const [isFlipped, setIsFlipped] = useState({
@@ -18,6 +19,9 @@ const Team = () => {
     card2: false,
     card3: false,
     card4: false,
+  });
+  useEffect(() => {
+    document.title = "Teams | TCET NSS UNIT";
   });
 
   const handleClick = (e, newVersion) => {
@@ -36,7 +40,7 @@ const Team = () => {
           <div className="circle1"></div>
           {/* <div className="circle2"></div> */}
         </div>
-        <div className="chairperson-content">
+        <div className="chairperson-content" id="chairperson">
           <div className="table">
             <div id="chairperson">
               <img src={NSS_chairperson} alt="Principal B.K. Mishra" />
@@ -66,7 +70,7 @@ const Team = () => {
           <div className="blob1"></div>
           <div className="blob2"></div>
         </div>
-        <h1 className="po_head">Programme officers</h1>
+        <h1 className="po_head" id="programme-officer">Programme officers</h1>
         <p className="po_about">
           Dedicated Program Officers lead the TCET NSS Unit with passion and
           commitment, charting a course of service and impact. Their guidance
@@ -129,7 +133,7 @@ const Team = () => {
                 </div>
                 <div className="back">
                   <div className="back_content">
-                    <h3>FROM THE PROGRAMME OFFICER’S DESK</h3>
+                    <h3>FROM THE PROGRAMME OFFICER'S DESK</h3>
                     <p>
                       This resilient unit never loses hope, imparting a lesson
                       of unity to the entire college. Community upliftment is
@@ -150,7 +154,7 @@ const Team = () => {
         </div>
       </div>
       <div id="page2">
-        <h1 className="dp_head">deputy-Programme officers</h1>
+        <h1 className="dp_head" id="deputy-programme-officer">deputy-Programme officers</h1>
         <p className="dp_about">
           At the core of implementation, our Deputy Program Officers play a
           crucial role, transforming vision into tangible reality and ensuring
@@ -232,6 +236,7 @@ const Team = () => {
       </div>
       <Scroller />
       <JcContainer />
+      <TeamCreativeTeam />
       <Socials />
       <Map />
       {/* <ImageGallery /> */}

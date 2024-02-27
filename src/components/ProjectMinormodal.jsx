@@ -1,5 +1,5 @@
 import health from "../assets/projects/online-health.jpg";
-export default function MinorModal({setShowMinorModal}) {
+export default function MinorModal({ setShowMinorModal }) {
   return (
     <div className="minor-modal-container">
       <div className="minor-modal">
@@ -24,7 +24,12 @@ export default function MinorModal({setShowMinorModal}) {
             volunteers aim to share gained knowledge and insights.
           </h3>
         </div>
-        <button onClick={() => setShowMinorModal(false)} className="minor-modal-close">Go Back</button>
+        <button
+          onClick={() => setShowMinorModal(false)}
+          className="minor-modal-close"
+        >
+          Go Back
+        </button>
       </div>
     </div>
   );

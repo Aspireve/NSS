@@ -44,7 +44,6 @@ export default function Values() {
             <div className="value-separator">
               <hr />
               <img src={value.icon} className="see-more-domains" alt={value.title} />
-              {/* <FontAwesomeIcon icon={value.icon} className="see-more-domains" /> */}
               <hr />
             </div>
           </div>

@@ -137,7 +137,7 @@ const Scroller = () => {
   };
 
   return (
-    <div>
+    <div id="council">
       <Modal
         show={show}
         onClose={() => {

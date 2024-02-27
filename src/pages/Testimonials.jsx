@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import "../styles/testimonial/testimonials.css";
 import fallback from "../assets/testimonial/Male cartoon.webp";
 import LeftQuote from "../assets/static_images/quote-left-solid.svg";
-import Map from "../components/HomeMap"
 import Testimonialmodal from "../components/TestimonialModal";
 
 export default function Testimonial() {
@@ -212,7 +211,6 @@ export default function Testimonial() {
         />
       )}
       </div>
-      <Map />
     </>
   );
 }

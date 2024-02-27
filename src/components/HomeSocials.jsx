@@ -16,16 +16,16 @@ export default function Socials() {
           <img src={Facebook} className="facebook" alt="facebook logo" />
           <p>@tcetnss</p>
         </div>
-        <div className="social-icon">
+        <div className="social-icon" onClick={() => window.location = "https://www.instagram.com/tcetnssunit"}>
           <img src={Instagram} className="instagram" alt="instagram logo" />
-          <p>@tcetnss</p>
+          <p>@tcetnssunit</p>
+        </div>
+        <div className="social-icon" onClick={() => window.location = "https://x.com/nss_tcet"}>
+          <img src={Twitter} className="twitter" alt="twitter logo" />
+          <p>@nss_unit</p>
         </div>
         <div className="social-icon">
           <img src={LinkedIn} className="linkedin" alt="linkedin logo" />
-          <p>@tcetnss</p>
-        </div>
-        <div className="social-icon">
-          <img src={Twitter} className="twitter" alt="twitter logo" />
           <p>@tcetnss</p>
         </div>
       </div>

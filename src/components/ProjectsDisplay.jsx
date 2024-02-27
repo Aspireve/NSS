@@ -396,10 +396,20 @@ const domain_names = [
   { name: "Education", search: "EDUCATION", icon: Book },
   { name: "Society", search: "SOCIETY", icon: UserGroup },
   { name: "Health", search: "HEALTH", icon: HeartPulse },
+  { name: "NSS Camp", search: "NSS CAMP", icon: HeartPulse },
 ];
 
-export default function ProjectDisplay() {
-  const [selectedDomain, setSelectedDomain] = useState(0);
+const domain_index = {
+  All: 0,
+  Environment: 1,
+  Education: 2,
+  Society: 3,
+  health: 4,
+  "NSS CAMP": 5
+}
+
+export default function ProjectDisplay({domain}) {
+  const [selectedDomain, setSelectedDomain] = useState(domain_index[domain] || 0);
   const [query, setQuery] = useState("");
   console.log(query);
   useEffect(() => {

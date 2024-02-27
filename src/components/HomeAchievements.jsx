@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import nss_logo from "../assets/static_images/nss_logo.svg";
 import lives_affected from "../assets/home/lives-affected.webp";
 import leadership from "../assets/home/leadership_and_democracy.webp";
@@ -11,52 +11,35 @@ export default function Achievements() {
   const sliderRef = useRef(null);
   const { isVisible } = useScrollVisibility(achievementsTitleRef, sliderRef);
 
+  const [counters, setCounters] = useState([0, 0, 0, 0]);
+  const finalValues = [18, 120000, 1350, 90000];
+  const increments = [1, 6000, 600, 3000]; // Adjusted for demonstration
+
   useEffect(() => {
-    const counter = document.getElementsByClassName("counter-incrementer");
-    const final_values = [
-      `${parseInt(counter[0].getAttribute("data-ctr"))}`,
-      `${parseInt(counter[1].getAttribute("data-ctr"))}`,
-      `${parseInt(counter[2].getAttribute("data-ctr"))}`,
-      `${parseInt(counter[3].getAttribute("data-ctr"))}`,
-    ];
-    const itrs = [1, 6, 6, 3];
-    function incrementCounter1() {
-      if (parseInt(counter[0].innerHTML) < final_values[0]) {
-        counter[0].innerHTML = parseInt(counter[0].innerHTML) + itrs[0];
-        setTimeout(incrementCounter1, 160);
-      }
-    }
-    function incrementCounter2() {
-      if (parseInt(counter[1].innerHTML) < final_values[1]) {
-        counter[1].innerHTML = parseInt(counter[1].innerHTML) + itrs[1];
-        setTimeout(incrementCounter2, 160);
-      }
-    }
-    function incrementCounter3() {
-      if (parseInt(counter[2].innerHTML) < final_values[2]) {
-        counter[2].innerHTML = parseInt(counter[2].innerHTML) + itrs[2];
-        setTimeout(incrementCounter3, 170);
-      }
-    }
-    function incrementCounter4() {
-      if (parseInt(counter[3].innerHTML) < final_values[3]) {
-        counter[3].innerHTML = parseInt(counter[3].innerHTML) + itrs[3];
-        setTimeout(incrementCounter4, 150);
-      }
-    }
-    if(isVisible) {
-      incrementCounter1();
-      incrementCounter2();
-      incrementCounter3();
-      incrementCounter4();
-    }
-  });
+    if (!isVisible) return;
+
+    const timers = finalValues.map((_, index) => {
+      const incrementCounter = () => {
+        setCounters((prevCounters) => {
+          if (prevCounters[index] < finalValues[index]) {
+            const newCounters = [...prevCounters];
+            newCounters[index] = Math.min(prevCounters[index] + increments[index], finalValues[index]);
+            return newCounters;
+          }
+          return prevCounters;
+        });
+      };
+
+      return setInterval(incrementCounter, 160);
+    });
+
+    return () => timers.forEach(clearInterval);
+  }, [isVisible]);
+
   return (
-    <div className={`home-achievements ${isVisible ? "appear" : ""}`} ref={achievementsTitleRef}
-    >
+    <div className={`home-achievements ${isVisible ? "appear" : ""}`} ref={achievementsTitleRef}>
       <h2 id="home-achievements-header" className={isVisible ? "home-domains-header" : ""} ref={sliderRef}>Achievements</h2>
       <p>
-        {" "}
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
         voluptatum ea qui provident sunt excepturi. Unde mollitia obcaecati eos,
         optio sit nisi neque modi libero sequi vel ratione magni cupiditate?
@@ -66,71 +49,23 @@ export default function Achievements() {
         quod.
       </p>
       <div className="home-achievements-incrementer">
-        <h3 className="respo-show">Established Since</h3>
-        <div className="achievement">
-          <h3>Established Since</h3>
-          <img src={nss_logo} alt="NSS Logo" />
-          <div className="incrementer make-flex">
-            <div className="incrementer">
-              <p className="counter-incrementer" data-ctr="18">
-                {" "}
-                0
-              </p>
+        {[
+          { title: "Established Since", image: nss_logo, count: counters[0], unit: "Years" },
+          { title: "People Affected", image: lives_affected, count: counters[1], unit: "Lives" },
+          { title: "Total Volunteers", image: leadership, count: counters[2], unit: "Volunteers" },
+          { title: "Volunteer Hours", image: trees_planted, count: counters[3], unit: "Hours" },
+        ].map(({ title, image, count, unit }, index) => (
+          <div key={index} className="achievement">
+            <h3>{title}</h3>
+            <img src={image} alt={title} />
+            <div className="incrementer make-flex">
+              <div className="incrementer">
+                <p className="counter-incrementer">{count.toLocaleString()}</p>
+              </div>
+              <p>{unit}</p>
             </div>
-            <p>Years</p>
           </div>
-          <p>Years</p>
-        </div>
-        <h3 className="respo-show">People Affected</h3>
-        <div className="achievement">
-          <h3>People Affected</h3>
-          <img src={lives_affected} alt="NSS Logo" />
-          <div className="incrementer make-flex">
-            <div className="incrementer">
-              <p className="counter-incrementer" data-ctr="120">
-                {" "}
-                0
-              </p>
-              <p>,000</p>
-            </div>
-            <p>Lives</p>
-          </div>
-          <p>Lives</p>
-        </div>
-
-        <h3 className="respo-show">Total Volunteers</h3>
-        <div className="achievement">
-          <h3>Total Volunteers</h3>
-          <img src={leadership} alt="NSS Logo" />
-          <div className="incrementer make-flex">
-            <div className="incrementer">
-              <p className="counter-incrementer" data-ctr="135">
-                {" "}
-                0
-              </p>
-              <p>0</p>
-            </div>
-            <p>Volunteers</p>
-          </div>
-          <p>Volunteers</p>
-        </div>
-
-        <h3 className="respo-show">Volunteer Hours</h3>
-        <div className="achievement">
-          <h3>Volunteer Hours</h3>
-          <img src={trees_planted} alt="NSS Logo" />
-          <div className="incrementer make-flex">
-            <div className="incrementer">
-              <p className="counter-incrementer" data-ctr="90">
-                {" "}
-                0
-              </p>
-              <p>,000</p>
-            </div>
-            <p>Hours</p>
-          </div>
-          <p>Hours</p>
-        </div>
+        ))}
       </div>
     </div>
   );

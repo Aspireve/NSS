@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: fit-content;
     width: 80%;
     margin: auto;
-    gap:2rem;
+    gap: 2rem;
     padding: 2rem 0;
     transform: translateY(5rem);
     opacity: 0;
@@ -149,6 +149,7 @@ section.appear {
 }
 
 @media screen and (max-width:768px) {
+
     .about-us {
         opacity: 1;
         flex-direction: column;
@@ -160,7 +161,7 @@ section.appear {
         width: 40%;
     }
 
-    .about-us-text {
+    .about-us > .about-us-text {
         width: 100%;
         text-align: center;
     }
@@ -207,5 +208,3 @@ section.appear {
         margin: auto;
     }
 }
-
-
