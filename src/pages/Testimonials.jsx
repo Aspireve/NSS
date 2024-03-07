@@ -3,6 +3,43 @@ import "../styles/testimonial/testimonials.css";
 import fallback from "../assets/testimonial/Male cartoon.webp";
 import LeftQuote from "../assets/static_images/quote-left-solid.svg";
 import Testimonialmodal from "../components/TestimonialModal";
+import { TestimonialLoading } from "../components/TestimonialLoading";
+
+function DisplayTestimonials({ testimonial, handleReadMoreClick }) {
+  return (
+    <div className={`Testimonail-card`}>
+      <div id="creator">
+        <div id="image">
+          <img src={testimonial.image} alt={testimonial.name} />
+        </div>
+        <div className="details">
+          <h1 className="name">{testimonial.name}</h1>
+          <p>
+            {testimonial.year} {testimonial.branch.toUpperCase()}
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src={LeftQuote} alt="left quote" className="leftquote" />
+      </div>
+      <div id="testimony">
+        <p>
+          {testimonial.Testimony.substring(0, 250)}
+          {"... "}
+          <span
+            style={{
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+            onClick={() => handleReadMoreClick(testimonial)}
+          >
+            Read More
+          </span>
+        </p>
+      </div>
+    </div>
+  );
+}
 
 export default function Testimonial() {
   const testimonial_cards = [
@@ -154,6 +191,9 @@ export default function Testimonial() {
 
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedTestimony, setSelectedTestimony] = useState("");
+  const [testimonials, setTestimonials] = useState([...testimonial_cards]); // initialTestimonials is your initial data
+  const [loading, setLoading] = useState(false);
+
 
   const handleReadMoreClick = (testimony, image, name, year, post) => {
     console.log("show testimonial");
@@ -161,55 +201,56 @@ export default function Testimonial() {
     setModalVisible(true);
   };
 
+  const loadMoreTestimonials = () => {
+    if (loading) return;
+    setLoading(true);
+    // Simulate an async API call to get more testimonials
+    setTimeout(() => {
+      setTestimonials(prevTestimonials => [...prevTestimonials, ...prevTestimonials]); // additionalTestimonials would be more data
+      setLoading(false);
+    }, 5000);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+      if (scrollTop + clientHeight >= scrollHeight - 5 && !loading) {
+        loadMoreTestimonials();
+      }
+      console.log(loading)
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [loading]); 
+
   return (
     <>
       <div className="Testimonial-wrapper">
         <h1>Testimonials</h1>
         <div className="card_wrapper">
-          {testimonial_cards.map((testimonial, index) => (
-            <div key={index} className={`Testimonail-card`}>
-              <div id="creator">
-                <div id="image">
-                  <img src={testimonial.image} alt={testimonial.name} />
-                </div>
-                <div className="details">
-                  <h1 className="name">{testimonial.name}</h1>
-                  <p>
-                    {testimonial.year} {testimonial.branch.toUpperCase()}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <img src={LeftQuote} alt="left quote" className="leftquote" />
-              </div>
-              <div id="testimony">
-                <p>
-                  {testimonial.Testimony.substring(0, 250)}
-                  {"... "}
-                  <span
-                    style={{
-                      textDecoration: "underline",
-                      cursor: "pointer",
-                    }}
-                    onClick={() => handleReadMoreClick(testimonial)}
-                  >
-                    Read More
-                  </span>
-                </p>
-              </div>
-            </div>
+          {testimonials.map((testimonial, index) => (
+            <DisplayTestimonials
+              key={index}
+              testimonial={testimonial}
+              handleReadMoreClick={handleReadMoreClick}
+            />
           ))}
         </div>
+        <TestimonialLoading />
         {modalVisible && (
-        <Testimonialmodal
-          onClose={() => setModalVisible(false)}
-          testimony={selectedTestimony.Testimony}
-          image={selectedTestimony.image}
-          name={selectedTestimony.name}
-          year={selectedTestimony.year}
-          post={selectedTestimony.post}
-        />
-      )}
+          <Testimonialmodal
+            onClose={() => setModalVisible(false)}
+            testimony={selectedTestimony.Testimony}
+            image={selectedTestimony.image}
+            name={selectedTestimony.name}
+            year={selectedTestimony.year}
+            post={selectedTestimony.post}
+          />
+        )}
       </div>
     </>
   );

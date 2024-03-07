@@ -11,28 +11,28 @@ const objectiveText = [
     simple_image: HomeImagesReduced.community_simple,
     title: "Community Understanding",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor ",
+      "Community understanding involves mutual empathy, cooperation, and shared values among group members, fostering inclusivity and collaboration towards common goals. NSS plays a key role in promoting this through service, social engagement, and youth development initiatives, enhancing community cohesion and individual growth.",
   },
   {
     image: HomeImages.assesment,
     simple_image: HomeImagesReduced.assesment_simple,
     title: "Assesment & Engagement",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor ",
+      "NSS facilitates assessment for informed decision-making and empowerment. It fosters collaboration and drives positive change in individuals and communities. Meaningful engagement supports continuous improvement.",
   },
   {
     image: HomeImages.competance,
     simple_image: HomeImagesReduced.competance_simple,
     title: "Competence Development",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor ",
+      "Competence development is about improving skills, knowledge, and abilities for personal and professional growth. It requires continuous learning, practice, and adapting to new experiences. NSS ensures individuals expand capabilities to excel in roles, contribute to teams, and face challenges confidently.",
   },
   {
     image: HomeImages.leadership,
     simple_image: HomeImagesReduced.leadership_simple,
     title: "Leadership & Democracy",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit itaque Lorem, ipsum dolor ",
+      "Democratic leadership entails integrity, inclusive participation, and valuing diverse perspectives. Leaders trained in NSS empower citizens through transparency, accountability, and active engagement. Democracy flourishes with leaders who champion equality, justice, and individual rights, ensuring government by and for the people.",
   },
 ];
 

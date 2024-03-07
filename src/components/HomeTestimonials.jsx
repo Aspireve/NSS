@@ -99,7 +99,7 @@ function TestimonialCard() {
             {
               testimonial_cards[
                 indexCard === 0 ? testimonial_cards.length - 1 : indexCard - 1
-              ].testament
+              ].testament.substring(0, 80)+"..."
             }
           </p>
           <div>
@@ -134,7 +134,7 @@ function TestimonialCard() {
             src={testimonial_cards[indexCard].image}
             alt={`${testimonial_cards[indexCard].name} Testimonial`}
           />
-          <p>{testimonial_cards[indexCard].testament}</p>
+          <p>{testimonial_cards[indexCard].testament.substring(0, 80)+"..."}</p>
           <div>
             <h3>{testimonial_cards[indexCard].name}</h3>
             <h5>{testimonial_cards[indexCard].position}</h5>
@@ -161,7 +161,7 @@ function TestimonialCard() {
             {
               testimonial_cards[
                 indexCard === testimonial_cards.length - 1 ? 0 : indexCard + 1
-              ].testament
+              ].testament.substring(0, 80)+"..."
             }
           </p>
           <div>

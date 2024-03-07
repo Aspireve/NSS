@@ -1,0 +1,17 @@
+.testimonials-loader {
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonials-loader > h2 {
+    font-family: Roboto-web;
+    font-size: 2rem;
+}
+
+.testimonials-loader > p {
+    font-family: Roboto-web;
+    font-size: 1rem;
+}

@@ -1,13 +1,13 @@
-import Images from "../assets/about/index";
+import Image from "../containers/Image";
 import "../styles/team/creativesteam.css";
 
-const TeamCreativeTeam = () => {
+const TeamCreativeTeam = ({simple_image, hd_image, name}) => {
   return (
-    <div className="team-creatives">
+    <section className="team-creatives">
       <div className="team-creatives-image-container">
-        <img src={Images.council2024} alt="Creative Team"/>
+        <Image simple_image={simple_image} HD_image={hd_image} alt={name}/>
         <div className="team-creatives-text-container">
-          <h2>Creative Team</h2>
+          <h2>{name}</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Perferendis veritatis, aperiam quos recusandae possimus officia
@@ -15,7 +15,7 @@ const TeamCreativeTeam = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

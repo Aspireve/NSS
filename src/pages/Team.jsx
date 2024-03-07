@@ -12,6 +12,7 @@ import VinitaAgarwal from "../assets/team/Dr. Vinita Agarwal.png"
 import SajjanKumar from "../assets/team/Mr. Sajjankumar Lal.png"
 import JyotiVanave from "../assets/team/Ms. Jyoti Vanawe.png"
 import TeamCreativeTeam from "../components/TeamCreativeTeam";
+import Images from "../assets/team/index";
 
 const Team = () => {
   const [isFlipped, setIsFlipped] = useState({
@@ -236,7 +237,8 @@ const Team = () => {
       </div>
       <Scroller />
       <JcContainer />
-      <TeamCreativeTeam />
+      <TeamCreativeTeam simple_image={Images.Tech_reduced} hd_image={Images.Tech} name={"Technical Team"}/>
+      <TeamCreativeTeam simple_image={Images.Creative_reduced} hd_image={Images.Creative} name={"Creatives Team"}/>
       <Socials />
       <Map />
       {/* <ImageGallery /> */}
