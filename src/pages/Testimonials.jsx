@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/testimonial/testimonials.css";
 import fallback from "../assets/testimonial/Male cartoon.webp";
 import LeftQuote from "../assets/static_images/quote-left-solid.svg";

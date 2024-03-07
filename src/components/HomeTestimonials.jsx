@@ -20,7 +20,7 @@ const testimonial_cards = [
   {
     name: "Ms. Jyoti Vanave",
     testament:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo molestias officia voluptas natus numquam recusandae laboriosam mollitia cum nam",
+      "The TCET NSS UNIT upholds core values of Respect, Discipline, and Punctuality, guided by the motto 'NOT ME BUT YOU.' Comprising 200 dedicated volunteers from various branches, they unite to serve the community with unwavering dedication and responsibility. Persistent and committed, the unit prioritises community upliftment, addressing local issues with solutions. Even during lockdown, volunteers brought joy, and now, with offline activities, their enthusiasm for community service has heightened. Post-tenure, volunteers evolve into adept multitaskers, earning our complete trust and everlasting pride.",
     image: deputyPo,
     position: "Deputy Programme Officer",
     period: "(2023 - present)",
@@ -96,11 +96,9 @@ function TestimonialCard() {
             } Testimonial`}
           />
           <p>
-            {
-              testimonial_cards[
-                indexCard === 0 ? testimonial_cards.length - 1 : indexCard - 1
-              ].testament.substring(0, 80)+"..."
-            }
+            {testimonial_cards[
+              indexCard === 0 ? testimonial_cards.length - 1 : indexCard - 1
+            ].testament.substring(0, 100) + "... Read More"}
           </p>
           <div>
             <h3>
@@ -134,7 +132,10 @@ function TestimonialCard() {
             src={testimonial_cards[indexCard].image}
             alt={`${testimonial_cards[indexCard].name} Testimonial`}
           />
-          <p>{testimonial_cards[indexCard].testament.substring(0, 80)+"..."}</p>
+          <p>
+            {testimonial_cards[indexCard].testament.substring(0, 100) +
+              "... Read More"}
+          </p>
           <div>
             <h3>{testimonial_cards[indexCard].name}</h3>
             <h5>{testimonial_cards[indexCard].position}</h5>
@@ -158,11 +159,9 @@ function TestimonialCard() {
             } Testimonial`}
           />
           <p>
-            {
-              testimonial_cards[
-                indexCard === testimonial_cards.length - 1 ? 0 : indexCard + 1
-              ].testament.substring(0, 80)+"..."
-            }
+            {testimonial_cards[
+              indexCard === testimonial_cards.length - 1 ? 0 : indexCard + 1
+            ].testament.substring(0, 100) + "... Read More"}
           </p>
           <div>
             <h3>
