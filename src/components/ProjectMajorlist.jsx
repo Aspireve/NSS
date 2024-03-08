@@ -27,7 +27,7 @@ export default function MajorProjectsDisplay({ projects }) {
             onClick={() => setShowMajorModal({display: true, data: project})}
           >
             <img
-              src={health}
+              src={project.images[0]}
               style={{ borderRadius: "20px 20px 0 0" }}
               alt={`${project.project} ${project.domain}`}
               loading="lazy"

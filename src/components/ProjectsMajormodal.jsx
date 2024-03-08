@@ -1,11 +1,13 @@
-import health from "../assets/projects/online-health.jpg";
-import fitness from "../assets/home/carousel-image-1.png";
 import arrow_left from "../assets/static_images/arrow-left-solid.svg";
 import arrow_right from "../assets/static_images/arrow-right-solid.svg";
 import { useCarousel } from "../hooks/useCarousel";
+import Image from "../containers/Image"
+
+
+
 export default function MajorModal({ dataModel, setShowMajorModal }) {
   console.log(dataModel)
-  const { page, next, back } = useCarousel([fitness, health]);
+  const { page, next, back } = useCarousel([...dataModel.data.images]);
   return (
     <div className="minor-modal-container">
       <div className="major-modal">

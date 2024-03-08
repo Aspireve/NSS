@@ -169,6 +169,8 @@
 .scale-projects-card >img {
     width: 100%;
     display: block;
+    height: 60%;
+    object-position: center;
 }
 .scale-projects-card:hover {
     scale: 1.03;

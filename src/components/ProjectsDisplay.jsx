@@ -9,11 +9,15 @@ import MajorProjectsDisplay from "./ProjectMajorlist";
 import MinorProjectsDisplay from "./ProjectMinorlist";
 import SearchBar from "./ProjectSearchbar";
 import SidebarHeader from "./ProjectSidebaeheader";
-import FullImages from "../project_assets/full/index"
+import FullImages from "../project_assets/full/index";
+import Major_HD from "../assets/projects/index";
+import Major_simple from "../assets/projects_reduced/index";
 
 const major_projects = [
   {
     project: "Panch Pran Pledge",
+    images: [...Major_HD.PachPran],
+    reduced_images: [...Major_simple.PachPran],
     domain: "EDUCATION",
     quote: "A pledge is a promise, and promises shape destinies.",
     main: `The "Panch Pran Pledge" was taken by the TCET NSS Volunteers at Thakur College of Engineering and Technology, Kandivali (E). Our aim was simple: to inspire a strong sense of responsibility and love for our nation and its soil among the volunteers from the TCET NSS UNIT.
@@ -27,6 +31,8 @@ const major_projects = [
   {
     project: "Cardiac Arrest Seminar",
     domain: "EDUCATION",
+    images: [...Major_HD.CardiacArrest],
+    reduced_images: [...Major_simple.CardiacArrest],
     quote: "In the silence of a heartbeat, the story of survival begins.",
     main: `In the heart of Thakur College of Engineering and Technology, Kandivali, we gathered for the "Cardiac Arrest Seminar". Our aim was straightforward: to help everyone better understand cardiac arrests and heart attacks. This special project provided TCET NSS Volunteers with hands-on experience, letting them practise chest compressions and use an AED on dummy patients—a crash course in providing first-aid for heart-related emergencies.
     The outcomes were meaningful: TCET NSS Volunteers gained practical experience, learning how to perform chest compressions and understanding the differences between a Cardiac Arrest and a Heart Attack. This project not only boosted awareness but also formed a community of individuals ready to help in emergencies.
@@ -37,6 +43,8 @@ const major_projects = [
   {
     project: "Nutrition Awareness Webinar",
     domain: "EDUCATION",
+    images: [...Major_HD.Nutrition],
+    reduced_images: [...Major_simple.Nutrition],
     quote: "Fuel your body, feed your potential.",
     main: `Thakur College of Engineering & Technology in Kandivali hosts an engaging "Webinar on Nutrition" with a professional nutritionist speaker, a significant initiative to promote healthy dietary practices. The primary goal of this webinar is to provide positive food habits for overall well-being among our TCET NSS Volunteers. This webinar serves as a knowledge-sharing platform, where speakers and TCET NSS Volunteers discuss various aspects of nutrition, from understanding macronutrients to decoding food labels. The aim is not only to impart information but also to encourage practical application, fostering a culture of health-conscious decision-making.
     Beyond knowledge, the project seeks to build a communal understanding of the crucial role nutrition plays in our lives. It isn't just about theory; we aim to cultivate an environment where making healthy choices becomes second nature. The "Webinar on Nutrition" reflects our commitment to TCET NSS Volunteers' well-being, aiming for a sustained culture of informed nutritional choices. TCET NSS Volunteers not only gain new insights but also leave with a sense of responsibility to share this knowledge within their circles.
@@ -45,10 +53,24 @@ const major_projects = [
     summary: `Thakur College of Engineering & Technology in Kandivali hosts an engaging "Webinar on Nutrition" with a professional nutritionist speaker, a significant initiative to promote healthy dietary practices. The primary goal of this webinar is to provide positive food habits for overall well-being among our TCET NSS Volunteers. This webinar serves as a knowledge-sharing platform, where speakers and TCET NSS Volunteers discuss various aspects of nutrition, from understanding macronutrients to decoding food labels. The aim is not only to impart information but also to encourage practical application, fostering a culture of health-conscious decision-making.`,
   },
   {
+    project: "Organ Donation Awareness",
+    domain: "EDUCATION",
+    images: [...Major_HD.OrganDonation],
+    reduced_images: [...Major_simple.OrganDonation],
+    quote: "Your organs, their second chance.",
+    main: `TCET NSS Volunteers conducted a vibrant Organ Donation Awareness project in our adopted village with the primary motive of enlightening villagers about the crucial significance of organ donation. The goal was to instil in volunteers a deep understanding and appreciation for this noble cause, fostering a sense of responsibility towards community health. Through this initiative, the volunteers aimed to dispel misconceptions and encourage a proactive approach to organ donation, thereby contributing to the well-being of the community.
+    The project unfolded successfully, offering volunteers not only the opportunity to enhance their creative skills but also to build confidence in public speaking. Crafting visually appealing posters became a valuable learning experience, allowing volunteers to effectively convey information and awareness within the village. The motive was to empower volunteers with skills that extend beyond theoretical knowledge, providing them with practical tools to communicate important messages to the community.
+    Volunteers not only gained insights into the importance of organ donation but also developed a heightened awareness of the broader impact it can have on community health. This project served as a powerful learning platform, illustrating that even small actions, like pledging to donate organs, can collectively make a significant difference. As a result, the organ donation awareness organised by TCET NSS UNIT initiatively stands as a testament to the positive and enriching experiences that can emerge when dedicated volunteers come together to promote health, awareness, and a culture of responsibility within a community
+    `,
+    summary: `TCET NSS UNIT organised an Organ Donation Awareness campaign which enhanced the skills of the volunteers and dispelled myths surrounding this crucial cause. This impactful initiative, highlighted by informative posters, not only fostered unity but also encouraged proactive organ donation. The positive experience proved beneficial for both volunteers and the community, contributing to lasting awareness about the significance of organ donation. Volunteers not only gained insights into the importance of organ donation but also developed the skill of creating visually appealing posters that effectively convey essential information.`,
+  },
+  {
     project: "Tree Plantation Drive",
     domain: "ENVIRONMENT",
+    images: [...Major_HD.TreePlantaion],
+    reduced_images: [...Major_simple.TreePlantaion],
     quote: `Sow the seed of change, secure a greener tomorrow`,
-    main: `The TCET NSS UNIT’s Tree Plantation Drive is one of their main projects where enthusiastic volunteers actively participate and contribute their part. The volunteers create catchy slogans on Tree Plantation, setting a positive tone for the day. The main focus of the project is to plant over 100+ saplings, demonstrating ongoing dedication to the environment. The volunteers are guided about the proper way to plant trees, gaining valuable skills and fostering teamwork.
+    main: `The TCET NSS UNIT's Tree Plantation Drive is one of their main projects where enthusiastic volunteers actively participate and contribute their part. The volunteers create catchy slogans on Tree Plantation, setting a positive tone for the day. The main focus of the project is to plant over 100+ saplings, demonstrating ongoing dedication to the environment. The volunteers are guided about the proper way to plant trees, gaining valuable skills and fostering teamwork.
     The project sought to educate both participants and the community about the crucial role of trees in environmental sustainability and climate change. Participants gain valuable collaborative experience, understanding the significance of trees in the urban environment. Feedback sessions gauge the volunteers' experiences and the effectiveness of the activity in raising awareness about Tree Plantation. Volunteers consistently provide attentive care to the plants and attention long after the initial planting.
     In essence, the TCET NSS Unit's Tree Plantation Drive is a yearly tradition showcasing the strength of regular collective action for environmental care. This effort doesn't just plant trees; it plants seeds of awareness and responsibility, ensuring a greener and more sustainable future each year.
     `,
@@ -57,10 +79,12 @@ const major_projects = [
   {
     project: "Beach Cleanup Drive",
     domain: "ENVIRONMENT",
+    images: [...Major_HD.BeachCleanUp],
+    reduced_images: [...Major_simple.BeachCleanUp],
     quote: `Leave only footprints not plastic, let the waves of change begin`,
-    main: `TCET NSS Unit's “Beach Cleanup Drive” is one of the major projects of the unit. Beaches are like a big playground for people, but they're not just for us. There's a whole secret world in the sand that we can't see—tiny creatures doing important stuff for the ocean. 
+    main: `TCET NSS Unit's “Beach Cleanup Drive” is one of the major projects of the unit. Beaches are like a big playground for people, but they're not just for us. There's a whole secret world in the sand that we can't see—tiny creatures doing important stuff for the ocean.
     The project aims to safeguard beaches and oceans by organising beach clean-up. Volunteers collect plastic, including harmful items, raising awareness about responsible plastic use and promoting a cleaner environment for everyone.
-    The project fosters environmental awareness, teamwork, and responsibility among volunteers. They learn hands-on skills like proper tree planting techniques and the importance of reducing plastic use. Engaging with communities, they spread awareness about preserving nature and creating a sustainable future.  
+    The project fosters environmental awareness, teamwork, and responsibility among volunteers. They learn hands-on skills like proper tree planting techniques and the importance of reducing plastic use. Engaging with communities, they spread awareness about preserving nature and creating a sustainable future.
     After collecting bags of plastic, they are given to the city cleaners. But it's not just about picking up trash. The volunteers also interacted with people about how to break down plastic, use less of it, and why it's bad for our oceans. We need to be smart about this and take care of our beaches.
     So, here's the deal: if we all pitch in, we can make a difference. Let's be the superheroes our beaches need. It's not just about cleaning up; it's about making sure we don't mess up in the first place. Together, we can keep our beaches happy and our oceans healthy!
     `,
@@ -69,6 +93,8 @@ const major_projects = [
   {
     project: "Swachhta Abhiyan",
     domain: "ENVIRONMENT",
+    images: [...Major_HD.Swacchata],
+    reduced_images: [...Major_simple.Swacchata],
     quote: `Trash in the bin, let the cleanliness win!"`,
     main: `"Swachhta Abhiyan" is like a special cleanliness drive at Mumbai University. Volunteers from TCET NSS UNIT work hard to clean up different areas in the university and nearby places. But they do more than just clean – they interact with other unit volunteers about why it's important to keep things clean and stay healthy.
     The aim of the volunteers is for everyone to understand why cleanliness is so crucial for our well-being. They don't just sweep and pick up trash; they also have conversations with other volunteers. They explain how being clean is directly connected to our health. Our  goal is not only to make a place look nice but also to make it a healthy and happy place for everyone.
@@ -80,6 +106,8 @@ const major_projects = [
   {
     project: "Paper Bag Making",
     domain: "ENVIRONMENT",
+    images: [...Major_HD.Paperbag],
+    reduced_images: [...Major_simple.Paperbag],
     quote: `Paper bag not plastic, a choice so fantastic!
     The first step was to raise awareness. The volunteers worked hard to spread the word among their own group and the people nearby. They wanted everyone to know that using recyclable paper is a smart choice for our planet. By interacting with people and sharing information, they hoped to create a ripple effect of understanding and change.
     As a result, TCET NSS volunteers made 2000+ paper bags showing immense strength of unity and togetherness. The project is a big example of showing that small actions towards a positive motive can lead to big results.
@@ -90,6 +118,8 @@ const major_projects = [
   {
     project: "Eco Carry Drive : Paper Bag Distribution",
     domain: "ENVIRONMENT",
+    images: [...Major_HD.EcoCarryBag],
+    reduced_images: [...Major_simple.EcoCarryBag],
     quote: `Hold the earth, in bags of worth.`,
     main: `"Small acts, big impact: Together, we make our world cleaner and greener!" This powerful sentiment captures the essence of the TCET NSS UNIT's Eco-Carry Drive project. While it might seem like a simple effort, the distribution of more than 2000 paper bags that are made by the volunteers themselves, in the community carried a profound message about the harm caused by plastic and the positive change that small actions can bring to our environment.
     The TCET NSS volunteers, forming groups equipped with self-made posters and slogans advocating for the use of paper bags. These visual aids made it easy to explain why choosing paper over plastic is a better choice for our planet. The community response was heartening, people not only accepted the paper bags but also grasped the importance of steering clear of plastic. Some even shared the volunteers' view, recognizing the harm caused by plastic bags and pledging to avoid them.
@@ -101,6 +131,8 @@ const major_projects = [
   {
     project: "Booster Dose Vaccination Drive",
     domain: "HEALTH",
+    images: [...Major_HD.BoosterDose],
+    reduced_images: [...Major_simple.BoosterDose],
     quote: `Strength in unity, immunity in boosters.`,
     main: `The TCET NSS Unit was coordinating a comprehensive Booster Dose Vaccination Drive, recognizing the imperative of disseminating information to maximise participation. The initiative began with an extensive awareness campaign, where volunteers visited every class, adhering to COVID Standard Operating Procedures (SOPs). Concurrently, messages were strategically broadcasted across official college groups, ensuring broad visibility and participation. Subsequently, the drive itself unfolded, with NSS Volunteers diligently ensuring its success while strictly adhering to COVID SOPs.
     During the drive, both faculty and students were assigned designated positions, emphasising the mandatory wearing of masks throughout the event. Recognizing the importance of personal health, volunteers were encouraged to avail themselves of the vaccine, particularly the Booster Dose, in alignment with the Government of India's announcement. Remarkably, all eligible volunteers seized this opportunity, contributing to the overall success of the vaccination drive.
@@ -111,13 +143,39 @@ const major_projects = [
   {
     project: "Raktdaan Se JeevanDaan : Blood Donation Camp",
     domain: "HEALTH",
+    images: [...Major_HD.BloodDonation],
+    reduced_images: [...Major_simple.BloodDonation],
     quote: `Be bold, donate gold - your life-saving blood, so untold.`,
     main: `The TCET NSS UNIT organises a significant Blood Donation Camp at the Thakur College of Engineering and Technology, Kandivali (E). The project aims to highlight the importance of regular blood donation, emphasising its crucial role in reducing mortality rates and fostering a collective sense of unity, compassion, and social responsibility.
-    Enthusiastic volunteers actively participate contributing to the seamless execution of the project. The volunteers handle registration and certification, maintain discipline, and assist doctors during the camp.  
+    Enthusiastic volunteers actively participate contributing to the seamless execution of the project. The volunteers handle registration and certification, maintain discipline, and assist doctors during the camp.
     100+ donors generously donate blood, demonstrating the success of the project in encouraging community participation. The learning objectives were met as volunteers are educated about blood donation protocols and learn about the significant impact of their contributions on society's health and well-being. Feedback from volunteers reveal the effectiveness of communication and the importance of active participation.
     A feedback session further enhanced the understanding of volunteers' experiences. The project not only engages the community but also encourages personal responsibility, making a positive and lasting impact on society's well-being. It highlights the significance of collective efforts in contributing to a noble cause and underscore the vital role of the TCET NSS UNIT in community welfare.
     `,
     summary: `The TCET NSS UNIT organised an impactful Blood Donation Camp at Thakur College of Engineering and Technology, Kandivali(E). 100+ donors actively participate in the enthusiastic volunteers in various roles. The project aims to create awareness about regular blood donation, educate on timely access, and foster a sense of unity and social responsibility. Feedback highlights the effective communication and active participation, emphasising the positive impact on society's well-being`,
+  },
+  {
+    project: "Free Medical CheckUp Camp",
+    domain: "HEALTH",
+    images: [...Major_HD.MedicalCamp],
+    reduced_images: [...Major_simple.MedicalCamp],
+    quote: `Check your health, boost your wealth.`,
+    main: `TCET NSS volunteers actively engaged in disciplined volunteering during the Medical Checkup camp. Various groups were assigned distinct tasks, showcasing the versatility of their roles. Some volunteers guided teachers through the process, ensuring a smooth flow, while others focused on confirming signatures, a crucial aspect of maintaining order. While discipline volunteering is a familiar aspect of TCET NSS events, what set this camp apart was the unique dynamic of exercising discipline among teachers.
+    The motive behind this disciplined volunteering was to contribute to the efficiency and organisation of the Medical Checkup camp. By coordinating with teachers, volunteers aimed to create a well-structured environment, ensuring that the camp ran seamlessly. This experience allowed volunteers to understand the importance of discipline not only in managing attendees but also in collaborating with educators, emphasising the role of teamwork in the success of such community-oriented initiatives.
+    In this particular volunteering endeavour, TCET NSS volunteers learned that discipline is a multifaceted concept. Beyond maintaining order among attendees, it involves collaborating with other stakeholders, such as teachers, to ensure the event's success. This unique perspective reinforced the idea that discipline extends beyond individual actions and requires coordinated efforts among volunteers and educators alike. The experience served as a valuable lesson in teamwork, adaptability, and the broader impact of disciplined volunteering in community service initiatives.
+    `,
+    summary: `TCET NSS volunteers took part in disciplined volunteering at a Medical Checkup camp, handling various tasks like guiding teachers about the process and confirming signatures. Unlike usual events, here, discipline extended to coordinating with teachers. The motive was to ensure camp efficiency and organisation. The learning emphasised the importance of teamwork and adaptability in disciplined volunteering, showing that maintaining order involves collaboration beyond managing attendees.
+    `,
+  },
+  {
+    project: "Fit India Movement : Fitness Activity",
+    domain: "HEALTH",
+    images: [...Major_HD.FitInida],
+    reduced_images: [...Major_simple.EcoCarryBag],
+    quote: `Step up, stay fit - that's the Fit India spirit.`,
+    main: `TCET NSS Unit took a proactive step in promoting health and fitness by organising a Fitness Activity aligned with the Fit India movement. The primary motive behind this initiative was to encourage volunteers and the community to embrace a healthier lifestyle. The session commenced with invigorating warm-up exercises, setting the tone for a holistic fitness experience.
+    Volunteers actively participated in various yogic exercises like Tadasana and Savasana, focusing on enhancing physical flexibility and strength. An essential aspect of the session was the incorporation of meditation, a practice known to boost mental well-being. This highlighted the importance of not only physical fitness but also the profound impact of exercises on mental health, emphasising a balanced approach to overall well-being.
+    As the fitness session drew to a close, volunteers engaged in chill-out exercises designed to promote relaxation. The learning from this initiative extended beyond the physical aspect of fitness. Volunteers gained insights into the interconnectedness of physical and mental health, recognizing the importance of a well-rounded approach to staying healthy. Overall, the fitness activity served as a reminder that incorporating simple exercises, meditation, and relaxation into daily routines can contribute significantly to a healthier and more balanced lifestyle, aligning with the ethos of the Fit India movement`,
+    summary: `TCET NSS Unit organised a fitness activity aligning with the Fit India movement. Starting with warm-up exercises, volunteers engaged in various yogic practices. The session incorporated meditation to enhance mental well-being. The fitness activity concluded with chill-out exercises for relaxation. The learning from this initiative is the holistic approach to well-being, combining physical and mental fitness. The simple exercises emphasised the importance of a balanced routine for overall health and vitality.`,
   },
 ];
 
@@ -184,7 +242,15 @@ const minor_project = [
   },
   {
     project: "Amrit Kalash : Pot Painting",
-    full: [FullImages.AmritKalash.img1, FullImages.AmritKalash.img2, FullImages.AmritKalash.img3, FullImages.AmritKalash.img4, FullImages.AmritKalash.img5, FullImages.AmritKalash.img6, FullImages.AmritKalash.img7],
+    full: [
+      FullImages.AmritKalash.img1,
+      FullImages.AmritKalash.img2,
+      FullImages.AmritKalash.img3,
+      FullImages.AmritKalash.img4,
+      FullImages.AmritKalash.img5,
+      FullImages.AmritKalash.img6,
+      FullImages.AmritKalash.img7,
+    ],
     domain: "EDUCATION",
     summary:
       "Dive into artistic expression with TCET NSS UNIT, from the initial white layer to the symbolic depth of Indian patriotism. TCET NSS Volunteers' dedication created more than a painted pot; they crafted cultural significance. Uncover the beauty of tradition, nurture creativity, and join a unifying journey where art binds us spiritually and culturally",
@@ -391,7 +457,7 @@ const minor_project = [
 ];
 
 const domain_names = [
-  { name: "All", search:"", icon: Heart },
+  { name: "All", search: "", icon: Heart },
   { name: "Environment", search: "ENVIRONMENT", icon: Earth },
   { name: "Education", search: "EDUCATION", icon: Book },
   { name: "Society", search: "SOCIETY", icon: UserGroup },
@@ -405,21 +471,27 @@ const domain_index = {
   Education: 2,
   Society: 3,
   health: 4,
-  "NSS CAMP": 5
-}
+  "NSS CAMP": 5,
+};
 
-export default function ProjectDisplay({domain}) {
-  const [selectedDomain, setSelectedDomain] = useState(domain_index[domain] || 0);
+export default function ProjectDisplay({ domain }) {
+  const [selectedDomain, setSelectedDomain] = useState(
+    domain_index[domain] || 0
+  );
   const [query, setQuery] = useState("");
   console.log(query);
   useEffect(() => {
     document.title = "Projects | TCET NSS UNIT";
   });
-  const filtered_major_items = major_projects.filter((item) =>
-    item.project.toLowerCase().includes(query.toLowerCase()) && item.domain.includes(domain_names[selectedDomain].search)
+  const filtered_major_items = major_projects.filter(
+    (item) =>
+      item.project.toLowerCase().includes(query.toLowerCase()) &&
+      item.domain.includes(domain_names[selectedDomain].search)
   );
-  const filtered_minor_items = minor_project.filter((item) =>
-    item.project.toLowerCase().includes(query.toLowerCase()) && item.domain.includes(domain_names[selectedDomain].search)
+  const filtered_minor_items = minor_project.filter(
+    (item) =>
+      item.project.toLowerCase().includes(query.toLowerCase()) &&
+      item.domain.includes(domain_names[selectedDomain].search)
   );
   return (
     <div className="projects-display-container">
