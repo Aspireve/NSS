@@ -1,8 +1,7 @@
-import Facebook from "../assets/static_images/facebook.svg";
-import Instagram from "../assets/static_images/instagram.svg";
-import LinkedIn from "../assets/static_images/linkedin.svg";
-import Twitter from "../assets/static_images/square-x-twitter.svg";
-import "../styles/home/socials.css";
+import Instagram from "../../assets/static_images/instagram.svg";
+import LinkedIn from "../../assets/static_images/linkedin.svg";
+import Twitter from "../../assets/static_images/square-x-twitter.svg";
+import "../../styles/home/socials.css";
 
 export default function Socials() {
   return (
@@ -12,15 +11,11 @@ export default function Socials() {
         Follow our socials to get the most recent updates about all our projects
       </p>
       <div className="socials-icon-links">
-        <div className="social-icon">
-          <img src={Facebook} className="facebook" alt="facebook logo" />
-          <p>@tcetnss</p>
-        </div>
-        <div className="social-icon" onClick={() => window.location = "https://www.instagram.com/tcetnssunit"}>
+        <div className="social-icon" onClick={() => window.open("https://www.instagram.com/tcetnssunit", '_blank')}>
           <img src={Instagram} className="instagram" alt="instagram logo" />
           <p>@tcetnssunit</p>
         </div>
-        <div className="social-icon" onClick={() => window.location = "https://x.com/nss_tcet"}>
+        <div className="social-icon" onClick={() => window.open("https://x.com/nss_tcet", '_blank')}>
           <img src={Twitter} className="twitter" alt="twitter logo" />
           <p>@nss_unit</p>
         </div>

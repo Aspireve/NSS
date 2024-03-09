@@ -6,7 +6,7 @@ import {
   AboutObjectives,
   AboutMagazine
 } from "../components/about.js";
-import { Map, Socials } from "../components/common.js";
+import { Map, Socials } from "../components/Common/index.js";
 import { useEffect } from "react";
 
 export default function About() {

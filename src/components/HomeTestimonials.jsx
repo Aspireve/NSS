@@ -3,51 +3,57 @@ import { useEffect, useState, useRef } from "react";
 import ArrowLeft from "../assets/static_images/arrow-left-solid.svg";
 import ArrowRight from "../assets/static_images/arrow-right-solid.svg";
 import nss_chairperson from "../assets/home/nss_chairperson.png";
-import deputyPo from "../assets/home/deputy-po-1.png";
-import satyam from "../assets/home/council-satyam.png";
-import ved from "../assets/home/jnr-council-ved.png";
+import Tanay from "../assets/home/Tanay.webp";
+import Jitesh from "../assets/home/Jitesh-Dubey.webp";
+import Himanshu from "../assets/home/himanshu singh.png"
+import ExCouncil from "../assets/home/ExCouncil.png";
 import { useNavigate } from "react-router-dom";
 
 const testimonial_cards = [
   {
-    name: "Mr. Ved Vora",
-    testament:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo molestias officia voluptas natus numquam recusandae laboriosam mollitia cum nam",
-    image: ved,
-    position: "Junior Council",
-    period: "(2023 - 24)",
+    name: "Mr. Rohit Yadav",
+    testament: `JAI HIND ! Just to be clear this is my First Ever Feedback in the journey of NSS, and I am glad to be giving the feedback as a Council. 😌 As we all know we are the so called CORONA BATCH, but our particular Unit from NSS too, is the CORONA UNIT as our seniors too got more offline exposure and our juniors will also surely get all upcoming projects in online mode. (Humse ki kuch khaas lagav tha ishwar ko ). Ab kya hi kar sakte hain yeh sochke poora man lagake projects complete kiye, council ki daant khaaye aur dekhte hi dekhte TCET ka sabse bada aur pyaar ek NSS PARIVAAR ban gaya . Council ne 3 cheezen sikhayi thi - 3 Principles of NSS, DISCIPLINE, PUNTUALITY & RESPECT and following all these principles will eventually make all the volunteers unite which is true. Talking about SE ka journey, I feared and respected our Councils a lot and did all my projects with utmost sincerity because (Council ka daant na khaana pade 😂 ), humare TE sabse best the, who always motivated us and helped us throughout the projects (Jaldi karo Council dekhenge toh chillaienge). Looking at these motivated seniors and also our batchmates bonding very well was one of the best parts jo bahot yaad aaienge. I will always be greatfull to have got the wonderfull oppurtunity of serving as the NSS COUNCIL in my TE, after 3 Stages of Interview (which is the most in any body of TCET ), and after becoming the COUNCIL the way people, especially NSS Volunteers will look at you totally changes. (NSS COUNCIL main hai bhai watt toh hai kaafi izzat hai inki). Apart from this the main motivation was our SE, (SE ke baccho pe sabse zyada dhyaan dena hai NSS ka future wahi honge, unko acche se sab kuch sikhana hai #legacy must go on) from recruiting them to teaching them basic values and legacies of NSS, ek ek kaam ke peeche sabne bahot mehnat aur efforts liye hain. TCET main rehke NSS Recruitment nahi experience kiya toh kya TCETian banoge tum , ekdum Roadiess Feelzz. Major Events jaise Republic Day, Vaccination Drive, Blood Donation Camp, Old Age Home Visit, Awareness in Singh Estate jo NSS ka main chehra aur focus rehte hain woh humne apne UNIT pe ekdum acche sur sabhya tareeke se complete kiya, iss samay samajh aa gaya ki yeh volunteers masti ke saath saath kaam bhi ekdum acche se karte hain, NSS Volunteers ke Discipline aur Puntuality ke charche poore TCET main hain . Having made so many memories and given so much efforts for this unit, it is really painful that this all is finally coming to an end. (As told by our Councils "Yeh ek saal kaise nikal jaiega na pata bhi nahi chalega ek ek moment enjoy karo aur poori mehnat se kaam karo") Will always remember each and every volunteer of our unit, SE aur TE dono ne bahot daant bhi khaayi hai, gusse wala look bhi dekha hai aur saath diya hai poora saal 😂. This journey was really filled with many ups and downs but the ones who always were by my side were my Council Mates "Khushi, Mayank, Om, Chhayank, Praveer, Priyanshu & Vaishnavi". You guys made it seem like a cakewalk for us, people will never know how hectic and complicated it was the way we handled it. As said in NSS "Once a Volunteer, always a Volunteer", we will always be a helping hand for our unit and am excited to see our juniors carry the legacy of NSS throughout their journey. JAI HIND !`,
+    image: ExCouncil,
+    position: "Ex Council",
+    period: "(2020 - 22)",
   },
   {
-    name: "Ms. Jyoti Vanave",
+    name: "Dr. B.K. Mishra",
+    testament: `TCET prioritises comprehensive student development, notably through the National Service Scheme (NSS) established in 2005. The NSS UNIT engages undergraduate students voluntarily in diverse social service activities, contributing to national development and socio-economic progress. Emphasising social awareness, dignity of labour, and a sense of responsibility, the program moulds future engineers to identify and address societal challenges. The TCET NSS UNIT, known for its exemplary organisation, conducts weekly projects showcasing commendable punctuality and discipline. I, Dr. B. K. Mishra, after the acknowledgement of the  initiative, express the pride in the volunteers and applauds their efforts to bring forth the Website that showcase the hardwork and volunteering of our determined Unit.`,
+    image: nss_chairperson,
+    position: "Chairperson",
+    period: "(2000 - present)",
+  },
+  {
+    name: "Dr. Vinita Agarwal",
     testament:
       "The TCET NSS UNIT upholds core values of Respect, Discipline, and Punctuality, guided by the motto 'NOT ME BUT YOU.' Comprising 200 dedicated volunteers from various branches, they unite to serve the community with unwavering dedication and responsibility. Persistent and committed, the unit prioritises community upliftment, addressing local issues with solutions. Even during lockdown, volunteers brought joy, and now, with offline activities, their enthusiasm for community service has heightened. Post-tenure, volunteers evolve into adept multitaskers, earning our complete trust and everlasting pride.",
-    image: deputyPo,
-    position: "Deputy Programme Officer",
-    period: "(2023 - present)",
+    image: "",
+    position: "Programme Officer",
+    period: "(20000 - present)",
   },
   {
-    name: "Dr. B.K. Mishra",
+    name: "Mr. Tanay Agarwal",
     testament:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo molestias officia voluptas natus numquam recusandae laboriosam mollitia cum nam",
-    image: nss_chairperson,
-    position: "Chairperson",
-    period: "(XXXX - present)",
-  },
-  {
-    name: "Mr. Satyam Rudra",
-    testament:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo molestias officia voluptas natus numquam recusandae laboriosam mollitia cum nam",
-    image: satyam,
+    image: Tanay,
     position: "Council",
-    period: "(2023 - 24)",
+    period: "(2022 - present)",
   },
   {
-    name: "Dr. B.K. Mishra",
+    name: "Mr. Jitesh Dubey",
     testament:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo molestias officia voluptas natus numquam recusandae laboriosam mollitia cum nam",
-    image: nss_chairperson,
-    position: "Chairperson",
-    period: "(XXXX - present)",
+    image: Jitesh,
+    position: "Volunteer",
+    period: "(2022 - present)",
+  },
+  {
+    name: "Mr. Himanshu Singh",
+    testament: `One joins NSS in order to be altruistic and assist those around them, but I can guarantee with certainty that volunteering with this amazing FAMILY will help you become the best version of yourself. NSS is without a doubt our college's most formidable body, as evidenced by our effort and zeal, but don't mistake this strength for a lack of enjoyment. My time as a volunteer has been the most fun I've had in years. From debate competitions to Old age home visits, from blood donations to The ELECTRIC Sojourn Dance, NSS has given me a variety of settings and opportunities to strengthen my ability to balance my need to serve others with my need to have a good time. It is here that I have witnessed my efforts make a significant difference in the lives of the needy, as well as where I have witnessed perfect strangers become best friends. Aise hi nahi hum khudko family ka title dete hai, when I needed it, I had a stronghold of 200 volunteers on my side, which is what every college student hopes for. Even if my official volunteer status has ended (once a volunteer, always a volunteer), my connection to NSS simply grows deeper with time. I will be grateful to my dependable councils and my fellow volunteers forever and always.`,
+    image: Himanshu,
+    position: "Ex Volunteer",
+    period: "(2021 - 2023)",
   },
 ];
 
@@ -187,7 +193,6 @@ function TestimonialCard() {
             </p>
           </div>
         </div>
-        ;
       </div>
       <div className="testimonial-scroller">
         <img src={ArrowLeft} alt="Left Arrow" onClick={displayPrev} />

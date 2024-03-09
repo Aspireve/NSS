@@ -6,7 +6,7 @@ import {
   HomeRecentProjects,
   HomeTestimonials
 } from "../components/index";
-import { Map } from "../components/Common/index"
+import { Map, Socials } from "../components/Common/index"
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -22,9 +22,9 @@ const Home = () => {
       <HomeObjectives />
       {/* <HomeDomains nav={navigate} />
       <HomeAchievements />
-      <HomeRecentProjects nav={navigate} />
-      <HomeTestimonials />
-      <Socials />*/}
+      <HomeRecentProjects nav={navigate} /> */}
+      <HomeTestimonials /> 
+      <Socials />
       <Map /> 
     </>
   );

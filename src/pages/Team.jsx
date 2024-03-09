@@ -6,7 +6,7 @@ import ReactCardFlip from "react-card-flip";
 import JcContainer from "../components/TeamCardcontainer";
 import NSS_chairperson from "../assets/home/nss_chairperson.png";
 import { Map } from "../components/Common/index";
-import Socials from "../components/HomeSocials";
+import Socials from "../components/Common/Socials";
 import SatishSingh from "../assets/team/Dr. Satish Singh.png";
 import VinitaAgarwal from "../assets/team/Dr. Vinita Agarwal.png";
 import SajjanKumar from "../assets/team/Mr. Sajjankumar Lal.png";
