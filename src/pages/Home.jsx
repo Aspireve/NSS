@@ -22,8 +22,8 @@ const Home = () => {
       <HomeHero />
       <HomeWhoAreWe nav={navigate} />
       <HomeWhatWeDo nav={navigate} />
-      {/* <HomeObjectives />
-      <HomeDomains nav={navigate} />
+      <HomeObjectives />
+      {/* <HomeDomains nav={navigate} />
       <HomeAchievements />
       <HomeRecentProjects nav={navigate} />
       <HomeTestimonials />

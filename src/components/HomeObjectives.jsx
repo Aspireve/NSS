@@ -11,7 +11,7 @@ const objectiveText = [
     simple_image: HomeImagesReduced.community_simple,
     title: "Community Understanding",
     description:
-      "Community understanding involves mutual empathy, cooperation, and shared values among group members, fostering inclusivity and collaboration towards common goals. NSS plays a key role in promoting this through service, social engagement, and youth development initiatives, enhancing community cohesion and individual growth.",
+      "Community understanding is built on empathy, cooperation, and shared values, fostering inclusivity and collaboration. NSS promotes this through service, social engagement, and youth development, enhancing community cohesion and individual growth.",
   },
   {
     image: HomeImages.assesment,
@@ -25,14 +25,14 @@ const objectiveText = [
     simple_image: HomeImagesReduced.competance_simple,
     title: "Competence Development",
     description:
-      "Competence development is about improving skills, knowledge, and abilities for personal and professional growth. It requires continuous learning, practice, and adapting to new experiences. NSS ensures individuals expand capabilities to excel in roles, contribute to teams, and face challenges confidently.",
+      "Competence development fosters personal and professional growth through learning and adaptation. NSS ensures individuals excel in roles, contribute to teams, and face challenges confidently.",
   },
   {
     image: HomeImages.leadership,
     simple_image: HomeImagesReduced.leadership_simple,
     title: "Leadership & Democracy",
     description:
-      "Democratic leadership entails integrity, inclusive participation, and valuing diverse perspectives. Leaders trained in NSS empower citizens through transparency, accountability, and active engagement. Democracy flourishes with leaders who champion equality, justice, and individual rights, ensuring government by and for the people.",
+      "Democratic leadership values integrity, inclusivity, and diverse perspectives. NSS-trained leaders empower citizens through transparency, accountability, and engagement, fostering government by and for the people.",
   },
 ];
 

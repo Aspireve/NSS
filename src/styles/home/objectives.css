@@ -54,7 +54,7 @@
 
 .home-objective-card {
     border-radius: 20px;
-    width: 23%;
+    width: 24%;
     display: block;
     position: relative;
     overflow: hidden;
@@ -62,7 +62,7 @@
 
 .home-objective-card-image {
     width: 100%;
-    height: 25rem;
+    height: 23rem;
     object-fit: cover;
     object-position: top;
     transition: 500ms;
@@ -158,7 +158,7 @@
 
     .home-objective-card {
         width: 100%;
-        height: 15rem;
+        height: fit-content;
     }
 
     .home-objective-card img {
@@ -173,7 +173,7 @@
     }
 
     .home-objective-card-text>p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .home-objective-card-text {
@@ -185,23 +185,37 @@
     .home-objective-card>div>p {
         opacity: 1
     }
+    .home-objective-card-image {
+        height: 18rem;
+    }
 
 }
 
 @media screen and (max-width:650px) {
+    .home-objective-card-text {
+        padding: 0;
+    }
     .home-objective-card {
         width: 100%;
+        height: 100%;
+    }
+    .home-objective-card-image {
         height: 19rem;
     }
 }
 
 @media screen and (max-width:425px) {
+    .home-objective-container {
+        width: 90%;
+        margin: none;
+    }
     .home-objective-header {
         font-size: 2.5rem;
     }
 
     .home-objective-quote {
         font-size: .9rem;
+        width: 100%;
     }
     .home-objective-cards-container {
         display: flex;
@@ -213,20 +227,30 @@
     }
     .home-objective-card {
         width: 100%;
-        height: 14rem;
+        height: 100%;
+    }
+    .home-objective-card-image {
+        height: 15rem;
     }
 }
 
 @media screen and (max-width:375px) {
     .home-objective-card {
         width: 100%;
-        height: 16rem;
+        height: 100%;
+        /* height: 16rem; */
+    }
+    .home-objective-card-image {
+        height: 17rem;
     }
 }
 
 @media screen and (max-width:320px) {
     .home-objective-card {
         width: 100%;
-        height: 18rem;
+        /* height: 18rem; */
+    }
+    .home-objective-card-image {
+        height: 20rem;
     }
 }
