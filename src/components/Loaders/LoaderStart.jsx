@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import static_image from "../assets/static_images/index";
-import "../styles/loading/startscreen.css";
+import static_image from "../../assets/static_images/index";
+import "../../styles/loading/startscreen.css";
 
 export default function LoadingScreen() {
   useEffect(() => {
