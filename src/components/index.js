@@ -1,6 +1,6 @@
 import React from "react"
 
-export const Navbar = React.lazy(() => import ("./Navbar"))
+export const Navbar = React.lazy(() => import ("./Common/Navbar"))
 export const Footer = React.lazy(() => import ("./Footer"))
 export const HomeHero = React.lazy(() => import("./HomeHero"))
 export const HomeWhoAreWe = React.lazy(() => import("./HomeWhoarewe"))
