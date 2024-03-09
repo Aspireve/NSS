@@ -13,6 +13,7 @@ nav {
     align-items: center;
     margin: auto;
     padding: .7rem 0;
+    user-select: none;
     color: var(--_font-color);
 }
 
@@ -192,7 +193,15 @@ nav {
     .logo-title {
         display: none;
     }
+    .logo-image {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
     .sidebar-menu {
         width: 100%;
+    }
+    .menu-bar, .menu-bar > img {
+        height: 2rem;
+        width: 2rem;
     }
 }

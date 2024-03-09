@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import "../styles/home/hero.css";
+import { HomeHero, HomeWhoAreWe } from "../components/Home/index";
 import {
-  HomeHero,
-  HomeWhoAreWe,
   HomeWhatWeDo,
   HomeObjectives,
   HomeDomains,
@@ -23,13 +22,13 @@ const Home = () => {
       <HomeHero />
       <HomeWhoAreWe nav={navigate} />
       <HomeWhatWeDo nav={navigate} />
-      <HomeObjectives />
+      {/* <HomeObjectives />
       <HomeDomains nav={navigate} />
       <HomeAchievements />
       <HomeRecentProjects nav={navigate} />
       <HomeTestimonials />
       <Socials />
-      <Map />
+      <Map /> */}
     </>
   );
 };

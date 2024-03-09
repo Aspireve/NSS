@@ -99,3 +99,12 @@ footer {
         font-size: .8rem;
     }
 }
+
+@media screen and (max-width:250px){
+    .section-div > ul > li {
+        padding-bottom: 0.2rem;
+    }
+    .links {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

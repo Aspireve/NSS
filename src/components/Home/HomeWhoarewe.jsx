@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import nss_logo from "../assets/static_images/nss_logo.svg"
-import "../styles/home/whoarewe.css";
-import useScrollVisibility from "../hooks/useScrollAnimation";
+import nss_logo from "../../assets/static_images/nss_logo.svg"
+import "../../styles/home/whoarewe.css";
+import useScrollVisibility from "../../hooks/useScrollAnimation";
 
 export default function WhoAreWe({nav}) {
   const aboutUsTitleRef = useRef(null);

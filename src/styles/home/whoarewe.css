@@ -188,6 +188,7 @@ section.appear {
 @media screen and (max-width:425px) {
     .about-us {
         flex-direction: column;
+        width: 90%;
     }
 
     .nss-logo-container {
@@ -195,7 +196,7 @@ section.appear {
     }
 
     .about-us-text h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .about-us-text p {

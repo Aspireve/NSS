@@ -3,6 +3,7 @@
     width: 100%;
     position: relative;
     background-color: black;
+    user-select: none;
 }
 
 .hero-text{

@@ -1,7 +1,7 @@
 import React from 'react'
-import teamNSS from "../assets/home/team-NSS.jpg"
-import teamNSSReduced from "../assets/home_reduced/team_NSS.webp"
-import Image from "../containers/Image"
+import teamNSS from "../../assets/home/team-NSS.jpg"
+import teamNSSReduced from "../../assets/home_reduced/team_NSS.webp"
+import Image from "../../containers/Image"
  
 const Hero = () => {
   return (

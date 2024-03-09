@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "../styles/footer.css";
+import "../../styles/footer.css";
 
 function FooterSection({ title, list, link }) {
     const navigate = useNavigate()
@@ -14,7 +14,6 @@ function FooterSection({ title, list, link }) {
     </div>
   );
 }
-
 
 export default function Footer() {
   const navigate = useNavigate()
@@ -58,8 +57,8 @@ export default function Footer() {
         <p>TCET-NSS. All rights reserved</p>
         <p className="developers-link" onClick={() => navigate("../developers")}>Meet the Developers</p>
         <ul>
-          <a href="https://www.instagram.com/tcetnssunit" target="blank" style={{textDecoration: "none", color: "inherit"}}><li>Instagram</li></a>
-          <a href="https://x.com/nss_tcet" target="blank" style={{textDecoration: "none", color: "inherit"}}><li>Twitter</li></a>
+          <a rel="noopener noreferrer" href="https://www.instagram.com/tcetnssunit" target="blank" style={{textDecoration: "none", color: "inherit"}}><li>Instagram</li></a>
+          <a rel="noopener noreferrer" href="https://x.com/nss_tcet" target="blank" style={{textDecoration: "none", color: "inherit"}}><li>Twitter</li></a>
         </ul>
       </div>
     </footer>

@@ -13,11 +13,12 @@ import {
   Projects,
   Home,
 } from "./pages/index";
-import { SlowInternet } from "./components/Loaders/index";
+import { LoaderStart, SlowInternet } from "./components/Loaders/index";
 
 function App() {
   return (
     <div className="app_container">
+      <LoaderStart />
       <BrowserRouter>
         <ScrollToTop />
         <Suspense fallback={<SlowInternet />}>

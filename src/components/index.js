@@ -1,9 +1,9 @@
 import React from "react"
 
-export const Navbar = React.lazy(() => import ("./Common/Navbar"))
-export const Footer = React.lazy(() => import ("./Footer"))
-export const HomeHero = React.lazy(() => import("./HomeHero"))
-export const HomeWhoAreWe = React.lazy(() => import("./HomeWhoarewe"))
+// export const Navbar = React.lazy(() => import ("./Common/Navbar"))
+// export const Footer = React.lazy(() => import ("./Footer"))
+// export const HomeHero = React.lazy(() => import("./Home/HomeHero"))
+export const HomeWhoAreWe = React.lazy(() => import("./Home/HomeWhoarewe"))
 export const HomeWhatWeDo = React.lazy(() => import("./HomeWhatwedo"))
 export const HomeObjectives = React.lazy(() => import("./HomeObjectives"))
 export const HomeDomains = React.lazy(() => import("./HomeDomains"))
