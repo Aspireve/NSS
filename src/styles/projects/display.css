@@ -7,7 +7,20 @@
     height: 90vh;
 }
 
+.scale-projects-card.minor {
+    height: 20vh;
+}
 
+.scale-projects-card.minor> img {
+    height: 100%;
+    width: 20vh;
+    object-fit: cover;
+}
+
+
+.scale-projects-card.major {
+    height: fit-content;
+}
 
 .domain-option-filters-containers {
     width: 20%;
@@ -189,6 +202,10 @@
 .scale-project-text>h4{
     font-family: Roboto-web;
     font-weight: 400;
+}
+.scale-projects-card.major > img {
+    height: 25vh;
+    object-fit: cover;
 }
 .minor-modal-container {
     position: fixed;
@@ -421,7 +438,6 @@
     }
     .scale-projects-card-display.minor {
         grid-template-columns: repeat(1, 1fr) !important;
-        background-color: green;
         width: 100%;
     }
     .projects-display-container {

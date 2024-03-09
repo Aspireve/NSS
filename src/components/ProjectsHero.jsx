@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "../styles/projects/hero.css";
 import beach from "../assets/projects/beach-cleaning.jpg";
 import ganesh from "../assets/projects/ganesh.jpg";
@@ -18,10 +18,22 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 export default function ProjectHero() {
   const { page, next, currentStepIndex } = useCarousel([
     <Image simple_image={beach_reduced} HD_image={beach} alt={"beach"} />,
-    <Image simple_image={newspaper_reduced} HD_image={newspaper} alt={"newspaper"} />,
+    <Image
+      simple_image={newspaper_reduced}
+      HD_image={newspaper}
+      alt={"newspaper"}
+    />,
     <Image simple_image={ganesh_reduced} HD_image={ganesh} alt={"ganesh"} />,
-    <Image simple_image={nasha_mukti_reduced} HD_image={nasha_mukti} alt={"nasha_mukti"} />,
-    <Image simple_image={online_health_reduced} HD_image={online_health} alt={"online_health"} />,
+    <Image
+      simple_image={nasha_mukti_reduced}
+      HD_image={nasha_mukti}
+      alt={"nasha_mukti"}
+    />,
+    <Image
+      simple_image={online_health_reduced}
+      HD_image={online_health}
+      alt={"online_health"}
+    />,
     <Image simple_image={blood_reduced} HD_image={blood} alt={"blood"} />,
   ]);
   useEffect(() => {
@@ -66,10 +78,14 @@ export default function ProjectHero() {
         id="parent-magestic-carousel"
         onClick={next}
       >
-        <TransitionGroup style={{height: '100%'}}>
-          <CSSTransition key={currentStepIndex}
+        <TransitionGroup style={{ height: "100%" }}>
+          <CSSTransition
+            key={currentStepIndex}
             timeout={1000}
-            classNames="animated-carousel" >{page}</CSSTransition>
+            classNames="animated-carousel"
+          >
+            {page}
+          </CSSTransition>
         </TransitionGroup>
         <div className="cursor-following-div" id="cursor-following-div">
           <div>

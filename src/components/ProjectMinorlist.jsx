@@ -3,7 +3,10 @@ import health from "../assets/projects/online-health.jpg";
 import MinorModal from "./ProjectMinormodal";
 
 export default function MinorProjectsDisplay({ projects }) {
-  const [showMinorModal, setShowMinorModal] = useState(false)
+  const [showMinorModal, setShowMinorModal] = useState({
+    display: false,
+    data: null
+  })
   if (projects === null)
     return (
       <section className="scale-projects-container">
@@ -20,13 +23,13 @@ export default function MinorProjectsDisplay({ projects }) {
         {projects.map((project, idx) => (
           <div
             key={"minor-project-" + idx}
-            className="scale-projects-card"
+            className="scale-projects-card minor"
             style={{ display: "flex" }}
-            onClick={() => setShowMinorModal(true)}
+            onClick={() => setShowMinorModal({display: true, data: project})}
           >
             <img
-              src={health}
-              style={{ borderRadius: "20px 0 0 20px", width: "30%" }}
+              src={project.image || health}
+              style={{ borderRadius: "20px 0 0 20px" }}
               alt={`${project.project} ${project.domain}`}
               loading="lazy"
             />
@@ -38,7 +41,7 @@ export default function MinorProjectsDisplay({ projects }) {
           </div>
         ))}
       </div>
-      {showMinorModal && <MinorModal setShowMinorModal={setShowMinorModal}/>}
+      {showMinorModal.display && <MinorModal data={showMinorModal.data} setShowMinorModal={setShowMinorModal}/>}
     </section>
   );
 }

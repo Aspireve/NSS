@@ -1,4 +1,3 @@
-import health from "../assets/projects/online-health.jpg";
 import MajorModal from "./ProjectsMajormodal";
 import { useState } from "react";
 
@@ -23,7 +22,7 @@ export default function MajorProjectsDisplay({ projects }) {
         {projects.map((project, idx) => (
           <div
             key={"major-project-" + idx}
-            className="scale-projects-card"
+            className="scale-projects-card major"
             onClick={() => setShowMajorModal({display: true, data: project})}
           >
             <img

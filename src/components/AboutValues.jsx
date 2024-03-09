@@ -8,21 +8,21 @@ import useScrollVisibility from "../hooks/useScrollAnimation";
 const values = [
   {
     title: "Punctuality",
-    quote: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+    quote: "Punctuality speaks volumes in the language of reliability.",
     icon: Punctuality,
     paragraph:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nostrum repellat vitae ea similique, explicabo provident cum error laboriosam consequatur!",
   },
   {
     title: "Discipline",
-    quote: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+    quote: "Discipline is the bridge between goals and accomplishment.",
     icon: Descipline,
     paragraph:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nostrum repellat vitae ea similique, explicabo provident cum error laboriosam consequatur!",
   },
   {
     title: "Respect",
-    quote: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+    quote: "Respect is a two-way street, earn by giving it.",
     icon: Respect,
     paragraph:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nostrum repellat vitae ea similique, explicabo provident cum error laboriosam consequatur!",

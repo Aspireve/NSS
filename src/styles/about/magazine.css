@@ -41,6 +41,12 @@
     scale: 1.1;
 }
 @media screen and (max-width: 768px) {
+    .magazine-container h2 {
+        font-size: 3rem;
+    }
+    .magazine-container p {
+        text-align: center;
+    }
 
 }
 @media screen and (max-width: 525px) {

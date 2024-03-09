@@ -3,6 +3,7 @@ import "../styles/projects/display.css";
 import Book from "../assets/static_images/book-solid.svg";
 import Heart from "../assets/static_images/heart-solid.svg";
 import HeartPulse from "../assets/static_images/heart-pulse-solid.svg";
+import CampFire from "../assets/static_images/campground-solid.svg"
 import UserGroup from "../assets/static_images/user-group-solid.svg";
 import Earth from "../assets/static_images/earth-americas-solid.svg";
 import MajorProjectsDisplay from "./ProjectMajorlist";
@@ -381,106 +382,132 @@ const major_projects = [
 
 const minor_project = [
   {
-    id: 14,
+    id: 201,
+    image: Major_HD.Preamble,
     project: "Preamble to the Constitution",
     domain: "EDUCATION",
     summary:
       "In celebration of Samvidhan Diwas (Constitution Day) on November 26th, a noteworthy initiative was taken by TCET NSS UNIT, commemorating the adoption of the Constitution of India. TCET NSS Volunteer’s heartfelt tribute to our Constitutionthrough the online reading of the Preamble and receiving the certificate, available in22 Official Languages and English, it's an inclusive embrace of unity in diversity—abeacon of democracy for our nation's foundation. This celebration fosters a deepappreciation for our constitutional values and invokes a sense of pride and belongingamong TCET NSS Volunteers, reinforcing their commitment to upholding India'sdemocratic principles.",
   },
   {
+    id: 202,
+    image: Major_HD.OnlineQuiz,
     project: "Online Quiz on Bharat Loktantra ki janani",
     domain: "EDUCATION",
     summary:
       "Embarking on a fascinating knowledge journey this Constitution Day, TCET NSS Volunteers engage in the Bharat Loktantra ki Janani online quiz—a digital homage to India's democratic heritage conducted on an online government portal. Challenging themselves, testing constitutional prowess, TCET NSS Volunteers join the celebration of Bharat Loktantra, where democracy reigns supreme and receive a certificate for taking the test. This quiz enhances understanding of democratic principles and contributes to the collective celebration of India's democratic legacy, fostering a sense of civic pride among TCET NSS Volunteers",
   },
   {
+    id: 203,
+    image: Major_HD.Poster,
     project: "POSTER MAKING",
     domain: "EDUCATION",
     summary:
       "Poster making is a vibrant aspect of various projects across education, environment, society, and health domains in TCET NSS UNIT. These colourful creations serve as impactful messengers, simplifying complex ideas into visually appealing messages. TCET NSS Volunteers showcase their creativity, turning big concepts into eye-catching visuals. The simplicity of posters makes spreading awareness easier, acting as superheroes in conveying messages effectively. Whether it's about Tree Plantation, Blood Donation Awareness, Road Safety & Traffic Management, or Electricity Conservation Awareness, poster making becomes a dynamic tool for creating understanding and making a positive impact",
   },
   {
+    id: 204,
+    image: Major_HD.Plenarytalk,
     project: "Plenary Talk",
     domain: "EDUCATION",
     summary:
       "Dive into the treasures of ancient Indian wisdom with our enlightening Plenary Talk on the Indian knowledge system conducted by Mumbai University(MU). TCET NSS Volunteers explore the profound insights of Ayurveda, Yoga, Vedic literature, and the interconnectedness of the universe. This captivating talk delves into the richness of our heritage, showcasing the timeless relevance of this knowledge in the modern world. TCET NSS Volunteers embraced the holistic living and sustainable practices embedded in India's knowledge legacy.",
   },
   {
+    id: 205,
+    image: Major_HD.NSSOrientation,
     project: "NSS Orientation",
     domain: "EDUCATION",
     summary:
       "Discover the TCET NSS UNIT's world through an enlightening NSS Orientation, where volunteers learn about the significance of the NSS logo and delve into the roots of NSS Foundation Day. It's more than an orientation; it's a journey into the heart of community service and meaningful engagement. TCET NSS Volunteers engaged in a journey of knowledge and community service, enriching their understanding of this impactful initiative.",
   },
   {
+    id: 206,
+    image: Major_HD.NSSRecruitment,
     project: "NSS SE Recruitment",
     domain: "EDUCATION",
     summary:
       "TCET NSS Volunteers unleashed the power of community engagement through theNSS Recruitment. Aiming to foster stronger connections with S.E. students and adeeper sense of purpose, this initiative enriches the TCET NSS Volunteer’sexperience. By sharing knowledge and experiences, TCET NSS UNIT cultivates aculture of continuous learning. The recruitment serves to expand the TCET NSS UNIT's reach, recruiting dedicated S.E. students. As a result, many students joinedTCET NSS UNIT in building a vibrant community committed to positive change andcollective growth.",
   },
   {
+    
+    id: 207,
+    image: Major_HD.ArticleWriting,
     project: "Article Writing",
     domain: "EDUCATION",
     summary:
       "Unlocking Creativity through Words: TCET NSS UNIT's Article Writing Project provides a platform for TCET NSS Volunteers to explore the profound power of expression. Through heartfelt poems and insightful articles also gets included in the official TCET NSS UNIT’s magazine “Parivartan”, TCET NSS Volunteers delve into diverse themes, passionately sharing their thoughts and ideas. This initiative creates a canvas where voices find resonance, fostering a vibrant community where creativity knows no bounds. ",
   },
   {
+    id: 208,
+    image: Major_HD.Dandiyatra,
     project: "Dandi Memorial Yatra",
     domain: "EDUCATION",
     summary:
       "Embark on a journey through history with the TCET NSS UNIT's Dandi Memorial Yatra which took place at the Gateway Of India, a tribute to Mahatma Gandhi's iconic Dandi March and the sacrifices of freedom fighters. TCET NSS Volunteers immersed themselves in the past, witnessing a captivating skit that unfolded the glorious chapters of India's struggle for Independence. This project aimed to honour the contributions of those who fought for freedom from British rule. Through this immersive experience, volunteers not only gained knowledge but also a profound understanding of the sacrifices that paved the way to independence",
   },
   {
+    id: 209,
+    image: Major_HD.MarinePollution,
     project: "Marine Pollution Seminar",
     domain: "EDUCATION",
     summary:
       "Dive into the depths of understanding with our Marine Pollution project, where knowledge meets action. TCET NSS Volunteers explored the complex factors affecting marine life and enthusiastically talked about solutions. As a result, they not only gained insights into the importance of the marine ecosystem but also contributed to the ongoing conversation on preserving our oceans. Towards the end of the seminar a fun quiz was conducted to test the knowledge gained by the TCET NSS Volunteers and a certificate was given afterwards.",
   },
   {
+    id: 210,
+    image: Major_HD.SeedChange,
     project: "Sow the Seed of Change : Debate",
     domain: "EDUCATION",
     summary:
       "TCET NSS UNIT's initiative for environmental awareness. Volunteers passionately debated on topics like 'India's Independence' and 'Dowry.' This project enhanced communication and critical thinking skills, fostering adaptability. A deeper understanding of complex issues and a showcase of participants' engagement abilities. Experience the results of our dedication to environmental responsibility and active participation in fostering change. ",
   },
   {
+    id: 211,
+    image: Major_HD.PotPainting,
     project: "Amrit Kalash : Pot Painting",
-    full: [
-      FullImages.AmritKalash.img1,
-      FullImages.AmritKalash.img2,
-      FullImages.AmritKalash.img3,
-      FullImages.AmritKalash.img4,
-      FullImages.AmritKalash.img5,
-      FullImages.AmritKalash.img6,
-      FullImages.AmritKalash.img7,
-    ],
     domain: "EDUCATION",
     summary:
       "Dive into artistic expression with TCET NSS UNIT, from the initial white layer to the symbolic depth of Indian patriotism. TCET NSS Volunteers' dedication created more than a painted pot; they crafted cultural significance. Uncover the beauty of tradition, nurture creativity, and join a unifying journey where art binds us spiritually and culturally",
   },
   {
+    
+    id: 212,
+    image: Major_HD.BloodAwareness,
     project: "Blood Donation Awareness",
     domain: "EDUCATION",
     summary:
       "TCET NSS volunteers took a stand for our society's well-being by promoting blood donation awareness. They emphasised the significant impact of individual efforts, showcasing the power of spreading awareness. Donors received certificates and donor cards, highlighting the importance of donating blood. Donating blood saves lives in emergencies, surgeries, and medical situations. This initiative exemplifies how each person contributes to improving community health.",
   },
   {
+    id: 213,
+    image: Major_HD.RoadSeminar,
     project: "Road Safety Seminar",
     domain: "EDUCATION",
     summary:
       "TCET NSS Unit's drive for safer roads partnered with 'Helmet for Life' creating a high-impact seminar on preventing accidents. A speaker's informative presentation emphasised responsible driving and distributed helmets to the TCET NSS Volunteers. Takeaways include certificates, helmets, a sense of responsibility, and a positive shift in driving behaviour. At the end of the seminar, TCET NSS Volunteers had a fun quiz about what they learned in the Road Safety Seminar",
   },
   {
+    
+    id: 214,
+    image: Major_HD.ElectricityConservation,
     project: "Electricity Conservation Awareness",
     domain: "EDUCATION",
     summary:
       "TCET NSS Unit's impactful online project raised awareness on responsible electricity use. TCET NSS Volunteers discussed, created posters, made questionnaires for the survey conducted at Singh Estate, and shared innovative ideas of conserving usage of electricity. Examining electricity bills of their families, neighbours, maids, watchmen, etc, they aimed to promote smart use. The project inspired a sense of responsibility for Mother Earth, fostering a cleaner, sustainable future. Now, armed with knowledge and passion, TCET NSS volunteers lead the charge in teaching efficient electricity use for a greener tomorrow.",
   },
   {
+    
+    id: 215,
+    image: Major_HD.SamvidhanDin,
     project: "Samvidhan Din : Constitution Day",
     domain: "EDUCATION",
     summary:
       "TCET NSS volunteers actively engaged in activities centred around Constitutional Rights, Fundamental Rights, and Democracy. With a powerful start with the National Anthem, the event showcased strong dedication to educating about India's democracy. The day at Mumbai University included expert insights on the Rupee issue, certificates for the volunteers, offering historical perspectives and solutions. The conference emphasised the Constitution's pivotal role, inspiring and motivating TCET NSS Volunteers to contribute to positive societal change. More than a conference, it became a collective effort for a better future and a renewed commitment to uphold our Constitution",
   },
   {
+    id: 216,
+    image: Major_HD.DeshUtsav,
     project: "Desh ke Utsav Pledge",
     domain: "EDUCATION",
     quote: "Cultural threads, where unity spreads.",
@@ -488,6 +515,8 @@ const minor_project = [
       "TCET NSS Volunteers pledged to promote the nation and its heritage, fostering a sense of community involvement from an online government portal and certificates were given to them for taking the pledge. Through virtual showcases and festival participation, TCET NSS Volunteers embraced cultural diversity, uniting beyond differences. This collective commitment goes beyond a ceremony—it's an ongoing journey toward unity, civic responsibility, and cultural celebration. Together, TCET NSS Volunteers advanced their shared commitment to unity, civic responsibility, and the lively celebration of cultural diversity",
   },
   {
+    id: 217,
+    image: Major_HD.VocalLocal,
     project: "Be Vocal About Local Pledge",
     domain: "EDUCATION",
     quote: "Sustainable future, with voices nurtured.",
@@ -495,6 +524,9 @@ const minor_project = [
       "TCET NSS Volunteers unite in pledging for local economic empowerment on an online government portal. Each volunteer commits online, receiving a certificate for their participation. Learnings include the collective impact on local businesses and cultural heritage. With TCET NSS Volunteers participating, the positive project impact enhances the contributing to a favourable image and reinforces our commitment to local empowerment. The pledge emphasises the social impact of choosing local, promoting eco-friendly behaviour. Join us in fostering resilient communities, economic sustainability, and a more vibrant local environment. ",
   },
   {
+    
+    id: 218,
+    image: Major_HD.SwatchhDiwali,
     project: "Swachh Diwali Shubh Diwali Pledge Activity",
     domain: "EDUCATION",
     quote: "Illuminate with care, Diwali pledge we bear.",
@@ -502,6 +534,9 @@ const minor_project = [
       "Embrace a green Diwali with TCET NSS UNIT! Volunteers pledge online through a government portal for an eco-friendly celebration, receiving certificates for their commitment. Learn about the environmental impact of traditional Diwali practices and shift towards sustainable choices in decorations and lighting. TCET NSS Volunteers promoted a cleaner Diwali to peers, family, and the community. Make a positive impact with a pledge for a Swachh and Shubh Diwali.",
   },
   {
+    
+    id: 219,
+    image: Major_HD.NukkadNatak,
     project: "Nukkad Natak On Angdaan",
     domain: "EDUCATION",
     quote: "Not all heroes wear capes! They donate",
@@ -509,6 +544,9 @@ const minor_project = [
       "Step into a world of compassion and commitment with TCET NSS UNIT's Organ Donation Awareness project. Through a captivating skit, TCET NSS Volunteers creatively combined informative posters and impactful slogans, educating the society about the impact of organ donation. Revealing the truth behind myths and encouraging personal responsibility, the heartfelt pledge by TCET NSS Volunteers signifies a small yet impactful step towards fostering a healthier society. TCET NSS Volunteers spread the message of hope and the power of organ donation through creativity and dedication",
   },
   {
+    
+    id: 220,
+    image: Major_HD.Ecoharbour,
     project: "Eco Harbour : E-waste collection drive",
     domain: "ENVIRONMENT",
     quote: "E-waste. End it. Our Planet depends on it.",
@@ -516,6 +554,8 @@ const minor_project = [
       "TCET NSS Unit organises a project to tackle electronic waste. We aim to stop improper disposal that harms our environment.When we gather and recycle old electronic stuff, it not only prevents dangerous materials from getting into our surroundings but also helps us recover valuable materials for reuse, reducing the need for new resources and lessening the environmental impact of making electronics. During the project, our NSS volunteers learn about the importance of responsible e-waste disposal, raising awareness about sustainable practices.",
   },
   {
+    id: 221,
+    image: Major_HD.SwatchattaSeva,
     project: "Swachhata hi Seva",
     domain: "ENVIRONMENT",
     quote: "Time to make a plea to make India defecation free",
@@ -663,7 +703,7 @@ const domain_names = [
   { name: "Education", search: "EDUCATION", icon: Book },
   { name: "Society", search: "SOCIETY", icon: UserGroup },
   { name: "Health", search: "HEALTH", icon: HeartPulse },
-  { name: "NSS Camp", search: "NSS CAMP", icon: HeartPulse },
+  { name: "NSS Camp", search: "NSS CAMP", icon: CampFire },
 ];
 
 const domain_index = {
