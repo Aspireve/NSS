@@ -12,15 +12,15 @@ import {
   Testimonial,
   Projects,
   Home,
-  Loading
 } from "./pages/index";
+import { SlowInternet } from "./components/Loaders/index";
 
 function App() {
   return (
     <div className="app_container">
       <BrowserRouter>
         <ScrollToTop />
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<SlowInternet />}>
           <Routes>
             <Route element={<NavbarFooter phase={3} />}>
               <Route index element={<Home />} />

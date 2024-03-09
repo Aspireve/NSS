@@ -5,43 +5,21 @@
     position: relative;
 }
 
-.dots-container {
-    display: flex;
+.loading-text {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    gap: 2rem;
+    font-family: Roboto-web;
 }
 
-.dot {
-    width: 40px;
-    height: 40px;
-    background-color: black;
-    opacity: 0.5;
+.loading-text > h1 {
+    font-size: 2rem;
+    text-align: center;
 }
 
-@keyframes loadBringthAndSoft {
-    0%, 100% {
-        opacity: 0.5;
-        scale: 0.7;
-    }
-    50% {
-        opacity: 1;
-        scale: 1
-    }
-    
-}
-
-.dot:nth-child(1) {
-    animation: loadBringthAndSoft 1.5s ease-in-out infinite 600ms;
-}
-
-.dot:nth-child(2) {
-    animation: loadBringthAndSoft 1.5s ease-in-out infinite 1.2s;
-}
-
-.dot:nth-child(3) {
-    animation: loadBringthAndSoft 1.5s ease-in-out infinite 1.8s;
+.loading-text > p {
+    font-size: 1rem;
+    color: #282828;
+    text-align: center;
 }
