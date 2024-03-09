@@ -1,4 +1,5 @@
-import React from "react";
+import { lazy } from "react";
 
-export const Navbar = React.lazy(() => import("./Navbar"));
-export const Footer = React.lazy(() => import("./Footer"));
+export const Navbar = lazy(() => import("./Navbar"));
+export const Footer = lazy(() => import("./Footer"));
+export const Map = lazy(() => import("./Map"));

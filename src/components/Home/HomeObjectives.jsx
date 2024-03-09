@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import HomeImages from "../assets/home/index";
-import HomeImagesReduced from "../assets/home_reduced/index";
-import "../styles/home/objectives.css";
-import Image from "../containers/Image";
-import useScrollVisibility from "../hooks/useScrollAnimation";
+import HomeImages from "../../assets/home/index";
+import HomeImagesReduced from "../../assets/home_reduced/index";
+import "../../styles/home/objectives.css";
+import Image from "../../containers/Image";
+import useScrollVisibility from "../../hooks/useScrollAnimation";
 
 const objectiveText = [
   {

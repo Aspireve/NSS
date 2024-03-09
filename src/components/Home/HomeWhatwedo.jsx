@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import "../styles/home/whatwedo.css";
-import useScrollVisibility from "../hooks/useScrollAnimation";
+import "../../styles/home/whatwedo.css";
+import useScrollVisibility from "../../hooks/useScrollAnimation";
 
 export default function WhatWeDo({nav}) {
   const sliderRef = useRef(null);

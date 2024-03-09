@@ -1,15 +1,12 @@
 import { useEffect } from "react";
-import "../styles/home/hero.css";
-import { HomeHero, HomeWhoAreWe } from "../components/Home/index";
+import { HomeHero, HomeWhoAreWe, HomeObjectives, HomeWhatWeDo } from "../components/Home/index";
 import {
-  HomeWhatWeDo,
-  HomeObjectives,
   HomeDomains,
   HomeAchievements,
   HomeRecentProjects,
   HomeTestimonials
 } from "../components/index";
-import { Socials, Map } from "../components/common"
+import { Map } from "../components/Common/index"
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -27,8 +24,8 @@ const Home = () => {
       <HomeAchievements />
       <HomeRecentProjects nav={navigate} />
       <HomeTestimonials />
-      <Socials />
-      <Map /> */}
+      <Socials />*/}
+      <Map /> 
     </>
   );
 };

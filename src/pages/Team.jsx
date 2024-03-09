@@ -4,13 +4,13 @@ import { useState, useEffect } from "react";
 import Scroller from "../components/Scroller";
 import ReactCardFlip from "react-card-flip";
 import JcContainer from "../components/TeamCardcontainer";
-import NSS_chairperson from "../assets/home/nss_chairperson.png"
-import Map from "../components/HomeMap"
-import Socials from "../components/HomeSocials"
-import SatishSingh from "../assets/team/Dr. Satish Singh.png"
-import VinitaAgarwal from "../assets/team/Dr. Vinita Agarwal.png"
-import SajjanKumar from "../assets/team/Mr. Sajjankumar Lal.png"
-import JyotiVanave from "../assets/team/Ms. Jyoti Vanawe.png"
+import NSS_chairperson from "../assets/home/nss_chairperson.png";
+import { Map } from "../components/Common/index";
+import Socials from "../components/HomeSocials";
+import SatishSingh from "../assets/team/Dr. Satish Singh.png";
+import VinitaAgarwal from "../assets/team/Dr. Vinita Agarwal.png";
+import SajjanKumar from "../assets/team/Mr. Sajjankumar Lal.png";
+import JyotiVanave from "../assets/team/Ms. Jyoti Vanawe.png";
 import TeamCreativeTeam from "../components/TeamCreativeTeam";
 import Images from "../assets/team/index";
 
@@ -71,7 +71,9 @@ const Team = () => {
           <div className="blob1"></div>
           <div className="blob2"></div>
         </div>
-        <h1 className="po_head" id="programme-officer">Programme officers</h1>
+        <h1 className="po_head" id="programme-officer">
+          Programme officers
+        </h1>
         <p className="po_about">
           Dedicated Program Officers lead the TCET NSS Unit with passion and
           commitment, charting a course of service and impact. Their guidance
@@ -87,10 +89,7 @@ const Team = () => {
               >
                 <div className="front">
                   <div className="front_content">
-                    <img
-                      src={SatishSingh}
-                      alt="Programme Officer-Satish Sir"
-                    />
+                    <img src={SatishSingh} alt="Programme Officer-Satish Sir" />
                     <div className="prog-detail">
                       <h1>Dr. Satish Singh</h1>
                       <h3>-Programme Officer</h3>
@@ -155,7 +154,9 @@ const Team = () => {
         </div>
       </div>
       <div id="page2">
-        <h1 className="dp_head" id="deputy-programme-officer">deputy-Programme officers</h1>
+        <h1 className="dp_head" id="deputy-programme-officer">
+          deputy-Programme officers
+        </h1>
         <p className="dp_about">
           At the core of implementation, our Deputy Program Officers play a
           crucial role, transforming vision into tangible reality and ensuring
@@ -207,7 +208,10 @@ const Team = () => {
               >
                 <div className="front">
                   <div className="front_content">
-                    <img src={JyotiVanave} alt="Deputy Programme Officer Jyoti Vanave" />
+                    <img
+                      src={JyotiVanave}
+                      alt="Deputy Programme Officer Jyoti Vanave"
+                    />
                     <div className="depu_po_details">
                       <h1>Jyoti Vanawe</h1>
                       <h3>-Deputy Programme Officer</h3>
@@ -237,8 +241,16 @@ const Team = () => {
       </div>
       <Scroller />
       <JcContainer />
-      <TeamCreativeTeam simple_image={Images.Tech_reduced} hd_image={Images.Tech} name={"Technical Team"}/>
-      <TeamCreativeTeam simple_image={Images.Creative_reduced} hd_image={Images.Creative} name={"Creatives Team"}/>
+      <TeamCreativeTeam
+        simple_image={Images.Tech_reduced}
+        hd_image={Images.Tech}
+        name={"Technical Team"}
+      />
+      <TeamCreativeTeam
+        simple_image={Images.Creative_reduced}
+        hd_image={Images.Creative}
+        name={"Creatives Team"}
+      />
       <Socials />
       <Map />
       {/* <ImageGallery /> */}

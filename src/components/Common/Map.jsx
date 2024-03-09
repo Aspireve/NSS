@@ -1,5 +1,4 @@
-import React from "react";
-import "../styles/home/map.css";
+import "../../styles/home/map.css";
 
 export default function Map() {
   return (
