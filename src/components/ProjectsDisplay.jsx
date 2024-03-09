@@ -177,6 +177,165 @@ const major_projects = [
     As the fitness session drew to a close, volunteers engaged in chill-out exercises designed to promote relaxation. The learning from this initiative extended beyond the physical aspect of fitness. Volunteers gained insights into the interconnectedness of physical and mental health, recognizing the importance of a well-rounded approach to staying healthy. Overall, the fitness activity served as a reminder that incorporating simple exercises, meditation, and relaxation into daily routines can contribute significantly to a healthier and more balanced lifestyle, aligning with the ethos of the Fit India movement`,
     summary: `TCET NSS Unit organised a fitness activity aligning with the Fit India movement. Starting with warm-up exercises, volunteers engaged in various yogic practices. The session incorporated meditation to enhance mental well-being. The fitness activity concluded with chill-out exercises for relaxation. The learning from this initiative is the holistic approach to well-being, combining physical and mental fitness. The simple exercises emphasised the importance of a balanced routine for overall health and vitality.`,
   },
+  {
+    project: "Mahashivratri- Old Age Home Visit",
+    domain: "SOCIETY",
+    images: [...Major_HD.MahaShiv],
+    reduced_images: [...Major_simple.MahaShiv],
+    quote: `Every wrinkle tells a story.`,
+    main: `The TCET NSS Unit collaborates with NGOs to organise visits to old age homes, uniting volunteers in a shared mission. Their simple aim is to bring joy to the elderly residents and alleviate feelings of loneliness. Through engaging activities like games, songs, and dance, volunteers create special moments that make the seniors' days brighter.
+    These visits represent a modest but impactful effort to uplift the lives of the elderly. Beyond spreading happiness, volunteers gain valuable insights. They witness firsthand the challenging conditions the seniors endure, fostering a realisation of their own privileged lives. This awareness serves as a reminder of gratitude and empathy.
+    The impact extends beyond the elderly residents and volunteers. It cultivates personal growth, nurturing a heightened sense of social responsibility. These visits contribute to building a compassionate and interconnected community, where individuals appreciate and care for the well-being of their older members. The ripple effect continues, creating a positive cycle of kindness and understanding. Through these small acts, the TCET NSS Unit and its volunteers are actively shaping a more compassionate and empathetic society, one visit at a time.`,
+    summary: `The TCET NSS conducts "Mahashivratri-Old Age Home Visit" annually on the occasion of Mahashivratri for senior citizens. Several volunteers oversee the visit, during which volunteers spend time with the seniors, offering companionship and support.Volunteers visit old age homes to spend time with senior citizens, engaging in activities such as games, music, and dance. This small effort not only brightens the seniors' days but also allows volunteers to learn and understand the challenges these individuals face. It provides a valuable perspective on the less fortunate situations many elderly individuals find themselves in.`,
+  },
+  {
+    project: "Tiranga Rally",
+    domain: "SOCIETY",
+    images: [...Major_HD.Tiringa],
+    reduced_images: [...Major_simple.Tiringa],
+    quote: `Tiranga, a symbol of strength, unity, and the spirit of a proud nation.`,
+    main: `The Mumbai University hosted an uplifting Tiranga rally in celebration of India's 75th independence anniversary, part of the Azadi ka Amrit Mahotsav. Known as "Har Ghar Tiranga," the campaign encourages everyone to bring the national flag home and proudly hoist it.Starting from the Sports Complex, Kolivery Village-Mumbai University and covering a 2-kilometre route through various points on campus, the rally involved enthusiastic volunteers from each unit. The participants, filled with energy, carried Tirangas and banners, creating a colourful spectacle symbolising unity and pride.
+    The event concluded in the evening marking a total success. Participants expressed joy and fulfilment, having celebrated and learned more about the significance of Azadi ka Amrit Mahotsav. This initiative aligns with the principles of Atmanirbhar Bharat, emphasising self-reliance.Azadi Ka Amrit Mahotsav, translated to the "Elixir of energy of independence," is a tribute by the Indian government to those who significantly contributed to the country's progress.
+    As India commemorates its 75th year of independence, events like the Tiranga rally serve as vibrant reminders of unity, patriotism, and the journey towards a self-reliant and prosperous nation. The simplicity of hoisting the Tiranga at home becomes a powerful symbol of individual contributions to the collective narrative of a free and thriving India. The enthusiasm and energy displayed by the participants highlight the deep-rooted connection people have with their country, making Azadi ka Amrit Mahotsav a truly memorable and unifying experience.`,
+    summary: `The Mumbai University organised a Tiranga rally as part of the Azadi ka Amrit Mahotsav celebration. The "Har Ghar Tiranga" campaign encourages people to bring the Tiranga home and hoist it for India's 75th independence anniversary. The rally, covering 2 kms, featured energetic volunteers with Tirangas and banners. The event concluded successfully in the evening, fostering joy and awareness about Azadi ka Amrit Mahotsav's significance.`,
+  },{
+    project: "Rakhi Selling Drive",
+    domain: "SOCIETY",
+    images: [...Major_HD.RakhiSell],
+    reduced_images: [...Major_simple.RakhiSell],
+    quote: `Bamboo knots, connecting lives in lots.`,
+    main: `TCET NSS Unit hosts Rakhi Selling Drive, spotlighting the beauty of cultural celebration and community support. The project extends beyond selling rakhis, it is a call for awareness and a step towards a brighter future for tribal women and underprivileged children. The unique aspect is that these rakhis are handcrafted by the very communities benefiting from the sales, embracing sustainable traditions and local empowerment.
+    This initiative aims to emphasise why handcrafted bamboo rakhis that are made by tribal women and underprivileged children hold more significance than factory-made ones.The TCET NSS volunteers sell these rakhis at prices determined by the tribal women themselves. It is a blend of caring for society and the environment. Each rakhi narrates a story, and every sale contributes to the well-being of tribal women and underprivileged children.
+    For our volunteers, the Rakhi Sale Drive isn't just about selling 500+ bamboo rakhis, it is a journey of personal growth. It fosters teamwork, responsibility, and heightens awareness of societal needs.
+    Ultimately, the Rakhi Sale Drive exemplifies how young individuals can revive traditions, create meaningful impacts, and embody the values of the National Service Scheme (NSS). This project signifies that small steps, when taken together, lead to significant and meaningful changes, aligning with the moto of NSS and contributing to a better society.`,
+    summary: `The TCET NSS UNIT organises a Rakhi Selling Drive, showcasing how young people can celebrate their culture and support the marginalised. Beyond selling handcrafted bamboo rakhis made by tribal women, the project aims to raise awareness about their importance and promote sustainability. Volunteers learn valuable lessons about teamwork and responsibility, demonstrating that small steps for a good cause can create meaningful changes in society.`,
+  },{
+    project: "Selfie With Tiranga",
+    domain: "SOCIETY",
+    images: [...Major_HD.Selfie],
+    reduced_images: [...Major_simple.Selfie],
+    quote: `Picture your patriotism, share the love.`,
+    main: `TCET NSS UNIT's "Selfie with the Tiranga" initiative is all about spreading love for our country and deepening historical awareness. This online event invites volunteers like you to express your patriotism by taking selfies with the national flag. It's a unique way for us to come together and celebrate India's independence, contributing to the Azadi ka Amrit Mahotsav theme.
+    The project included only one thing: taking a selfie with the Tiranga. We believe that this small act can make a big impact.
+    TCET NSS volunteers, guided by a strong sense of responsibility and love for our nation, actively participated in the project. It's not just about taking a selfie - we want you to think about the historical significance of India's struggle for independence. Many volunteers have shared that this initiative has deepened their connection to the nation, increased their respect for past struggles, and filled them with pride.
+    Our project has been a success, evident in the increased love for our country, stronger community bonds, and a shared commitment to celebrate India's independence. We've found strengths in patriotic engagement and community building, with opportunities for education and awareness. Our initiative aligns perfectly with the Azadi ka Amrit Mahotsav theme, showcasing the power of online efforts to foster pride and unity. Even in the digital realm, simple acts like taking a selfie contribute meaningfully to celebrating India's rich history and independence. These initiatives are small yet significant steps in our journey of love, unity, and reflection on our incredible past!`,
+    summary: `The "Selfie with the Tiranga" project by TCET NSS UNIT aimed to make people love their country and understand its history. Volunteers took selfies with the national flag online, showing their love for India. This project brought people together and made them celebrate India's independence. It fit well with the Azadi ka Amrit Mahotsav theme, proving that online events can make people proud and united.`,
+  },{
+    project: "Talk with the City",
+    domain: "SOCIETY",
+    images: [...Major_HD.TalkWithCity],
+    reduced_images: [...Major_simple.TalkWithCity],
+    quote: `When the voices connect, the problems dissect.`,
+    main: `The TCET NSS conducted the "Talk with the City" project, a proactive effort to connect with the community and comprehend their challenges. Venturing into Singh Estate, Thakur Village kandivali(East) which is adopted by TCET NSS UNIT, volunteers formed groups to engage residents with a thoughtful questionnaire. This direct interaction aimed to uncover the daily struggles faced by the community. Discussions extended beyond identifying problems as TCET NSS volunteers actively delved into dialogues to explore potential solutions. 
+    The motive behind the project was rooted in fostering a deeper understanding of the issues prevalent in the adopted village. By approaching residents with a structured questionnaire, the volunteers aimed to give voice to their concerns and create a platform for open dialogue. The goal was not only to identify problems but also to establish a collaborative effort where solutions could be discussed and implemented. 
+    One of the significant learnings from the "Talk with the City" project was the power of direct engagement in community service.Through these interactions, volunteers learned firsthand about the daily struggles and challenges faced by ordinary people, gaining valuable insights into their lives and experiences. Volunteers gained valuable insights into the nuanced challenges faced by the residents, allowing for more targeted and effective problem-solving. The project highlighted the importance of empathy, communication, and community involvement in creating positive change.`,
+    summary: `TCET NSS Unit initiated the "Talk with the City" project, focusing on understanding the challenges faced by people. Volunteers visited Singh Estate, Thakur Village kandivali(East) which is adopted by TCET NSS UNIT, dividing into groups to gather insights through a prepared questionnaire. Engaging in discussions, they not only identified problems but also offered solutions and the struggles faced by the common people. The project emphasised community interaction and problem-solving. A key learning was the importance of direct communication in comprehending and addressing local issues effectively.`,
+  },{
+    project: "Back2School : Best out of waste workshop",
+    domain: "SOCIETY",
+    images: [...Major_HD.BackSchool],
+    reduced_images: [...Major_simple.BackSchool],
+    quote: `Recycle, create, innovate.`,
+    main: `TCET NSS Unit organises the "Best out of Waste workshop", showcasing the transformative potential of waste by creating both visually pleasing and practical items. Volunteers, organised into groups, take their ingenuity to local schools. Here, they collaborate with students, imparting the skill of repurposing waste materials into useful products. This interactive approach not only instils the art of recycling but also underlines the significance of reusing resources to reduce environmental impact. 
+    The motive behind this project is twofold: first, to demonstrate the creative possibilities inherent in items considered as waste, and second, to impart the crucial lessons of recycling and reusing to the younger generation. By engaging with students directly, the project aims to foster an early understanding of the importance of responsible waste management. Through hands-on activities, students not only witness the process of crafting useful items but also comprehend the broader message of environmental sustainability. 
+    An essential learning from this initiative is that waste can be repurposed to create valuable resources. Through creativity and collaboration, seemingly discarded materials find a new lease on life as functional and visually appealing products. This project not only contributes to environmental consciousness but also strengthens the sense of community by donating the crafted items to the TCET NSS adopted village. It serves as a reminder that small, mindful actions can collectively make a significant impact in promoting a sustainable and responsible approach to waste management`,
+    summary: `TCET NSS Unit conducts the "Best out of Waste" project, illustrating the transformation of waste into both beautiful and practical items. Volunteers, grouped with diverse creative ideas, visit schools, crafting these products alongside students. This hands-on approach not only teaches the art of recycling but also emphasises the importance of reusing materials. The created items, showcasing the power of recycling, are generously donated to the TCET NSS adopted village, promoting sustainability and community engagement. The learning here is clear: waste can be a valuable resource with a little creativity and effort.`,
+  },{
+    project: "Kite Making",
+    domain: "SOCIETY",
+    images: [...Major_HD.KiteMaking],
+    reduced_images: [...Major_simple.KiteMaking],
+    quote: `Crafting dreams into the sky, one kite at a time.`,
+    main: `The TCET NSS Unit organises a memorable kite-making project at a local primary and secondary school to celebrate the festival of Makar Sankranti. The initiative aims to not only engage the students in a creative activity but also impart valuable skills and foster teamwork. The volunteers took the lead in teaching the students the steps of crafting a kite, from selecting materials to assembling the pieces.
+    Dividing the students into groups, the volunteers distribute the necessary materials, offering guidance and support throughout the entire process. The collaborative atmosphere during the project promotes teamwork among the students, creating a positive and enriching environment.
+    Once all the kites were completed, a collective effort unfolded as students and volunteers gathered to fly their creations. Beyond the joy of kite-flying, the project left a lasting impact on both volunteers and students. It showcased the power of hands-on learning and the potential for creativity to serve as a tool for education and community building. The experience not only brought a tangible outcome in the form of flying kites but also left behind a sense of accomplishment, shared memories, and a strengthened bond among all those involved.`,
+    summary: `The TCET NSS unit organises a kite making project for the primary and secondary school to celebrate the festival of Makar Sankranti with them. They guide students through the entire kite-making process, dividing them into groups and providing materials. After crafting their kites, both students and volunteers gathered to fly them, turning the activity into a collaborative and educational experience.`,
+  },{
+    project: "Joy of Giving Week : Donation drive",
+    domain: "SOCIETY",
+    images: [...Major_HD.JoyGive],
+    reduced_images: [...Major_simple.JoyGive],
+    quote: `Give a little, change a lot.`,
+    main: `The TCET NSS Unit organises a heartwarming "Joy of Giving Week" that transcends the boundaries of the college to reach remote villagers in need. Faculty, students, and staff enthusiastically participate, contributing a diverse array of items including toys, clothes, food packages, and books. 
+    These vibrant boxes symbolised the collective spirit of generosity that was brewing within the college community. Students and faculty embraced the opportunity to make a positive impact, recognizing the privilege of being able to give back to those less fortunate.
+    The NSS volunteers play a crucial role in not only coordinating the logistics but also in spreading awareness about the campaign. Their efforts motivate and inspire others to actively participate in the Joy of Giving Week. The act of giving becomes a shared experience, binding the college community together in a common purpose beyond academic pursuits.
+    The donation boxes overflowed with contributions, reflecting the compassion and empathy of the TCET community. The Joy of Giving Week not only addressed the material needs of the recipients but also sowed the seeds of compassion, unity, and social responsibility within the hearts of everyone involved.`,
+    summary: `The TCET NSS Unit organises a Joy of Giving Week, during which college faculty, students, and staff generously donate items like toys, clothes, food packages, and books. The week-long initiative aims to collect essentials for remote villagers in need. Active participation from the college community results in boxes filled with donations.`,
+  },{
+    project: "Sow the seed of change:  Debate Activity",
+    domain: "SOCIETY",
+    images: [...Major_HD.SeedChange],
+    reduced_images: [...Major_simple.SeedChange],
+    quote: `Debate: where words clash and ideas ignite.`,
+    main: `The TCET NSS Unit "Sow the seed of change'' initiative under Meri Mati Mera Desh theme, is considered as a commendable effort to not only spread awareness but also instigate change and advocate for environmental responsibility. Enthusiastic volunteers actively participate, showcasing their perspectives and share their point of views on various critical topics.The volunteers are divided into groups, each engaged in a debate, offering insights on issues like India's independence and the practice of dowry etc.
+    The project provides a platform for volunteers to articulate their views, improving communication and argumentative skills through this debate. It facilitates critical thinking, enabling participants to analyse each point thoroughly. A crucial aspect was the feedback analysis, gauging the participants' experiences and determining the project's impact on their awareness and understanding of the raised issues.
+    The "Sow the seed of change" initiative by the TCET NSS Unit reflects a commitment to environmental responsibility and community engagement. Despite challenges, the project's strengths and opportunities form a robust foundation for its ongoing success, fostering a sense of responsibility towards nature and driving positive change within the community.`,
+    summary: `The TCET NSS Unit "Sow the seed of change” initiative under Meri Mati Mera Desh theme, aims to raise environmental awareness and instigate change. Through engaging debates on different topics, volunteers explore their critical thinking, communication skills, and their ability to analyse complex issues, fostering intellectual growth and community engagement through participating in these debates.`,
+  },{
+    project: "(MU) De Addiction Rally",
+    domain: "SOCIETY",
+    images: [...Major_HD.AddictRally],
+    reduced_images: [...Major_simple.AddictRally],
+    quote: `A collective journey towards a brighter, addiction free future.`,
+    main: `The Nasha Mukti Rally, organised by the Mumbai University, unfolds at Azad Maidan in Churchgate, Mumbai. The volunteers, carrying posters and compelling slogans against tobacco, alcohol, and cigarettes, filled the bustling streets. Their vibrant chants resonate, capturing the attention of the people and conveying a powerful message promoting a healthier, addiction-free lifestyle.
+    Advancing towards the Gateway of India, government officials stage a thought-provoking skit. This provides a conducive setting for open discussions and idea exchange. Beyond being a demonstration against addiction, the rally evolves into a platform fostering connections and community among participants.
+    The ripple effect was palpable as individuals were inspired to share their knowledge with their communities, contributing to a broader movement against addiction. The Nasha Mukti Rally stands as a remarkable display of unity, collective determination, and a strong belief in a future free from addiction's shackles. It leaves an enduring impact, catalysing positive change in society.`,
+    summary: `The Mumbai University organises a “Nasha Mukti Rally” at Azad Maidan in Churchgate, Mumbai. Enthusiastic students aim to spread awareness about addiction dangers. The rally moves to the Gateway of India, where government officials perform a skit illustrating addiction's harsh realities. Participants pledge to live substance-free, promoting unity and a commitment to raise awareness. The project ends positively, with participants leaving motivated to make a difference.`,
+  },{
+    project: "(MU) Ganpati Visarjan",
+    domain: "SOCIETY",
+    images: [...Major_HD.Visarjan],
+    reduced_images: [...Major_simple.Visarjan],
+    quote: `In the waters of farewell, Ganpati's blessings linger.`,
+    main: `The TCET NSS Unit conducts a Ganpati Visarjan Volunteering project, held at Thakur Village,Kandivali (E) on the 3rd, 5th, 7th and 11th day of Ganpati Visarjan. The primary objectives are to ensure the safe and smooth immersion of Ganpati idols, managing traffic and safety in the process.
+    The project demonstrates that positive change is achievable through collaboration and shared values. Volunteers recognized the significance of considering the unique needs and circumstances of different regions and communities when designing and implementing management skills. The importance of community involvement and the collective impact of such efforts on society became evident.
+    Feedback from volunteers is collected to understand their experiences, ensuring the project's effectiveness in increasing awareness and knowledge about management skills during volunteering.
+    The outcomes were tangible, with volunteers actively assisting in lifting Ganpati idols, gaining valuable experience in managing traffic and crowds. The Ganpati Visarjan Volunteering project by the TCET NSS Unit not only contributes to the success of the event but also promotes community unity, cultural preservation, and environmental responsibility. The experience enriches the volunteers with valuable life skills, strengthening community bonds, and raising awareness about cultural traditions and sustainability.`,
+    summary: `The TCET NSS Unit successfully organises a Ganpati Visarjan Volunteering project, ensuring safe and orderly idol immersion. With a focus on traffic and crowd management, volunteers displayed dedication to community service. Positive feedback highlighted increased awareness about management skills and the importance of collaborative efforts. Its main aim was to manage the traffic and ensure safety during the overall process.`,
+  },{
+    project: "Amrit Kalash Yatra",
+    domain: "SOCIETY",
+    images: [...Major_HD.AmritKalash],
+    reduced_images: [...Major_simple.AmritKalash],
+    quote: `Unity and diversity, a pot filled with the richness of togetherness.`,
+    main: `The TCET NSS UNIT embarked on a meaningful journey with the project "Amrit Kalash Yatra,".This initiative aims to educate and unite on the importance of Amrit Kalash and the significance of soil in our environment.
+    The objective is to symbolise unity by collecting soil from various regions, creating an Amrit Kalash—a visual representation of unity in diversity within the people. All members, including students and faculty, actively contribute soil from their places, emphasising the project's well-organised and disciplined execution by NSS volunteers. 	
+    The project successfully fosters a sense of unity and community. NSS volunteers play a crucial role in educating participants about the cultural and symbolic significance of the Amrit Kalash. The feedback session further ensures a comprehensive understanding of the project's impact before its conclusion.
+    The "Amrit Kalash Yatra" is an awareness initiative, strengthening community bonds. It highlights the significance of tradition, how art, in the form of the Amrit Kalash, spiritually and culturally connects us all.`,
+    summary: `The TCET NSS UNIT successfully organises a "Amrit Kalash Yatra" focusing on the creation of Amrit Kalash to raise awareness about soil's environmental significance. The project emphasises the power of visual representation, effective communication, and community-building initiatives.`,
+  },{
+    project: "Road Safety and Traffic Management",
+    domain: "SOCIETY",
+    images: [...Major_HD.TrafficManage],
+    reduced_images: [...Major_simple.TrafficManage],
+    quote: `Guiding traffic, steering safety - a community in motion.`,
+    main: `The TCET NSS UNIT's "Road Safety and Traffic Management" project at Mahindra Gate, Kandivali (E), went beyond a typical awareness campaign. It aimed to make roads safer by educating people about following traffic rules, wearing helmets, and using seat belts.
+    The project organised volunteers into groups to create catchy slogans and posters. These materials were then displayed at red traffic signals, making them effective tools for spreading awareness. The project's adaptability to real-time traffic conditions received praise from the Traffic Police.
+    With support from the Mumbai Traffic Police, the project played a significant role in increasing awareness about road safety. Volunteers created 30-40 posters, placards and slogans, demonstrating the community's active involvement in promoting safer roads.
+    The main goals were to educate people about traffic rules and emphasise the importance of helmets and seat belts. Despite facing challenges, the collaboration with the Mumbai Traffic Police became a model for future initiatives. The project's success is a testament to how collective efforts and community participation can truly make a lasting impact on road safety, serving as inspiration for others.`,
+    summary: `The TCET NSS UNIT organises a "Road Safety and Traffic Management" project at Mahindra Gate, Kandivali(E). In collaboration with the Mumbai Traffic Police, the  volunteers created around 30-40 posters, placards  and slogans to raise awareness about the traffic rules, helmets, and seat belts. The initiative, marked by flexibility and real-time adjustments, effectively engaged the community and demonstrated the impact of collaborative efforts in enhancing road safety. The main objective of this project was to make people aware about the importance of following traffic rules.`,
+  },{
+    project: "MatDaan se YogDaan : Voter Id Registration",
+    domain: "SOCIETY",
+    images: [...Major_HD.MatDaan],
+    reduced_images: [...Major_simple.MatDaan],
+    quote: `A small card, a big voice - let every citizen be heard.`,
+    main: `The TCET NSS Unit's project for registering voter IDs at Thakur College of Engineering and Technology in Kandivali (E) shows a strong commitment to getting people involved in their community and participating in the democratic process. The main goals were to make sure people understand why having a voter ID is important and to support a fair and democratic election system.
+    The volunteers helped about 100+ people register for their voter IDs. The college faculty, students, and other staff members get themselves registered to obtain their voter ID. This not only achieved the main goal but also made the volunteers feel more connected as a group and improved their communication skills.
+    It emphasised the importance of civic responsibility and active participation in the democratic process. Through this initiative, volunteers connected with their local community and encouraged discussions about governance and policy matters. The feedback analysis was conducted to understand volunteers' experiences, further highlighting the positive impact of the project in increasing awareness regarding the importance of voter IDs.
+    The TCET NSS Unit's voter ID registration project demonstrates a commitment to both civic responsibility and education, achieving tangible outcomes in the form of 100+ registered voter IDs every year. The project's success, coupled with the valuable learning experiences for volunteers, positions it as a commendable initiative promoting democratic values and community engagement.`,
+    summary: `The TCET NSS UNIT volunteers embraced the voter id registration at the Thakur College of Engineering and Technology, Kandivali (E). Our main goal was to make people aware about the importance of having a voter id and to promote a fair and democratic electoral system. Enthusiastic volunteers actively participated in the project and contributed their part.Volunteers provided adequate assistance to those who had come to make their voter id. It increased more awareness regarding the importance of having a voter id card. It emphasised on the significance of participating in the democratic process, showcasing your role as a responsible citizen.`,
+  },{
+    project: "(MU) Gandhi Jayanti Bhajan Sandhya ",
+    domain: "SOCIETY",
+    images: [...Major_HD.Gandhijaynati],
+    reduced_images: [...Major_simple.EcoCarryBag],
+    quote: `Harmonising culture, echoing Gandhi's values.`,
+    main: `TCET NSS volunteers experienced a delightful evening at the Bhajan Sandhya held at the Gateway of India, Mumbai. The atmosphere was filled with the melodious tunes of bhajans sung by special guest singers, creating a spiritual and cultural environment. The event showcased a variety of bhajans from different parts of India, highlighting the richness of our cultural heritage.
+    Importantly, the event was not just about music, it also aimed to instil the values advocated by Mahatma Gandhi. Through stories from his life, such as the Salt March to Dandi, the event emphasised principles like non-violence, truthfulness, and kindness. These values were not only a tribute to Gandhi but also served as valuable life lessons for all the volunteers.
+    Aligned with the morals of the NSS, the Bhajan Sandhiya event reinforced the principles of community service and social responsibility. Participants learned that cultural events like these could be powerful platforms for imparting meaningful values. The event concluded with a collective pledge where everyone committed to helping others in the community, maintaining cleanliness, and supporting the Swachh Bharat Mission. This pledge reflected a strong dedication to service and cleanliness, embodying the ideals inspired by Mahatma Gandhi. Overall, the Bhajan Sandhiya event left a lasting impact by seamlessly blending music, culture, and essential life lessons.`,
+    summary: `TCET NSS volunteers participated in Bhajan Sandhya at the Gateway of India on Gandhi Jayanti. The event featured special guest singers who filled the evening with beautiful bhajans, showcasing India's diverse cultural heritage. Incorporating Mahatma Gandhi's values, the event highlighted principles like kindness and non-violence through stories like the Salt March. Aligned with NSS principles, the event concluded with a collective pledge, emphasising commitments to community service, cleanliness, and support for the Swachh Bharat Mission, reflecting the unit's dedication to Gandhian ideals.`,
+  },
 ];
 
 const minor_project = [
@@ -214,7 +373,7 @@ const minor_project = [
     project: "NSS SE Recruitment",
     domain: "EDUCATION",
     summary:
-      "TCET NSS Volunteers unleashed the power of community engagement through theNSS Recruitment. Aiming to foster stronger connections with S.E. students and adeeper sense of purpose, this initiative enriches the TCET NSS Volunteer’sexperience. By sharing knowledge and experiences, TCET NSS UNIT cultivates aculture of continuous learning. The recruitment serves to expand the TCET NSSUNIT's reach, recruiting dedicated S.E. students. As a result, many students joinedTCET NSS UNIT in building a vibrant community committed to positive change andcollective growth.",
+      "TCET NSS Volunteers unleashed the power of community engagement through theNSS Recruitment. Aiming to foster stronger connections with S.E. students and adeeper sense of purpose, this initiative enriches the TCET NSS Volunteer’sexperience. By sharing knowledge and experiences, TCET NSS UNIT cultivates aculture of continuous learning. The recruitment serves to expand the TCET NSS UNIT's reach, recruiting dedicated S.E. students. As a result, many students joinedTCET NSS UNIT in building a vibrant community committed to positive change andcollective growth.",
   },
   {
     project: "Article Writing",
@@ -226,7 +385,7 @@ const minor_project = [
     project: "Dandi Memorial Yatra",
     domain: "EDUCATION",
     summary:
-      "Embark on a journey through history with the TCET NSS UNIT’s Dandi Memorial Yatra which took place at the Gateway Of India, a tribute to Mahatma Gandhi's iconic Dandi March and the sacrifices of freedom fighters. TCET NSS Volunteers immersed themselves in the past, witnessing a captivating skit that unfolded the glorious chapters of India's struggle for Independence. This project aimed to honour the contributions of those who fought for freedom from British rule. Through this immersive experience, volunteers not only gained knowledge but also a profound understanding of the sacrifices that paved the way to independence",
+      "Embark on a journey through history with the TCET NSS UNIT's Dandi Memorial Yatra which took place at the Gateway Of India, a tribute to Mahatma Gandhi's iconic Dandi March and the sacrifices of freedom fighters. TCET NSS Volunteers immersed themselves in the past, witnessing a captivating skit that unfolded the glorious chapters of India's struggle for Independence. This project aimed to honour the contributions of those who fought for freedom from British rule. Through this immersive experience, volunteers not only gained knowledge but also a profound understanding of the sacrifices that paved the way to independence",
   },
   {
     project: "Marine Pollution Seminar",
@@ -366,9 +525,9 @@ const minor_project = [
   {
     project: "Anti-ragging Week",
     domain: "SOCIETY",
-    quote: "Respect your peers, wipe out ragging’s fears!",
+    quote: "Respect your peers, wipe out ragging's fears!",
     summary:
-      "During Anti-Ragging Week, the TCET NSS Unit organised an impactful initiative – an anti-ragging quiz based on an enlightening documentary. Volunteers were provided with a link to the documentary, fostering awareness and understanding of the issue. Subsequently, a quiz link was shared, encouraging active participation. The motive was clear: to educate, prevent, and create a safer environment. This initiative not only disseminated crucial information but also instilled a sense of responsibility among volunteers.Through this, the TCET NSS Unit aimed to promote a campus culture rooted in respect, empathy, and the eradication of ragging",
+      "During Anti-Ragging Week, the TCET NSS Unit organised an impactful initiative - an anti-ragging quiz based on an enlightening documentary. Volunteers were provided with a link to the documentary, fostering awareness and understanding of the issue. Subsequently, a quiz link was shared, encouraging active participation. The motive was clear: to educate, prevent, and create a safer environment. This initiative not only disseminated crucial information but also instilled a sense of responsibility among volunteers.Through this, the TCET NSS Unit aimed to promote a campus culture rooted in respect, empathy, and the eradication of ragging",
   },
   {
     project: "Honeywell Event Discipline",

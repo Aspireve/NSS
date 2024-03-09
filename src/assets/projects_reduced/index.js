@@ -29,7 +29,23 @@ const Images = {
     BoosterDose: [],
     BloodDonation: [],
     MedicalCamp: [],
-    FitIndia: []
+    FitIndia: [],
+    MahaShiv: [],
+  Tiringa: [],
+  RakhiSell: [],
+  Selfie: [],
+  RoadSafety: [],
+  TalkWithCity: [],
+  BackSchool: [],
+  KiteMaking: [],
+  JoyGive: [],
+  SeedChange: [],
+  AddictRally: [],
+  Visarjan: [],
+  AmritKalash: [],
+  TrafficManage: [],
+    MatDaan: [],
+    Gandhijaynati: [],
 
 }
 

@@ -3,8 +3,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 999999999;
-    transition: 600ms;
+    z-index: 1000;
     animation: translate_loader_y 500ms ease-in-out 4s forwards;
 }
 
@@ -12,10 +11,6 @@
     to {
         transform: translateY(-100%);
     }
-    
-}
-.translate-y-loading {
-    transform: translateY(-100%);
 }
 
 .loading-element-container {
@@ -33,13 +28,11 @@
     width: 15rem;
     height: 15rem;
     margin-bottom: 2rem;
-    transition: 800ms ease-in-out;
     animation: rotate_nss_image 800ms  ease-in-out  forwards;
 }
 
 @keyframes rotate_nss_image {
     from {
-        display: block;
         scale: 0;
         rotate: -180deg;
     }
@@ -55,7 +48,7 @@
     font-weight: 900;
     font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(43, 43, 43, 0.491);
-    text-wrap: nowrap;
+    white-space: nowrap;
     transform: translateY(1rem);
     opacity: 0;
     transition: 800ms ease-in-out;
