@@ -4,3 +4,4 @@ export const HomeHero = lazy(() => import("./HomeHero"));
 export const HomeWhoAreWe = lazy(() => import("./HomeWhoarewe"));
 export const HomeObjectives = lazy(() => import("./HomeObjectives"));
 export const HomeWhatWeDo = lazy(() => import("./HomeWhatwedo"));
+export const HomeTestimonials = lazy(() => import("./HomeTestimonials"))

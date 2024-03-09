@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { HomeHero, HomeWhoAreWe, HomeObjectives, HomeWhatWeDo } from "../components/Home/index";
+import {HomeTestimonials} from "../components/Home/index"
 import {
   HomeDomains,
   HomeAchievements,
   HomeRecentProjects,
-  HomeTestimonials
+  
 } from "../components/index";
 import { Map, Socials } from "../components/Common/index"
 import { useNavigate } from "react-router-dom";
@@ -21,8 +22,8 @@ const Home = () => {
       <HomeWhatWeDo nav={navigate} />
       <HomeObjectives />
       {/* <HomeDomains nav={navigate} />
-      <HomeAchievements />
-      <HomeRecentProjects nav={navigate} /> */}
+      <HomeAchievements /> */}
+      <HomeRecentProjects nav={navigate} /> 
       <HomeTestimonials /> 
       <Socials />
       <Map /> 

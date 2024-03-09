@@ -1,12 +1,12 @@
-import "../styles/home/testimonials.css";
+import "../../styles/home/testimonials.css";
 import { useEffect, useState, useRef } from "react";
-import ArrowLeft from "../assets/static_images/arrow-left-solid.svg";
-import ArrowRight from "../assets/static_images/arrow-right-solid.svg";
-import nss_chairperson from "../assets/home/nss_chairperson.png";
-import Tanay from "../assets/home/Tanay.webp";
-import Jitesh from "../assets/home/Jitesh-Dubey.webp";
-import Himanshu from "../assets/home/himanshu singh.png"
-import ExCouncil from "../assets/home/ExCouncil.png";
+import ArrowLeft from "../../assets/static_images/arrow-left-solid.svg";
+import ArrowRight from "../../assets/static_images/arrow-right-solid.svg";
+import nss_chairperson from "../../assets/home/nss_chairperson.png";
+import Tanay from "../../assets/home/Tanay.webp";
+import Jitesh from "../../assets/home/Jitesh-Dubey.webp";
+import Himanshu from "../../assets/home/himanshu singh.png";
+import ExCouncil from "../../assets/home/ExCouncil.png";
 import { useNavigate } from "react-router-dom";
 
 const testimonial_cards = [
@@ -26,8 +26,7 @@ const testimonial_cards = [
   },
   {
     name: "Dr. Vinita Agarwal",
-    testament:
-      "The TCET NSS UNIT upholds core values of Respect, Discipline, and Punctuality, guided by the motto 'NOT ME BUT YOU.' Comprising 200 dedicated volunteers from various branches, they unite to serve the community with unwavering dedication and responsibility. Persistent and committed, the unit prioritises community upliftment, addressing local issues with solutions. Even during lockdown, volunteers brought joy, and now, with offline activities, their enthusiasm for community service has heightened. Post-tenure, volunteers evolve into adept multitaskers, earning our complete trust and everlasting pride.",
+    testament: `This resilient unit never loses hope, imparting a lesson of unity to the entire college. Community upliftment is the priority for each dedicated volunteer, well-acquainted with local issues and always ready to seek and implement solutions. Despite lockdown challenges, they engaged in creative projects like webinars and mask-making. Now, with improved conditions, offline projects bring hope, exposure, and excitement, fostering the continuous growth and development of our trusted volunteers. We're forever proud of them.`,
     image: "",
     position: "Programme Officer",
     period: "(20000 - present)",

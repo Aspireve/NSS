@@ -32,7 +32,7 @@
 
 .prioject-class-container {
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 0;
     gap: 1rem;
     display: flex;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 .recent-project-card {
     border-radius: 20px;
     overflow: hidden;
-    width: 27%;
+    width: 100%;
     box-shadow: 0 0 10px #5453536f;
     transition: 500ms;
     cursor: pointer;
@@ -81,13 +81,19 @@
 
 @media screen and (max-width:1024px) {
     .recent-project-card{
-        width: 30%;
+        width: 31%;
+    }
+    .recent-project-card:nth-child(4), .recent-project-card:nth-child(5){
+        width: 48%;
     }
     .home-projects-header {
         font-size: 3.5rem;
     }
     .recent-projects-container {
         width: 90%;
+    }
+    .prioject-class-container {
+        flex-wrap: wrap;
     }
 }
 
@@ -116,6 +122,7 @@
     .prioject-class-container {
         flex-direction: column;
         padding: 0;
+        gap: 0;
     }
     .prioject-class-container img {
         width: 35%;
@@ -125,6 +132,9 @@
         display: flex;
         width: 100%;
         margin: 1rem 0;
+    }
+    .recent-project-card:nth-child(4), .recent-project-card:nth-child(5) {
+        width: 100%;
     }
     .recent-project-domain {
         font-size: 1rem;
@@ -150,15 +160,14 @@
     .recent-project-short-description {
         font-size: .8rem;
     }
+    .prioject-class-container {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width:425px){
-    .prioject-class-container {
-
-        padding: 0 1rem;
-    }
     .prioject-class-container img {
-        width: 35%;
+        width: 45%;
         object-fit: cover;
 
     }
