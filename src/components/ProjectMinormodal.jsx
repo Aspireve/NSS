@@ -4,7 +4,7 @@ export default function MinorModal({ setShowMinorModal, data }) {
   return (
     <div className="minor-modal-container">
       <div className="minor-modal">
-        <img src={data.image || health} />
+        <img src={data.image || health} alt={data.project + ", " + data.domain}/>
         <div className="minor-modal-text">
           <p className="minor-modal-quote">
             {data.quote}
