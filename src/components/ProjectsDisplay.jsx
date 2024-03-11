@@ -726,7 +726,7 @@ const minor_project = [
   },
   // {
   //   project: "Yuva Samvad (MU)",
-  //   domain: "SOCIETY",
+  //   domain: "EDUCATION",
   //   quote: "Young hearts, boundless dreams",
   //   summary:
   //     "TCET NSS volunteers participated in the online Yuva Samvad competition organised by Mumbai University, focusing on the theme 'Meri Mati Mera Desh.' Volunteers eloquently spoke on subjects such as India's rich culture and heritage. This virtual platform allowed our volunteers to showcase their knowledge and patriotic spirit. The objectives included fostering a sense of national pride and highlighting cultural diversity. Volunteers gained valuable insights into effective communication, cultural appreciation, and the significance of preserving our heritage. Overall, the competition was a meaningful exchange of ideas, fostering a deeper connection with our roots.",

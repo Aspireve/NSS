@@ -1,6 +1,14 @@
+.table-header-bold {
+    margin: 3rem auto 1rem auto;
+    text-align: center;
+    font-size: 3rem;
+
+
+}
+
 table {
     min-width: 60%;
-    margin: 3rem auto;
+    margin:  0 auto 3rem auto;
 }
 table, th, td {
     border: 1px solid black;
@@ -22,6 +30,9 @@ tr:first-child {
 @media screen and (max-width: 768px) {
     .really-really-huge-table {
         font-size: .8rem;
+    }
+    .table-header-bold {
+        font-size: 2rem;
     }
 }
 
@@ -49,6 +60,9 @@ tr:first-child {
 @media screen and (max-width: 425px) {
     table {
         font-size: .8rem;
+    }
+    .table-header-bold {
+        font-size: 1.5rem;
     }
 }
 

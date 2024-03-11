@@ -3,6 +3,8 @@ import "../../styles/about/tables.css"
 
 export const Volunteertable = () => {
   return (
+    <>
+    <h2 className="table-header-bold">Volunteers Benefitted</h2>
     <table>
       <tr>
         <th colspan="4">NSS VOLUNTEERS</th>
@@ -63,5 +65,6 @@ export const Volunteertable = () => {
       </tr>
     
     </table>
+    </>
   );
 };

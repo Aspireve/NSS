@@ -25,7 +25,7 @@ export default function About() {
       <AboutValue />
       {/* <AboutObjectives /> */}
       <Volunteertable />
-      <CouncilTable />
+      {/* <CouncilTable /> */}
       <ProjectsDomaintable />
       {/* <POProjMatch /> */}
       <AboutMagazine />

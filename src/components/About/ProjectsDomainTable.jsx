@@ -1,6 +1,4 @@
-
-import "../../styles/about/tables.css"
-
+import "../../styles/about/tables.css";
 
 export const ProjectsDomaintable = () => {
   return (
@@ -8,7 +6,7 @@ export const ProjectsDomaintable = () => {
       <tr>
         <th colspan="4">DOMAINS OF NSS</th>
       </tr>
-      <tr style={{fontWeight: 700}}>
+      <tr style={{ fontWeight: 700 }}>
         <td>Education</td>
         <td>Environment</td>
         <td>Health</td>
@@ -62,7 +60,6 @@ export const ProjectsDomaintable = () => {
         <td>Stemp Workshop on health and Hygiene</td>
         <td>Ganpati Visarjan Volunteering</td>
       </tr>
-    
     </table>
   );
 };
