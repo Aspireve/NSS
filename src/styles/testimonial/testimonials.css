@@ -1,20 +1,7 @@
 
 .Testimonial-wrapper {
   padding-top: 14vh;
-    /* height: 100%; */
     width: 100%;
-    /* background-image: linear-gradient(
-      to top,
-      #dad4ec11 0%,
-      #dad4ec 1%,
-      #f3e7e9 100%
-    );
-    background-image: linear-gradient(
-      to top,
-      #f3e7e9 0%,
-      #e3eeff 99%,
-      #e3eeff15 100%
-    ); */
     background-blend-mode: screen;
     display: flex;
     flex-direction: column;
@@ -105,6 +92,10 @@
       padding: 0.6rem;
       font-size: 1.2rem;
     }
+    #creator{
+      gap: 1rem;
+
+    }
     .details > h1 {
       font-size: 1.3rem;
     }
@@ -127,7 +118,6 @@
       font-size: 1.2rem;
     }
     #creator {
-      gap: 0.2rem;
       padding: 0.8rem 1rem;
     }
   }
@@ -146,7 +136,7 @@
       font-size: 0.9rem;
     }
     #creator {
-      gap: 0.2rem;
+      gap: 1rem;
       padding: 0.5rem 1rem;
     }
     #creator #image {

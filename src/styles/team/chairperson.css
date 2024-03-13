@@ -1,0 +1,33 @@
+.chairperson-container {
+    /* display: none; */
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+
+    
+}
+.chairperson-content {
+    /* min-height: 60vh; */
+    background-color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    --gap-design: 2.5rem;
+    border-radius: 1.3rem;
+    padding: 1rem;
+    gap: var(--gap-design)
+}
+
+.chairperson-content > img {
+    height: 40vh;
+    border-radius: 0.6rem 0 0 0.6rem;
+    display: block;
+}
+
+.chair-info>h3 {
+    margin-left: calc(var(--gap-design) - 3.5rem);
+}
+
+.chair-info>h1 {
+    margin-left: calc(var(--gap-design) - 4.5rem);
+}

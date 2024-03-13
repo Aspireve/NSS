@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
-    transform: translate(3rem);
+    transform: translateY(3rem);
     opacity: 0;
     transition: 500ms;
 }

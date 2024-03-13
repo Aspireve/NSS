@@ -1,9 +1,9 @@
 import "../styles/testimonial/modal.css";
 import Close from "../assets/static_images/xmark-solid.svg"
 
-export default function Modal({ onClose, testimony, image, name, year, post }) {
+export default function Modal({ onClose, testimony, image, name, council, post }) {
   return (
-    <div className={`modal-overlay ${testimony ? "active" : ""}`}>
+    <div id="modal-overlay" className={`modal-overlay ${testimony ? "active" : ""}`}>
       <div className="modal">
         <span className="modal-close-button" onClick={onClose}>
           <img src={Close} alt="Close Button"/>
@@ -22,7 +22,7 @@ export default function Modal({ onClose, testimony, image, name, year, post }) {
             <div className="details">
               <h1 className="name">{name}</h1>
               <p>{post}</p>
-              <p>{year}</p>
+              <p>{council}</p>
             </div>
           </div>
           <p>{testimony}</p>

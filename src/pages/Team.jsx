@@ -13,6 +13,7 @@ import SajjanKumar from "../assets/team/Mr. Sajjankumar Lal.png";
 import JyotiVanave from "../assets/team/Ms. Jyoti Vanawe.png";
 import TeamCreativeTeam from "../components/TeamCreativeTeam";
 import Images from "../assets/team/index";
+import { Chairperson } from "../components/Team/Chairperson";
 
 const Team = () => {
   const [isFlipped, setIsFlipped] = useState({
@@ -36,37 +37,11 @@ const Team = () => {
   };
   return (
     <div>
-      <div id="chairperson-container">
-        <div className="colors">
+        {/* <div className="colors">
           <div className="circle1"></div>
-          {/* <div className="circle2"></div> */}
-        </div>
-        <div className="chairperson-content" id="chairperson">
-          <div className="table">
-            <div id="chairperson">
-              <img src={NSS_chairperson} alt="Principal B.K. Mishra" />
-            </div>
-            <div className="detail_chairperson">
-              <h1>Dr. B.K. Mishra</h1>
-              <h3>-Chairperson TCET NSS UNIT</h3>
-              <div className="principals_desk">
-                TCET prioritizes holistic student development, notably through
-                the NSS unit established in 2005. The unit engages undergraduate
-                students voluntarily in diverse social service activities,
-                contributing to socio-economic progress. Students gain social
-                awareness, respecting community challenges and cultivating a
-                sense of dignity in labor. The NSS unit, known for its proactive
-                planning, conducts weekly projects showcasing commendable
-                punctuality and discipline. The magazine initiative empowers
-                volunteers to voice social issues, fostering a sense of
-                responsibility. Kudos to TCET NSS UNIT and POs for their
-                efforts. Congratulations to the dedicated volunteers!
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="page1">
+        </div> */}
+        <Chairperson />
+      {/* <div id="page1">
         <div className="colors">
           <div className="blob1"></div>
           <div className="blob2"></div>
@@ -152,8 +127,8 @@ const Team = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div id="page2">
+      </div> */}
+      {/* <div id="page2">
         <h1 className="dp_head" id="deputy-programme-officer">
           deputy-Programme officers
         </h1>
@@ -238,10 +213,10 @@ const Team = () => {
             </div>
           </div>
         </div>
-      </div>
-      <Scroller />
-      <JcContainer />
-      <TeamCreativeTeam
+      </div> */}
+      {/* <Scroller /> */}
+      {/* <JcContainer /> */}
+      {/* <TeamCreativeTeam
         simple_image={Images.Tech_reduced}
         hd_image={Images.Tech}
         name={"Technical Team"}
@@ -252,9 +227,9 @@ const Team = () => {
         hd_image={Images.Creative}
         name={"Creatives Team"}
         text={"Creativity is Seeing what others see and Thinking what noone else ever though"}
-      />
-      <Socials />
-      <Map />
+      /> */}
+      {/* <Socials /> */}
+      {/* <Map /> */}
       {/* <ImageGallery /> */}
     </div>
   );

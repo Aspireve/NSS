@@ -12,7 +12,7 @@ export default function Achievements() {
   const { isVisible } = useScrollVisibility(achievementsTitleRef, sliderRef);
 
   const [counters, setCounters] = useState([0, 0, 0, 0]);
-  const finalValues = [18, 120000, 1350, 90000];
+  const finalValues = [18, 196000, 1450, 108000];
   const increments = [1, 6000, 600, 3000]; // Adjusted for demonstration
 
   useEffect(() => {

@@ -596,14 +596,18 @@ export default function Testimonial() {
     }, 5000);
   };
 
+  
+
 
   useEffect(() => {
+
     const handleScroll = () => {
+      if(modalVisible) setModalVisible(false)
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
       if (scrollTop + clientHeight >= scrollHeight - 5 && !loading) {
         loadMoreTestimonials();
       }
-      console.log(loading)
+      // console.log(loading)
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -611,8 +615,19 @@ export default function Testimonial() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [loading]); 
+  }, [loading, modalVisible]); 
 
+  function handleClickOutside(event) {
+    if (event.target.id === 'modal-overlay') {
+      console.log("Closing...")
+      setModalVisible(false)
+    }
+
+  }
+
+  if (modalVisible) {
+    window.addEventListener('click', handleClickOutside);
+  }
   return (
     <>
       <div className="Testimonial-wrapper">
