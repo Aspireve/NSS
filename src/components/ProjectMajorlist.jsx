@@ -1,17 +1,32 @@
 import MajorModal from "./ProjectsMajormodal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function MajorProjectsDisplay({ projects }) {
+export default function MajorProjectsDisplay({ projects, display_id }) {
+  console.log("disp", display_id);
   const [showMajorModal, setShowMajorModal] = useState({
     display: false,
     data: null,
   });
+  useEffect(() => {
+    console.log(display_id)
+    const item = projects.find(item => (item.id === parseInt(display_id)));
+    console.log(item)
+    if(item)
+    setShowMajorModal({
+      display: true,
+      data: item
+    })
+  }, [])
+
+
   if (projects === null)
     return (
       <section className="scale-projects-container">
         <h2>No Major Projects</h2>
       </section>
     );
+
+  
   return (
     <section className="scale-projects-container">
       <h2>Major Projects</h2>
@@ -23,7 +38,7 @@ export default function MajorProjectsDisplay({ projects }) {
           <div
             key={"major-project-" + idx}
             className="scale-projects-card major"
-            onClick={() => setShowMajorModal({display: true, data: project})}
+            onClick={() => setShowMajorModal({ display: true, data: project })}
           >
             <img
               src={project.images[0]}
@@ -39,7 +54,12 @@ export default function MajorProjectsDisplay({ projects }) {
           </div>
         ))}
       </div>
-      {showMajorModal.display && <MajorModal dataModel={showMajorModal} setShowMajorModal={setShowMajorModal} />}
+      {showMajorModal.display && (
+        <MajorModal
+          dataModel={showMajorModal}
+          setShowMajorModal={setShowMajorModal}
+        />
+      )}
     </section>
   );
 }

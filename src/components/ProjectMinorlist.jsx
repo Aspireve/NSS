@@ -1,12 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import health from "../assets/projects/online-health.jpg";
 import MinorModal from "./ProjectMinormodal";
 
-export default function MinorProjectsDisplay({ projects }) {
+export default function MinorProjectsDisplay({ projects, display_id }) {
   const [showMinorModal, setShowMinorModal] = useState({
     display: false,
     data: null
   })
+  useEffect(() => {
+    console.log(display_id)
+    const item = projects.find(item => (item.id === parseInt(display_id)));
+    console.log(item)
+    if(item)
+    setShowMinorModal({
+      display: true,
+      data: item
+    })
+  }, [])
+
   if (projects === null)
     return (
       <section className="scale-projects-container">

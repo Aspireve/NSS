@@ -13,6 +13,7 @@ import SidebarHeader from "./ProjectSidebaeheader";
 import Major_HD from "../assets/projects/index";
 import Major_simple from "../assets/projects_reduced/index";
 import { ViewImagegallery } from "./ViewImagegallery";
+import { useLocation, useParams } from "react-router-dom";
 
 const major_projects = [
   {
@@ -412,7 +413,8 @@ const major_projects = [
     The volunteers not only learned to effectively communicate the importance of electricity conservation but also provided actionable tips for households to adopt energy-efficient practices. The project extended its reach by exploring solar panel adoption and other eco-friendly measures. The extensive data collection, totaling more than 100 electricity bills, allowed for deep insights into consumption patterns, enabling the volunteers to tailor recommendations for maximum impact.
     The TCET NSS volunteers, by interacting directly with the community, not only educated residents about conservation but also empowered them with the knowledge and tools for active energy conservation. This community-driven approach ensured that the impact of the project extended beyond the immediate awareness campaign, setting the stage for sustainable, long-lasting improvements in electricity usage in Singh Estate.
     In conclusion, the "Shakti Sanchay: Electricity Conservation Project" not only informed and educated the community but also actively engaged residents in the journey towards a more eco-friendly and sustainable neighborhood. Through personalized recommendations and a data-driven approach, the project exemplified a strong dedication to creating lasting positive changes in electricity consumption habits.`,
-    summary: "The 'Shakti Sanchay' Electricity Conservation Project by the TCET NSS UNIT volunteers is conducted in Singh Estate which is the adopted area of TCET NSS UNIT. It gathers insights from electricity bills of residents of the Singh Estate. Using personalized recommendations, the project enhanced awareness and empowered residents, fostering a sustainable community mindset. The initiative showcased a commitment to eco-friendly practices and long-term electricity conservation.",
+    summary:
+      "The 'Shakti Sanchay' Electricity Conservation Project by the TCET NSS UNIT volunteers is conducted in Singh Estate which is the adopted area of TCET NSS UNIT. It gathers insights from electricity bills of residents of the Singh Estate. Using personalized recommendations, the project enhanced awareness and empowered residents, fostering a sustainable community mindset. The initiative showcased a commitment to eco-friendly practices and long-term electricity conservation.",
   },
   {
     id: 43,
@@ -661,6 +663,7 @@ const minor_project = [
       "TCET NSS Unit conducts the project “Swachhta hi Seva” for a cleaner India, free from open defecation. Our volunteers actively participate in this initiative, improving cleanliness in communities and public spaces. Simultaneously, we spread awareness about waste and pollution's impact, stressing the importance of preserving natural resources. The result: cleaner surroundings, reduced litter, and better waste management. This positively impacts the local environment, reducing pollution and ensuring the sustainable preservation of our natural resources.",
   },
   {
+    id: 222,
     project: "Anti-dowry rally (MU)",
     image: Major_HD.DowryRally,
     domain: "SOCIETY",
@@ -669,6 +672,7 @@ const minor_project = [
       "The TCET NSS participated in an Anti-Dowry organised by Asha Kulkarni rally near Parle G factory in Vile Parle. Together with other NSS units, they held up posters to spread the message against dowry. The inclusion of a skit aimed to further raise awareness about this social issue, effectively using a creative medium to convey the message against dowry during the event. The main goals were to inform people about the harms of giving or taking dowry. This event taught participants the importance of working together to change society and showed them how creating awareness in the community can tackle long standing social problems",
   },
   {
+    id: 223,
     project: "Jagrukta Abhiyan Poster Making",
     image: Major_HD.JagruktaAbhiPoster,
     domain: "EDUCATION, CAMP",
@@ -678,6 +682,7 @@ const minor_project = [
       "TCET NSS unit conducted the Jagrukta Abhiyan Poster Making project aimed at preparing posters and slogans for the Jagrukta Abhiyan rally in our adopted village Saiwan. The main objective was to raise awareness about key issues like hygiene, waste management, and disease prevention. Dedicated volunteers created posters and slogans, focusing on these topics. They organized into groups, each assigned to a specific theme. Slogans were crafted in Marathi for better understanding. Through this project, volunteers learned essential elements of rally preparation and gained insights into creating impactful awareness materials.",
   },
   {
+    id: 224,
     image: Major_HD.Gurudev,
     project: "Gurudev Bhajan Sandhya (MU)",
     domain: "EDUCATION",
@@ -693,6 +698,7 @@ const minor_project = [
   //   summary: "",
   // },
   {
+    id: 225,
     image: Major_HD.SanitaryDistri,
     project: "Sanitary Pad Distribution",
     domain: "HEALTH, CAMP",
@@ -701,6 +707,7 @@ const minor_project = [
       "TCET NSS unit organised a seminar to distribute sanitary pads to all the women of our adopted village Saiwan, ensuring access to menstrual hygiene products. The aim was to raise awareness about the menstrual cycle and the importance of using sanitary pads. Following the seminar, each woman received packets containing 2 pads and as a result more than 600 pads were distributed. Participants gained insights into menstrual cycle reasons and hygiene practices. They learned the importance of using sanitary pads for hygiene during menstruation. This initiative empowered women with essential products and knowledge, promoting better menstrual health practices in the community.",
   },
   {
+    id: 226,
     project: "Human Trafficking",
     image: Major_HD.HumanTraffic,
     domain: "EDUCATION",
@@ -709,6 +716,7 @@ const minor_project = [
       "In a bid to combat human trafficking, which involves the illegal trade of humans for forced labour or other forms of exploitation, TCET NSS Unit conducted an awareness project with clear goals: enlighten volunteers about trafficking issues, advocate for victims' rights, and prevent criminal practices. Volunteers, in groups, created posters addressing human trafficking. The session increased awareness, aligning with the UN's 'World Day Against Trafficking in Persons' theme of 'Use and Abuse of Technology' this year. Several volunteers benefited from the initiative, making strides towards a better-informed and proactive community in the fight against human trafficking",
   },
   {
+    id: 227,
     image: Major_HD.SchoolTeac,
     project: "Back2School : School Teaching",
     domain: "SOCIETY",
@@ -717,6 +725,7 @@ const minor_project = [
       "The TCET NSS conducted a School Teaching project in its adopted village. The volunteers were on a mission to make a difference. They split into groups, with some focusing on teaching older kids and others on the younger ones. The motive was clear, to share knowledge and create a joyful learning atmosphere. The volunteers didn't just teach; they played games, ensuring a fun and holistic experience. The motive went beyond classrooms; it was about building connections and leaving a positive impact. In this shared learning adventure, both the volunteers and the children gained valuable insights, fostering a spirit of growth and community in the adopted village",
   },
   {
+    id: 228,
     image: Major_HD.Zumba,
     project: " Fitness & Zumba Activity",
     domain: "EDUCATION, CAMP",
@@ -733,6 +742,7 @@ const minor_project = [
   //     "TCET NSS volunteers participated in the online Yuva Samvad competition organised by Mumbai University, focusing on the theme 'Meri Mati Mera Desh.' Volunteers eloquently spoke on subjects such as India's rich culture and heritage. This virtual platform allowed our volunteers to showcase their knowledge and patriotic spirit. The objectives included fostering a sense of national pride and highlighting cultural diversity. Volunteers gained valuable insights into effective communication, cultural appreciation, and the significance of preserving our heritage. Overall, the competition was a meaningful exchange of ideas, fostering a deeper connection with our roots.",
   // },
   {
+    id: 229,
     project: "Anti-ragging Week",
     image: Major_HD.Antiragg,
     domain: "EDUCATION",
@@ -741,6 +751,7 @@ const minor_project = [
       "During Anti-Ragging Week, the TCET NSS Unit organised an impactful initiative - an anti-ragging quiz based on an enlightening documentary. Volunteers were provided with a link to the documentary, fostering awareness and understanding of the issue. Subsequently, a quiz link was shared, encouraging active participation. The motive was clear: to educate, prevent, and create a safer environment. This initiative not only disseminated crucial information but also instilled a sense of responsibility among volunteers.Through this, the TCET NSS Unit aimed to promote a campus culture rooted in respect, empathy, and the eradication of ragging",
   },
   {
+    id: 230,
     project: "Honeywell Event Discipline",
     domain: "SOCIETY",
     image: Major_HD.HoneyWell,
@@ -749,6 +760,7 @@ const minor_project = [
       "At the Honeywell event, TCET NSS volunteers were organised into groups, each with a specific role. Some enthusiastically welcomed foreign delegates with a special NSS clap, fostering a friendly atmosphere. Another group efficiently managed the crowd, ensuring a seamless experience for the international guests participating in games. Throughout the event, volunteers excelled in crowd and discipline management, displaying teamwork and organisational skills. The motive was clear: create a warm environment and showcase unity. In this process, they gained valuable insights into effective event coordination, teamwork, and hospitality—lessons that extend beyond the occasion, fostering a strong sense of community and shared responsibility",
   },
   {
+    id: 231,
     project: "BenevolentPaws: Feeding Animals and Birds",
     domain: "SOCIETY",
     image: Major_HD.Benevolent,
@@ -757,6 +769,7 @@ const minor_project = [
       'On International Animal Rights Day, TCET NSS Unit conducted the project "Benevolent Paws: Feeding Animals and Birds." Volunteers enthusiastically fed various creatures, sharing uplifting images of their efforts. The motive was to spread kindness and awareness about the well-being of animals, birds, and fishes. The project emphasised our shared responsibility to care for the environment and its inhabitants. Volunteers learned the importance of compassion, empathy, and the positive impact of small actions in creating a more humane world. This initiative sparked a sense of responsibility towards our animal friends and encouraged ongoing efforts for their welfare.',
   },
   {
+    id: 232,
     image: Major_HD.Ashrambeau,
     project: "Poster making for ashram beautification",
     domain: "SOCIETY",
@@ -765,6 +778,7 @@ const minor_project = [
       "Dive into the world of compassion and creativity with TCET NSS Volunteers inspiring project, turning walls into vibrant canvases at the Old Age Home. Each stroke carries the spirit of kindness, uplifting the residents' hearts. Witness the transformation of spaces through our volunteers' creativity, sparking joy and fostering a sense of community. Join us in spreading smiles and making every brushstroke count in the beautiful tapestry of giving. Together, let's celebrate the power of art to brighten lives and create lasting memories",
   },
   {
+    id: 233,
     image: Major_HD.PubAwareness,
     project: "Public Awareness Campaign",
     domain: "EDUCATION",
@@ -773,6 +787,7 @@ const minor_project = [
       "Step into the realm of impact with our Public Awareness Campaign, where enthusiasm meets dedication. TCET NSS Volunteers, driven by a commitment to community service, harnessed the power of information to connect with government schemes. Through videos and virtual platforms, they learned and spread awareness, emphasising the responsibility we all bear towards nation-building. Witness the journey of informed citizenship, where collective action shapes a brighter, more engaged community",
   },
   {
+    id: 234,
     image: Major_HD.ERDC,
     project: "ERDC seminar",
     domain: "EDUCATION",
@@ -781,6 +796,7 @@ const minor_project = [
       "TCET NSS unit's PO's participated in the One Day Conference on the 'Importance of Entrepreneurship Development' along with the PO’s of other NSS units of Mumbai University at Indian Institution of Management, Mumbai (IIM Mumbai). The objective was to explore ways to encourage entrepreneurship at the grassroots level. Through the conference, they learned about the significance of entrepreneurship in tackling unemployment and promoting rural growth. They also gained insights into integrating entrepreneurship into education and fostering collaboration among various stakeholders. Overall, the event emphasised practical strategies for implementing entrepreneurship and rural development projects effectively.",
   },
   {
+    id: 235,
     image: Major_HD.NukkadSocial,
     project: "Nukkad Natak On Social Issues",
     domain: "EDUCATION",
@@ -789,6 +805,7 @@ const minor_project = [
       "Embark on a journey through eras with TCET NSS UNIT's thought-provoking Nukkad Natak On Social Issues. TCET NSS Volunteers, driven by dedication and talent, bring to life the challenges faced by females across different times. From captivating introductions to seamless performances, witness the echoes of societal evolution. TCET NSS Volunteers foster connections, enhancing communication skills, and leaving a lasting impact on society. The Nukkad Natak On Social Issues is more than a performance; it's a journey through time, unravelling cultural transformations with every act",
   },
   {
+    id: 236,
     project: "Books To Street",
     domain: "SOCIETY",
     image: Major_HD.B2Streets,
@@ -796,6 +813,7 @@ const minor_project = [
     summary: `The TCET NSS UNIT's "Books to Street" project aimed to promote recycling and provide free notebooks to underprivileged students. Enthusiastic TCET NSS Volunteers actively participated, creating over 500 notebooks from old ones. This initiative showcased resourcefulness, empowering TCET NSS Volunteers to make a positive impact on their community. The project, inspiring creativity and sustainability, garnered support from the community, especially young volunteers. Despite challenges, the initiative highlights the potential to recycle and support others in need`,
   },
   {
+    id: 237,
     project: "UNITY RUN",
     domain: "SOCIETY",
     image: Major_HD.UnityRun,
@@ -804,6 +822,7 @@ const minor_project = [
       "The Rashtriya Ekta Diwas - Unity Run at Thakur College of Engineering and Technology, Kandivali(E) a powerful initiative on Sardar Vallabhbhai Patel's birth anniversary, brings the NSS volunteers together for a symbolic collective run around the Thakur Complex, Kandivali(E). More than a physical activity, it became a strong symbol of unity, showcasing TCET NSS volunteers' responsibility to ensure no participant is left behind. Participatory learning emphasises how unity strengthens a diverse nation. Positive feedback analysis highlights the personal and national significance learned by volunteers. The run successfully promotes unity and patriotism, with certificates reinforcing a sense of achievement and pride. In conclusion, it proves transformative, fostering unity, patriotism, and fitness in the college community. ",
   },
   {
+    id: 238,
     image: Major_HD.VeeronVardaan,
     project: "Veero Ka Vandan",
     domain: "SOCIETY",
@@ -812,6 +831,7 @@ const minor_project = [
       'The TCET NSS UNIT organises the "Veero ka Vandan" project, an initiative expressing gratitude to police officers, traffic police, and security guards. Dedicated volunteers create and distribute over more than 60 handmade gratitude cards, aligning with the theme "Meri Maati, Mera Desh: Maati ko Naman, Veero ka Vandan." The project emphasises the significance of expressing gratitude, fostering positive relationships, and recognizing the sacrifices of heroes. Despite limited resources, the initiative strengthens community bonds, demonstrates the impact of simple acts of kindness, and presents opportunities for future similar projects. The "Veero ka Vandan" initiative reflects a commitment to community well-being, promoting awareness of gratitude and compassion.',
   },
   {
+    id: 239,
     image: Major_HD.Aakalan,
     project: "Aakalan : Paper Correction",
     domain: "SOCIETY",
@@ -820,6 +840,7 @@ const minor_project = [
       "The Rashtriya Ekta Diwas - Unity Run at Thakur College of Engineering and Technology, Kandivali(E) a powerful initiative on Sardar Vallabhbhai Patel's birth anniversary, brings the NSS volunteers together for a symbolic collective run around the Thakur Complex, Kandivali(E). More than a physical activity, it became a strong symbol of unity, showcasing TCET NSS volunteers' responsibility to ensure no participant is left behind. Participatory learning emphasises how unity strengthens a diverse nation. Positive feedback analysis highlights the personal and national significance learned by volunteers. The run successfully promotes unity and patriotism, with certificates reinforcing a sense of achievement and pride. In conclusion, it proves transformative, fostering unity, patriotism, and fitness in the college community. ",
   },
   {
+    id: 240,
     image: Major_HD.VoterAwareness,
     project: "Voter ID awareness",
     domain: "EDUCATION",
@@ -828,6 +849,7 @@ const minor_project = [
       "The TCET NSS Unit organised a voter ID awareness campaign at Thakur College of Engineering and Technology, Kandivali (E). The TCET NSS volunteers play a crucial role in spreading awareness about the significance of possessing a voter ID through a dedicated campaign within the college premises. This initiative marks a crucial step in nurturing civic responsibility and encouraging active involvement in the democratic process. Volunteers explain the importance, eligibility criteria, and the step-by-step process, offering information on the required documents for a smooth application. The volunteers make sure that more and more people join this movement and ensure that their voice is heard by acquiring the Voter ID during this enlightening campaign",
   },
   {
+    id: 241,
     project: "15th August Independence Day Parade",
     domain: "SOCIETY",
     image: Major_HD.Independence,
@@ -835,6 +857,7 @@ const minor_project = [
     summary: `TCET NSS Unit, as always, actively participated in the Independence Day parade. Starting with practice days earlier, volunteers identified the mistakes they were doing and rectified them, in order to perform nicely on Independence Day. Their objective was a flawless parade presentation. Volunteers, alongside other college committees, performed a marvellous parade, showcasing dedication and enthusiasm. The occasion not just marked Independence Day but also showed how TCET's NSS unit values learning and getting better. It was a celebration of freedom, with volunteers working together to improve and make the day special.`,
   },
   {
+    id: 242,
     project: "26th January Republic Day",
     domain: "SOCIETY",
     image: Major_HD.Republic,
@@ -842,6 +865,7 @@ const minor_project = [
     summary: `The TCET NSS Unit actively joined the Republic Day flag hoisting tradition at Thakur College of Engineering and Technology. A substantial number of volunteers gathered to express reverence for the Indian flag during the ceremony. Following the flag hosting, Program Officers (POs) engaged in insightful discussions with volunteers, delving into the importance and objectives of NSS. The event concluded on a positive note with a lively photo session, where volunteers, council members, and POs came together to capture memorable moments of unity and participation.`,
   },
   {
+    id: 243,
     image: Major_HD.BOW,
     project: "Best out of waste Workshop",
     quote: "Waste not, want not: Embracing creativity in recycling",
@@ -850,6 +874,7 @@ const minor_project = [
     domain: "ENVIRONMENT, CAMP",
   },
   {
+    id: 244,
     image: Major_HD.Godadhi,
     project: "Godadi making project",
     quote: "Weave Warmth, Share Hope.",
@@ -858,6 +883,7 @@ const minor_project = [
     domain: "ENVIRONMENT",
   },
   {
+    id: 245,
     image: Major_HD.StemCell,
     project: "Stem Cell Donation",
     quote: "Break Myths, Save Lives: Donate Stem Cells!",
@@ -866,6 +892,7 @@ const minor_project = [
     domain: "HEALTH",
   },
   {
+    id: 246,
     image: Major_HD.HarGhar,
     project: "Har ghar Tiranga",
     quote: "Bringing patriotism to every doorstep, one flag at a time.",
@@ -874,6 +901,7 @@ const minor_project = [
     domain: "SOCIETY",
   },
   {
+    id: 247,
     image: Major_HD.Patri,
     project: "Patriotic run",
     quote: "Patriotism in motion, community in action",
@@ -882,6 +910,7 @@ const minor_project = [
     domain: "SOCIETY",
   },
   {
+    id: 248,
     image: Major_HD.PlasticPickup,
     project: "Plastic Pick-up Drive",
     quote: "Cleaning up together, for a brighter tomorrow",
@@ -890,6 +919,7 @@ const minor_project = [
     domain: "SOCIETY, CAMP",
   },
   {
+    id: 249,
     image: Major_HD.MedicalCampVolu,
     project: "Medical Camp Volunteering",
     quote: "Making health a priority: volunteering to create positive change.",
@@ -898,6 +928,7 @@ const minor_project = [
     domain: "SOCIETY, CAMP",
   },
   {
+    id: 250,
     image: Major_HD.MidDay,
     project: "Mid-day meal Distribution Volunteering",
     quote:
@@ -907,6 +938,7 @@ const minor_project = [
     domain: "SOCIETY, CAMP",
   },
   {
+    id: 251,
     image: Major_HD.PooshanDan,
     project: "PoshanDaan",
     quote: "Poshandaan: where every meal carries a touch of love",
@@ -915,6 +947,7 @@ const minor_project = [
     domain: "SOCIETY, CAMP",
   },
   {
+    id: 252,
     image: Major_HD.RainSurvey,
     project: "Rain Water Harvesting Survey Project",
     quote: "In every drop, a lesson. In every survey, a solution",
@@ -942,10 +975,11 @@ const domain_index = {
   "NSS CAMP": 5,
 };
 
-export default function ProjectDisplay({ domain }) {
+export default function ProjectDisplay({ domain, id }) {
   const [selectedDomain, setSelectedDomain] = useState(
     domain_index[domain] || 0
   );
+  console.log(id);
   const [query, setQuery] = useState("");
   console.log(query);
   useEffect(() => {
@@ -990,8 +1024,8 @@ export default function ProjectDisplay({ domain }) {
         <ViewImagegallery />
       </div>
       <div className="projects-cards-side">
-        <MajorProjectsDisplay projects={filtered_major_items} />
-        <MinorProjectsDisplay projects={filtered_minor_items} />
+        <MajorProjectsDisplay display_id={id} projects={filtered_major_items} />
+        <MinorProjectsDisplay display_id={id} projects={filtered_minor_items} />
       </div>
     </div>
   );

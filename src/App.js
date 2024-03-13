@@ -12,7 +12,7 @@ import {
   Testimonial,
   Projects,
   Home,
-  ImageGallery
+  ImageGallery,
 } from "./pages/index";
 import { LoaderStart, SlowInternet } from "./components/Loaders/index";
 
@@ -34,10 +34,11 @@ function App() {
             </Route>
             <Route element={<NavbarOnly phase={3} />}>
               <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/:id" element={<Projects />} />
             </Route>
             <Route element={<NavbarOnly phase={1} />}>
               <Route path="/testimonials" element={<Testimonial />} />
-              <Route path="/imagegallery" element={<ImageGallery/>} />
+              <Route path="/imagegallery" element={<ImageGallery />} />
             </Route>
           </Routes>
         </Suspense>
