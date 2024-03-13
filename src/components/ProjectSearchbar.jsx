@@ -9,7 +9,6 @@ export default function SearchBar({query, setQuery}) {
           type="text"
           spellCheck="false"
           placeholder="Search Projects "
-          autoFocus
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
