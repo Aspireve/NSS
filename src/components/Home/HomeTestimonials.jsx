@@ -4,6 +4,7 @@ import ArrowLeft from "../../assets/static_images/arrow-left-solid.svg";
 import ArrowRight from "../../assets/static_images/arrow-right-solid.svg";
 import nss_chairperson from "../../assets/home/nss_chairperson.png";
 import Tanay from "../../assets/home/Tanay.webp";
+import Vinita from "../../assets/home/VinitaAgarwal.png"
 import Jitesh from "../../assets/home/Jitesh-Dubey.webp";
 import Himanshu from "../../assets/home/himanshu singh.png";
 import ExCouncil from "../../assets/home/ExCouncil.png";
@@ -22,14 +23,14 @@ const testimonial_cards = [
     testament: `TCET prioritises comprehensive student development, notably through the National Service Scheme (NSS) established in 2005. The NSS UNIT engages undergraduate students voluntarily in diverse social service activities, contributing to national development and socio-economic progress. Emphasising social awareness, dignity of labour, and a sense of responsibility, the program moulds future engineers to identify and address societal challenges. The TCET NSS UNIT, known for its exemplary organisation, conducts weekly projects showcasing commendable punctuality and discipline. I, Dr. B. K. Mishra, after the acknowledgement of the  initiative, express the pride in the volunteers and applauds their efforts to bring forth the Website that showcase the hardwork and volunteering of our determined Unit.`,
     image: nss_chairperson,
     position: "Chairperson",
-    period: "(2000 - present)",
+    period: "(2006 - present)",
   },
   {
     name: "Dr. Vinita Agarwal",
     testament: `This resilient unit never loses hope, imparting a lesson of unity to the entire college. Community upliftment is the priority for each dedicated volunteer, well-acquainted with local issues and always ready to seek and implement solutions. Despite lockdown challenges, they engaged in creative projects like webinars and mask-making. Now, with improved conditions, offline projects bring hope, exposure, and excitement, fostering the continuous growth and development of our trusted volunteers. We're forever proud of them.`,
-    image: "",
+    image: Vinita,
     position: "Programme Officer",
-    period: "(20000 - present)",
+    period: "(2006 - present)",
   },
   {
     name: "Mr. Tanay Agarwal",
@@ -42,7 +43,7 @@ const testimonial_cards = [
   {
     name: "Mr. Jitesh Dubey",
     testament:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo molestias officia voluptas natus numquam recusandae laboriosam mollitia cum nam",
+      "JAI HIND ! As a less social person, I often found myself feeling like an outsider among my peers. I tended to gravitate towards solitary activities, preferring to spend my time alone watching movies, learning something new, or simply sitting quietly with my thoughts. Social situations made me uncomfortable, and I often felt like I didn't belong. That's when I decided to step out of my comfort zone and join NSS.Without a question, the best aspect of my experience was the recruitment procedure. I was able get exposure while engaging in a variety of activities by joining NSS, in addition to giving me a chance to give back to society. During the projects, I found myself engaging in teamwork and collaboration, something I had always shied away from. Working with fellow volunteers on community projects became a catalyst for personal growth. I discovered the joy of contributing to something larger than myself. The experience of organizing and Participating in a range of activities, including cleanliness drives, visits to old age homes, blood donations, and The Sojourn Dance, within the NSS has afforded me diverse settings and opportunities. These experiences have contributed to the development of my ability to effectively balance my commitment to serving others with the pursuit of personal fulfillment and enjoyment. One of the most surprising aspects was the support and camaraderie I found among my fellow volunteers. The shared goal of making a positive impact brought us together, and I realized that I wasn't alone in my journey.Being part of NSS has been one of the most significant experiences in my life. I believe everyone should consider dedicating a small portion of their lives to helping others. In doing so, you lose nothing but gain a unique and fulfilling kind of happiness. JAI HIND ! ",
     image: Jitesh,
     position: "Volunteer",
     period: "(2022 - present)",

@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import bloodDonation from "../../assets/projects/procard_Blood donation camp (Health) 13.jpg";
 import treePlantation from "../../assets/projects/procard_Tree plantation drive (Environment) 06.jpg"
+import MeriMati from "../../assets/projects/mera maati mera desh.jpg"
 import voterId from "../../assets/projects/procard_Voter Id registration (Society) 04.jpg"
 import oldAgeHome from "../../assets/projects/procard_Mahashivratri - Old Age home visit (Society) 02.jpeg"
 import "../../styles/home/recent-projects.css";
@@ -29,12 +30,13 @@ const projectDescription = [
     description: `The TCET NSS UNIT volunteers embraced the voter id registration at the Thakur College of Engineering and Technology, Kandivali (E). Our main goal was to make people aware about the importance of having a voter id and to promote a fair and democratic electoral system. Enthusiastic volunteers actively participated in the project and contributed their part.Volunteers provided adequate assistance to those who had come to make their voter id. It increased more awareness regarding the importance of having a voter id card. It emphasised on the significance of participating in the democratic process, showcasing your role as a responsible citizen.`,
   },
   {
-    image: treePlantation,
+    image: MeriMati,
     domain: "SOCIETY",
-    title: "Debate Activity",
+    title: "Meri Maati Mera Desh",
     id: 31,
-    description: `The TCET NSS Unit "Sow the seed of change” initiative under Meri Mati Mera Desh theme, aims to raise environmental awareness and instigate change. Through engaging debates on different topics, volunteers explore their critical thinking, communication skills, and their ability to analyse complex issues, fostering intellectual growth and community engagement through participating in these debates.`,
-  },
+    description:
+    "Under the 'Meri Mati Mera Desh' initiative, TCET NSS Unit organized a meaningful project, encouraging participants to express their love for the country by placing soil in specially painted Amrit Kalash. College students, faculty, and volunteers actively participated, taking a pledge to symbolize their commitment. The event featured a spirited rally with prepared posters and slogans, fostering a sense of unity and patriotism.",
+    },
   {
     image: oldAgeHome,
     domain: "SOCIETY",
@@ -54,7 +56,7 @@ export default function RecentProjects({nav}) {
       <h1 className={isVisible? "home-projects-header" : ""} ref={sliderRef}>Recent Projects</h1>
       <div className="prioject-class-container">
         {projectDescription.map((project, idx) => (
-          <div key={project.title + idx} className="recent-project-card" onClick={() => nav(`../projects/${project.id}`)}>
+          <div key={project.title + idx} className="recent-project-card" onClick={() => nav(`../projects?id=${project.id}`)}>
             <img src={project.image} alt="project" />
             <h4 className="recent-project-domain">{project.domain}</h4>
             <h3 className="recent-project-title">{project.title}</h3>

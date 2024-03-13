@@ -21,9 +21,10 @@
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     /* scale: 0.01; */
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
+    scale: 0;
     opacity: 0.01;
-    animation: oversize 1s ease-in forwards ;
+    animation: oversize 500ms ease-in forwards ;
   }
 
   @keyframes oversize {

@@ -245,11 +245,13 @@ const Team = () => {
         simple_image={Images.Tech_reduced}
         hd_image={Images.Tech}
         name={"Technical Team"}
+        text={""}
       />
       <TeamCreativeTeam
         simple_image={Images.Creative_reduced}
         hd_image={Images.Creative}
         name={"Creatives Team"}
+        text={"Creativity is Seeing what others see and Thinking what noone else ever though"}
       />
       <Socials />
       <Map />

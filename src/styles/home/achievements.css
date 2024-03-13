@@ -27,9 +27,14 @@
     margin-bottom: 1rem;
 }
 
+.incrementer.make-flex {
+    display: flex;
+    flex-direction: column;
+}
 
 .incrementer.make-flex > p{
-    display: none;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .home-achievements > p {

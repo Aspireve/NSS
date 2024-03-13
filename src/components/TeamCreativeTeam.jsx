@@ -1,7 +1,7 @@
 import Image from "../containers/Image";
 import "../styles/team/creativesteam.css";
 
-const TeamCreativeTeam = ({simple_image, hd_image, name}) => {
+const TeamCreativeTeam = ({simple_image, hd_image, name, text}) => {
   return (
     <section className="team-creatives">
       <div className="team-creatives-image-container">
@@ -9,9 +9,7 @@ const TeamCreativeTeam = ({simple_image, hd_image, name}) => {
         <div className="team-creatives-text-container">
           <h2>{name}</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Perferendis veritatis, aperiam quos recusandae possimus officia
-            sunt! Accusantium illo molestias repudiandae!
+          {text}
           </p>
         </div>
       </div>

@@ -123,13 +123,17 @@ const Images = {
     require("./inner_Nasha Mukti Rally (MU) (4).jpg"),
   ],
   Visarjan: [
-    require("./procard_Ganpati visarjan(MU)  (Society) 07.jpg"),
+    require("./Ganpati Visarjan.jpg"),
+    require("./procard_Ganpati visarjan .jpg"),
     require("./Ganpati visarjan .jpg"),
-    require("./Ganpati visarjan(MU)  (Society) 03.jpg"),
-    require("./Ganpati visarjan(MU)  (Society) 04.jpg"),
-    require("./Ganpati visarjan(MU)  (Society) 05.jpg"),
-    require("./Ganpati visarjan(MU)  (Society) 06.jpg"),
-    require("./Ganpati visarjan(MU)  (Society) 08.jpg"),
+    require("./pg_Ganpati visarjan(MU)  (Society) 02.jpg")
+    // require("./procard_Ganpati visarjan(MU)  (Society) 07.jpg"),
+    // require("./Ganpati visarjan .jpg"),
+    // require("./Ganpati visarjan(MU)  (Society) 03.jpg"),
+    // require("./Ganpati visarjan(MU)  (Society) 04.jpg"),
+    // require("./Ganpati visarjan(MU)  (Society) 05.jpg"),
+    // require("./Ganpati visarjan(MU)  (Society) 06.jpg"),
+    // require("./Ganpati visarjan(MU)  (Society) 08.jpg"),
   ],
   AmritKalash: [
     require("./Amrit Kalash Yatra 01.jpg"),
@@ -151,6 +155,7 @@ const Images = {
     require("./inner_Voter Id registration (Society) 03.jpg"),
   ],
   MeriMati: [
+    require("./procd_mera maati mera desh.jpg"),
     require("./Meri mati mera desh (Society,Environment) 06.jpg"),
     require("./Meri mati mera desh (Society,Environment) 05.jpg"),
     require("./Meri mati mera desh (Society,Environment) 01.jpg"),
@@ -208,8 +213,8 @@ const Images = {
     require("./school teaching_camp(3).jpeg"),
   ],
   EnergyCons: [
-    require("./Electricity conservation (Society) 03.jpg"),
-    require("./Electricity conservation (Society) 04.jpg"),
+    require("./procard_Electricity conservation  awareness(Society) 02.jpg"),
+    // require("./Electricity conservation (Society) 04.jpg"),
   ],
   WallPainting: [
     require("./Wall painting_camp(2).jpg"),
@@ -272,7 +277,7 @@ const Images = {
   Poshan: require("./Poshandaan_camp(2).jpeg"),
   HarGhar: require("./Har ghar Tiranga.jpg"),
   B2Streets: require("./procard_Books To Street (Society) 01.jpg"),
-  ElectricityConservation: require("./procard_Electricity conservation  awareness(Society) 02.jpg"),
+  ElectricityConservation: require("./Electricity conservation (Society) 03.jpg"),
   EcoHarbour: [],
   SchoolTeac: require("./school teaching_camp.jpeg"),
   Patri: require("./procard_Patriotic Run Project (Society) (2).jpg"),

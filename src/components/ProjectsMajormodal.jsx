@@ -19,7 +19,7 @@ export default function MajorModal({ dataModel, setShowMajorModal }) {
               className="image-arrowe left"
               alt="left arrow"
             />
-            <img src={page}  alt="project carousel"/>
+            <img style={{objectFit: "contain"}} src={page}  alt="project carousel"/>
             <img
               src={arrow_right}
               onClick={() => next()}
