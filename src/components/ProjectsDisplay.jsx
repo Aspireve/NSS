@@ -12,6 +12,7 @@ import SearchBar from "./ProjectSearchbar";
 import SidebarHeader from "./ProjectSidebaeheader";
 import Major_HD from "../assets/projects/index";
 import Major_simple from "../assets/projects_reduced/index";
+import { ViewImagegallery } from "./ViewImagegallery";
 
 const major_projects = [
   {
@@ -986,6 +987,7 @@ export default function ProjectDisplay({ domain }) {
           </ul>
         </div>
         <SearchBar query={query} setQuery={setQuery} />
+        <ViewImagegallery />
       </div>
       <div className="projects-cards-side">
         <MajorProjectsDisplay projects={filtered_major_items} />

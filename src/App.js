@@ -12,6 +12,7 @@ import {
   Testimonial,
   Projects,
   Home,
+  ImageGallery
 } from "./pages/index";
 import { LoaderStart, SlowInternet } from "./components/Loaders/index";
 
@@ -36,6 +37,7 @@ function App() {
             </Route>
             <Route element={<NavbarOnly phase={1} />}>
               <Route path="/testimonials" element={<Testimonial />} />
+              <Route path="/imagegallery" element={<ImageGallery/>} />
             </Route>
           </Routes>
         </Suspense>
